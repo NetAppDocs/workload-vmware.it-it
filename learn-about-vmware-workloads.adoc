@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: learn-about-vmware-workloads.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: Workload Factory per VMware offre strumenti per spostare i dati dai sistemi on-premise a VMware Cloud on AWS. Il consulente per la migrazione VMware ti permette di analizzare le configurazioni delle macchine virtuali attuali negli ambienti vSphere on-premise e di generare un piano per implementare layout di macchine virtuali consigliati nei cluster VMware Cloud su AWS vSphere e utilizzare file system Amazon FSX per NetApp ONTAP customizzati come datastore esterni. 
+---
+= Leggi le informazioni su workload Factory per VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory per VMware offre strumenti per spostare i dati dai sistemi on-premise a VMware Cloud on AWS (VMC). Il consulente per la migrazione VMware ti permette di analizzare le configurazioni delle macchine virtuali attuali negli ambienti vSphere on-premise e di generare un piano per implementare layout di macchine virtuali consigliati nei cluster VMware Cloud su AWS vSphere e utilizzare file system Amazon FSX per NetApp ONTAP customizzati come datastore esterni.
+
+Amazon FSX per NetApp ONTAP è un datastore NFS esterno costruito sul file system ONTAP di NetApp che può essere collegato al cloud di VMware sui cluster vSphere. Non è necessario aggiungere altri host per aumentare lo storage disponibile; al contrario, ti basterà utilizzare FSX per i volumi ONTAP come datastore esterno per integrare i datastore vSAN. Ciò offre un'infrastruttura storage virtualizzata flessibile e dalle performance elevate, che scala indipendentemente dalle risorse di calcolo.
+
+image:diagram-vmware-fsx-overview.png["Un diagramma che mostra l'architettura."]
+
+
+
+== Come funziona VMware Migration Advisor
+
+Il Migration ADVISOR può aiutarti a spostare le macchine virtuali on-premise (VM) e i loro dati, in esecuzione su qualsiasi datastore supportato da VMware, nei datastore VMware Cloud, che includono datastore NFS supplementari su un file system FSX per ONTAP.
+
+image:diagram-vmware-fsx-old-new.png["Un diagramma che mostra un esempio di vecchia architettura e nuova architettura dopo la migrazione."]
+
+È possibile collegare fino a quattro (4) volumi FSX per ONTAP a un singolo cluster vSphere su VMware Cloud su AWS.
+
+
+
+== Cosa puoi fare con il Migration Advisor
+
+Il Migration Advisor offre le seguenti funzionalità:
+
+* Analizza le configurazioni correnti delle macchine virtuali on-premise
+* Determinazione delle macchine virtuali da migrare a VMware Cloud su AWS
+* Identifica lo spazio richiesto in FSX per i volumi ONTAP da utilizzare come datastore esterni di macchine virtuali
+* Esaminare il rapporto risultante per comprendere le fasi di distribuzione
+* Eseguire l'implementazione effettiva
+
+
+Il Migration ADVISOR supporta il planning della configurazione per un singolo cluster VMware Cloud su AWS connesso a un singolo file system FSX per ONTAP.
+
+
+
+== Vantaggi dell'utilizzo del Migration ADVISOR
+
+Il passaggio di parti dell'infrastruttura corrente a VMware Cloud su AWS utilizzando Amazon FSX per ONTAP come datastore NFS esterni offre i seguenti vantaggi:
+
+* Ottimizzazione dei costi grazie al disaccoppiamento di host e storage e all'efficienza dei dati avanzata
+* Possibilità di aumentare la capacità dello storage in base alle esigenze senza acquistare ulteriori istanze di host
+* Le funzionalità di gestione dei dati NetApp ONTAP nel cloud, come snapshot efficienti in termini di spazio, cloning, compressione, deduplica, compaction, e replica
+* Riduzione nella gestione dei refresh hardware
+* Possibilità di modificare il throughput dei dati, gli IOPS e le dimensioni del file system, oltre ad aumentare o diminuire le dimensioni dei volumi
+* Alta disponibilità con supporto per implementazioni di zone di disponibilità multiple
+* Riduzione di costi e latenza da configurazioni single-AZ che utilizzano il peering VPC senza richiedere un gateway di transito
+
+
+
+
+== Costo
+
+L'utilizzo di VMware Migration Advisor è gratuito.
+
+Dovrai pagare per le risorse AWS implementate in base ai consigli del Migration ADVISOR.
+
+
+
+== Licensing
+
+Per utilizzare il Migration ADVISOR non sono necessarie licenze speciali da parte di NetApp.

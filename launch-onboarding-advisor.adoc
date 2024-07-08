@@ -1,0 +1,169 @@
+---
+sidebar: sidebar 
+permalink: launch-onboarding-advisor.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: Accedi alla NetApp workload Factory per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze. 
+---
+= Creare un piano di distribuzione utilizzando il Migration Advisor
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Accedi alla NetApp workload Factory per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze.
+
+Il Migration Advisor può essere utilizzato per creare un piano di distribuzione per i seguenti scenari:
+
+* <<Creare un piano di implementazione basato su un ambiente vSphere on-premise,Per migrare nel cloud il tuo attuale ambiente vSphere on-premise.>>
+* <<Creazione di un piano di distribuzione basato su un piano esistente,Per implementare un sistema nel cloud sulla base di un piano di implementazione esistente che abbia requisiti simili.>>
+
+
+Per accedere a workload Factory è necessario disporre di un nome utente e di una password. Se non si dispone dell'accesso, creare un account ora. Vedere le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"].
+
+
+
+== Creare un piano di implementazione basato su un ambiente vSphere on-premise
+
+Puoi migrare le attuali configurazioni delle macchine virtuali negli ambienti vSphere on-premise su macchine virtuali in VMware Cloud su AWS e utilizzare file system Amazon FSX per NetApp ONTAP customizzati come datastore esterni.
+
+.Requisiti
+* È necessario aver creato il file di inventario dai sistemi esistenti utilizzando il raccoglitore VM di Migration ADVISOR (file.csv) o RVTools (file.xlsx).
+* È necessario avere accesso al file di inventario dal sistema su cui si sta effettuando l'accesso a workload Factory.
+
+
+.Fasi
+. Dal riquadro carichi di lavoro VMware, selezionare *Pianificazione e distribuzione* per visualizzare la pagina principale di VMware Migration Advisor.
++
+image:screenshot-choose-method-create.png["Una schermata dei diversi metodi che è possibile utilizzare per caricare le informazioni di configurazione correnti della macchina virtuale."]
+
+. Selezionare *Crea un nuovo piano di distribuzione*.
+. Selezionare il tipo di file di inventario che si intende utilizzare per popolare workload Factory con la configurazione VM corrente e selezionare *Avanti*.
++
+** Selezionare *utilizzare il Data Collector VMware del Migration ADVISOR* per utilizzare il file .csv creato utilizzando il Data Collector di VMware.
+** Selezionare *Usa RVTools* per utilizzare il file .xlsx creato utilizzando RVTools.
+
+
++
+Viene visualizzata la pagina "preparazione per l'onboarding di VMware Cloud".
+
+. Nella sezione _Upload VM Configuration_, selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file che si desidera utilizzare.
++
+** Selezionare il file .csv quando si utilizza Migration ADVISOR VM Collector.
+** Selezionare il file .xlsx quando si utilizza RVTools.
+
+
++
+La sezione di riepilogo delle VM viene popolata a partire dal file di inventario in modo da riflettere il numero di VM e la capacità di archiviazione totale.
+
+. Nella sezione _considerazioni sull'inventario VM_, selezionare le opzioni per filtrare l'elenco delle VM che si desidera migrare.
++
+.. *Considerare le VM*: Indicare quali VM verranno estratte dal file .csv in base al relativo stato di alimentazione operativo. È possibile portare in tutte le macchine virtuali o solo quelle attivate, disattivate o sospese.
+.. *Storage della VM da considerare*: Selezionare se i datastore creati per ogni VM integrata sono dimensionati in base alle dimensioni attualmente utilizzate (consigliato) o alle dimensioni sottoposte a provisioning.
++
+I datastore esterni saranno implementati utilizzando Amazon FSX per i volumi del file system NetApp ONTAP.
+
+.. *Memoria VM da considerare*: Selezionare se la memoria allocata per ciascuna VM integrata è dimensionata in base alle dimensioni attualmente utilizzate (scelta consigliata) o alle dimensioni fornite.
+
+
+. Nella sezione _VMware Cloud on AWS Deployment Configuration_, inserisci i dettagli relativi alla configurazione richiesta di VMware Cloud on AWS.
++
+.. *Regione*: Selezionare la regione in cui verranno distribuite le VM e i file system Amazon FSX per NetApp ONTAP.
++
+Per performance ottimali e convenienza, questa è generalmente la stessa regione in cui viene implementato il tuo VMware Cloud su AWS SDDC.
+
+.. *Requisiti prestazionali stimati della VM*: Questa opzione è disponibile solo quando si utilizza RVTools. Il raccoglitore VM di Migration ADVISOR acquisisce queste informazioni dall'ambiente in uso. Fornire i seguenti parametri di prestazioni medie per macchina virtuale che si desidera applicare alle nuove macchine virtuali che verranno distribuite:
++
+*** *IOPS medi per VM*: Immettere il numero di IOPS richiesti per i file system. In caso di dubbi, è possibile utilizzare il valore predefinito di 3 IOPS per GiB dello storage SSD per file system Amazon FSX per ONTAP. Ad esempio, se implementi 2.000 GiB di capacità, questo verrà tradotto in 6.000 IOPS. Si consiglia di iniziare con un'impostazione IOPS più piccola. Puoi aumentare gli IOPS SSD con provisioning dopo la creazione del file system con la migrazione o l'implementazione dei workload.
+*** *Dimensione media dei blocchi di i/o*: La dimensione di ciascun blocco contenente operazioni di lettura o scrittura. La dimensione predefinita è 4 KB. Una dimensione dei blocchi maggiore può essere migliore per grandi carichi di lavoro in lettura e scrittura sequenziale. Una dimensione dei blocchi più piccola potrebbe offrire performance migliori per i carichi di lavoro che eseguono piccole scritture casuali su file sparsi o grandi.
+*** *Rapporto di scrittura medio*: La percentuale di operazioni che sono operazioni di scrittura per i carichi di lavoro. Il rapporto predefinito è 30% scritture e 70% letture.
+
+
+
+
+. Nella sezione _considerazioni sulla capacità di storage della VM_, seleziona alcune opzioni di storage.
++
+.. *Average data Reduction Ratio* (rapporto medio di riduzione dei dati): Scegliere tra i tre valori comuni di selezione per la riduzione dei dati. Selezionare "1:1 - Nessuna riduzione", "1:1,25 - riduzione del 20%" o "1:1,5 - riduzione del 33%".
+.. *Percentuale spazio di crescita*: Immettere la percentuale di crescita della capacità aggiunta alla capacità dei file system FSX per ONTAP.
++
+Si noti che se si seleziona una quantità inferiore al 20%, non sarà possibile creare snapshot di volume per la protezione e i backup a lungo termine.
+
+
+
+. Selezionare *Avanti* per visualizzare la pagina "VMware cloud on AWS node Configuration" (Configurazione nodo VMware cloud su AWS).
++
+Questa pagina consente di definire la configurazione del cluster VMware su AWS utilizzando un'analisi dei risparmi stimata e il tipo di nodo consigliato. È possibile configurare quanto segue:
+
++
+.. *Architettura vSAN*: Selezionare se si desidera utilizzare l'architettura vSAN Express Storage Architecture (ESA) o l'architettura vSAN Original Storage Architecture (OSA).
+.. *VSAN Fault Tolerance*: Selezionare il livello di tolleranza di errore richiesto per le VM. È possibile scegliere "Auto" (automatico), consigliato, o tra una varietà di livelli RAID.
++
+*** RAID-1 (FTT 1): Consiste di una copia esatta (o mirror) di un set di dati su 2 o più dischi.
+*** RAID-5 (FTT 1): Consiste nello striping a livello di blocco con parità distribuita. Le informazioni di parità vengono distribuite tra 3 o più unità e possono resistere a guasti di un singolo disco.
+*** RAID-5 (FTT 2): Consiste nello striping a livello di blocco con parità distribuita. Le informazioni di parità vengono distribuite tra 4 o più unità e possono resistere a due guasti simultanei dei dischi.
+*** RAID-6 (FTT 2): Estende RAID 5 aggiungendo un altro blocco di parità; pertanto, utilizza lo striping a livello di blocco con due blocchi di parità distribuiti su tutti i dischi membri. Richiede 4 o più dischi e può resistere a eventuali guasti simultanei a due dischi.
+
+
+.. *Lista di selezione configurazione nodi*: Selezionare un tipo di istanza EC2 per i nodi.
+
+
+. Selezionare *Avanti* e la pagina "Seleziona macchine virtuali" visualizza le macchine virtuali che corrispondono ai criteri forniti nella pagina precedente.
++
+.. Nella sezione _Criteri di selezione_, selezionare i criteri per le VM che si intende distribuire:
++
+*** In base all'ottimizzazione di costi e performance
+*** In base alla capacità di ripristinare facilmente i dati con snapshot locali per scenari di ripristino
+*** In base a entrambe le serie di criteri: Il costo più basso pur fornendo buone opzioni di recupero
+
+
+.. Nella sezione _Virtual Machines_ (macchine virtuali), le macchine virtuali corrispondenti ai criteri specificati nella pagina precedente sono selezionate (selezionate). Seleziona o deseleziona le macchine virtuali se desideri integrare/migrare un numero inferiore o superiore di macchine virtuali in questa pagina.
++
+La sezione *distribuzione consigliata* verrà aggiornata se si apportano modifiche. Si noti che selezionando la casella di controllo nella riga di intestazione è possibile selezionare tutte le VM in questa pagina.
+
+.. Selezionare *Avanti*.
+
+
+. Nella pagina *piano di distribuzione del datastore*, esaminare il numero totale di VM e archivi dati consigliati per la migrazione.
++
+.. Selezionare ciascun datastore elencato nella parte superiore della pagina per vedere il provisioning di datastore e macchine virtuali.
++
+Nella parte inferiore della pagina sono indicate la macchina virtuale di origine (o più macchine virtuali) per cui verranno forniti i servizi di provisioning di questa nuova macchina virtuale e datastore.
+
+.. Dopo aver compreso come verranno distribuiti i datastore, selezionare *Avanti*.
+
+
+. Nella pagina *Revisione del piano di distribuzione*, esaminare il costo mensile stimato per tutte le VM che si intende migrare.
++
+Nella parte superiore della pagina vengono descritti i costi mensili per tutte le macchine virtuali distribuite e per i file system FSX per ONTAP. È possibile espandere ogni sezione per visualizzare i dettagli relativi alla "configurazione del file system Amazon FSX per ONTAP consigliata", alla "analisi dei costi stimata", alla "configurazione del volume", alle "ipotesi di dimensionamento" e alle "Avvertenze tecniche".
+
+. Una volta soddisfatto del piano di migrazione, hai a disposizione alcune opzioni:
++
+** Selezionare *Distribuisci* per distribuire i file system FSX per ONTAP per supportare le VM. link:deploy-fsx-file-system.html["Scopri come implementare un file system FSX per ONTAP"].
+** Selezionare *Download plan > VM deployment* per scaricare il piano di migrazione in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.
+** Selezionare *Download plan > Plan report* per scaricare il piano di migrazione in formato .pdf in modo da poter distribuire il piano per la revisione.
+** Selezionare *Esporta piano* per salvare il piano di migrazione come modello in formato .json. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
+
+
+
+
+
+
+== Creazione di un piano di distribuzione basato su un piano esistente
+
+Se si sta pianificando una nuova implementazione simile a un piano di distribuzione esistente utilizzato in passato, è possibile importare tale piano, apportare modifiche e salvarlo come nuovo piano di distribuzione.
+
+.Requisiti
+È necessario avere accesso al file .json per il piano di distribuzione esistente dal sistema sul quale si sta effettuando l'accesso a workload Factory.
+
+.Fasi
+. Accedere a workload Factory.
+. Dal riquadro carichi di lavoro VMware, selezionare *Pianificazione e distribuzione* per visualizzare la pagina principale di VMware Migration Advisor.
++
+image:screenshot-choose-method-import.png["Una schermata dei diversi metodi che è possibile utilizzare per caricare le informazioni di configurazione correnti della macchina virtuale."]
+
+. Selezionare *Importa un piano di distribuzione esistente*.
+. Selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file del piano esistente che si desidera importare nel Migration ADVISOR.
+. Selezionare *successivo* per visualizzare la pagina Review plan (esamina piano).
+. È possibile selezionare *precedente* per accedere alla pagina _prepara per l'onboarding di VMware Cloud_ e alla pagina _Seleziona VM_ per modificare le impostazioni del piano come descritto nella sezione precedente.
+. Dopo aver personalizzato il piano in base ai tuoi requisiti, puoi salvare il piano o avviare il processo di implementazione dei datastore su file system FSX per ONTAP.
+
