@@ -28,12 +28,12 @@ Per accedere a workload Factory è necessario disporre di un nome utente e di un
 Puoi migrare le attuali configurazioni delle macchine virtuali negli ambienti vSphere on-premise su macchine virtuali in VMware Cloud su AWS e utilizzare file system Amazon FSX per NetApp ONTAP customizzati come datastore esterni.
 
 .Requisiti
-* È necessario aver creato il file di inventario dai sistemi esistenti utilizzando il raccoglitore VM di Migration ADVISOR (file.csv) o RVTools (file.xlsx).
+* È necessario aver creato il file di inventario dai sistemi esistenti utilizzando il raccoglitore VM del Migration ADVISOR (file.csv) o RVTools (file.xlsx).
 * È necessario avere accesso al file di inventario dal sistema su cui si sta effettuando l'accesso a workload Factory.
 
 
 .Fasi
-. Dal riquadro carichi di lavoro VMware, selezionare *Pianificazione e distribuzione* per visualizzare la pagina principale di VMware Migration Advisor.
+. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
 +
 image:screenshot-choose-method-create.png["Una schermata dei diversi metodi che è possibile utilizzare per caricare le informazioni di configurazione correnti della macchina virtuale."]
 
