@@ -15,10 +15,14 @@ Dopo aver verificato che il file system FSX per ONTAP consigliato (o più file s
 
 A seconda della policy e delle autorizzazioni aggiunte all'account workload Factory, puoi implementare il file system FSX per ONTAP completamente utilizzando workload Factory (utilizzando la modalità automatica). Se hai meno autorizzazioni (modalità lettura) o nessuna autorizzazione (modalità base), dovrai utilizzare le informazioni di CloudFormation da Codebox e distribuire il file system FSX per ONTAP in AWS.
 
-.Requisiti
+.Requisiti per le implementazioni in VMware Cloud su AWS
 * Devi utilizzare VMware Cloud su SDDC (Software-Defined Data Center) AWS versione 1,20 o superiore per implementare FSX per i file system ONTAP.
 * Non è necessario distribuire il file system FSX per ONTAP nello stesso VPC utilizzato durante la distribuzione SDDC. Devi invece implementarla in un nuovo Amazon VPC che possiedi per abilitare l'integrazione di VMware Cloud su AWS con Amazon FSX per NetApp ONTAP.
 * Devi implementare il file system FSX per ONTAP all'interno della stessa area AWS del tuo SDDC.
+
+
+.Requisiti per le implementazioni su Amazon EC2
+* Il volume root del file system FSX for ONTAP deve essere creato come volume EBS.
 
 
 .Fasi
@@ -36,7 +40,7 @@ La maggior parte dei campi che definiscono il file system FSX per ONTAP sono com
 +
 .. *Regione e VPC*: Selezionare la regione e il VPC in cui verrà distribuito il file system FSX per ONTAP.
 +
-Deve essere implementato in un VPC diverso da quello in cui viene implementato VMware Cloud su AWS.
+Se stai eseguendo l'implementazione in VMware Cloud su AWS, assicurati di implementarlo in un VPC diverso da quello in cui viene implementato VMware Cloud su AWS.
 
 .. *Gruppo di sicurezza*: Quando si utilizza l'opzione *creazione avanzata*, è possibile selezionare il gruppo di protezione predefinito per FSX per ONTAP VPC in modo che tutto il traffico possa accedere al file system FSX per ONTAP.
 +

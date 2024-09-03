@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: Accedi alla NetApp workload Factory per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze. 
 ---
-= Creare un piano di distribuzione utilizzando il Migration Advisor
+= Crea un piano di implementazione per VMware Cloud on AWS utilizzando il Migration ADVISOR
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -13,9 +13,9 @@ summary: Accedi alla NetApp workload Factory per accedere al consulente per la m
 [role="lead"]
 Accedi alla NetApp workload Factory per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze.
 
-Il Migration Advisor può essere utilizzato per creare un piano di distribuzione per i seguenti scenari:
+Durante la migrazione a VMware Cloud, puoi utilizzare il Migration ADVISOR per creare un piano di implementazione per i seguenti scenari:
 
-* <<Creare un piano di implementazione basato su un ambiente vSphere on-premise,Per migrare nel cloud il tuo attuale ambiente vSphere on-premise.>>
+* <<Creare un piano di implementazione basato su un ambiente vSphere on-premise,Per migrare il tuo attuale ambiente vSphere on-premise nel cloud VMware.>>
 * <<Creazione di un piano di distribuzione basato su un piano esistente,Per implementare un sistema nel cloud sulla base di un piano di implementazione esistente che abbia requisiti simili.>>
 
 
@@ -33,9 +33,9 @@ Puoi migrare le attuali configurazioni delle macchine virtuali negli ambienti vS
 
 
 .Fasi
-. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
+. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*.
 +
-image:screenshot-choose-method-create.png["Una schermata dei diversi metodi che è possibile utilizzare per caricare le informazioni di configurazione correnti della macchina virtuale."]
+Viene visualizzata la pagina principale di VMware Migration Advisor.
 
 . Selezionare *Crea un nuovo piano di distribuzione*.
 . Selezionare il tipo di file di inventario che si intende utilizzare per popolare workload Factory con la configurazione VM corrente e selezionare *Avanti*.
@@ -96,7 +96,7 @@ Questa pagina consente di definire la configurazione del cluster VMware su AWS u
 
 +
 .. *Architettura vSAN*: Selezionare se si desidera utilizzare l'architettura vSAN Express Storage Architecture (ESA) o l'architettura vSAN Original Storage Architecture (OSA).
-.. *VSAN Fault Tolerance*: Selezionare il livello di tolleranza di errore richiesto per le VM. È possibile scegliere "Auto" (automatico), consigliato, o tra una varietà di livelli RAID.
+.. *VSAN Fault Tolerance*: Selezionare il livello di tolleranza di errore richiesto per le VM. È possibile scegliere "Auto" (automatico), che è consigliato, o tra una varietà di livelli RAID.
 +
 *** RAID-1 (FTT 1): Consiste di una copia esatta (o mirror) di un set di dati su 2 o più dischi.
 *** RAID-5 (FTT 1): Consiste nello striping a livello di blocco con parità distribuita. Le informazioni di parità vengono distribuite tra 3 o più unità e possono resistere a guasti di un singolo disco.
@@ -134,7 +134,7 @@ Nella parte inferiore della pagina sono indicate la macchina virtuale di origine
 
 . Nella pagina *Revisione del piano di distribuzione*, esaminare il costo mensile stimato per tutte le VM che si intende migrare.
 +
-Nella parte superiore della pagina vengono descritti i costi mensili per tutte le macchine virtuali distribuite e per i file system FSX per ONTAP. È possibile espandere ogni sezione per visualizzare i dettagli relativi alla "configurazione del file system Amazon FSX per ONTAP consigliata", alla "analisi dei costi stimata", alla "configurazione del volume", alle "ipotesi di dimensionamento" e alle "Avvertenze tecniche".
+Nella parte superiore della pagina vengono descritti i costi mensili per tutte le macchine virtuali distribuite e per i file system FSX per ONTAP. È possibile espandere ogni sezione per visualizzare i dettagli relativi a "Configurazione del file system Amazon FSX consigliata per ONTAP", "analisi dei costi stimata", "Configurazione del volume", "ipotesi di dimensionamento" e "Avvertenze tecniche".
 
 . Una volta soddisfatto del piano di migrazione, hai a disposizione alcune opzioni:
 +
@@ -157,10 +157,7 @@ Se si sta pianificando una nuova implementazione simile a un piano di distribuzi
 
 .Fasi
 . Accedere a workload Factory.
-. Dal riquadro carichi di lavoro VMware, selezionare *Pianificazione e distribuzione* per visualizzare la pagina principale di VMware Migration Advisor.
-+
-image:screenshot-choose-method-import.png["Una schermata dei diversi metodi che è possibile utilizzare per caricare le informazioni di configurazione correnti della macchina virtuale."]
-
+. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
 . Selezionare *Importa un piano di distribuzione esistente*.
 . Selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file del piano esistente che si desidera importare nel Migration ADVISOR.
 . Selezionare *successivo* per visualizzare la pagina Review plan (esamina piano).

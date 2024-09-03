@@ -1,0 +1,9 @@
+= Release iniziale di workload Factory per VMware
+:allow-uri-read: 
+
+
+
+
+=== Release iniziale di workload Factory per VMware
+
+La release iniziale include la capacità di utilizzare il consulente per la migrazione di VMware per analizzare le configurazioni delle macchine virtuali correnti negli ambienti vSphere on-premise e generare un piano per implementare i layout delle macchine virtuali raccomandati in VMware Cloud su AWS e utilizzare file system Amazon FSX per NetApp ONTAP personalizzati come datastore esterni.

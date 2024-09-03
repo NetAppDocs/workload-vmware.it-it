@@ -8,6 +8,8 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
   langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
@@ -21,20 +23,34 @@ sidebar:
     entries:
     - title: Leggi le informazioni su workload Factory per VMware
       url: "/learn-about-vmware-workloads.html"
-    - title: Avvio rapido
+    - title: Avvio rapido per la migrazione a VMware Cloud su AWS
       url: "/quick-start.html"
+    - title: Guida rapida per la migrazione ad Amazon EC2
+      url: "/quick-start-native.html"
   - title: USA il consulente per la migrazione di VMware
     entries:
-    - title: Acquisire le configurazioni VM correnti
-      url: "/capture-vm-configurations.html"
-    - title: Creare un piano di distribuzione utilizzando il Migration Advisor
-      url: "/launch-onboarding-advisor.html"
-    - title: Implementa il file system FSX per ONTAP consigliato
-      url: "/deploy-fsx-file-system.html"
-    - title: Connetti FSX per ONTAP a VMware Cloud su AWS
-      url: "/connect-sddc-to-fsx.html"
-    - title: Migra i tuoi dati nella nuova infrastruttura
-      url: "/migrate-data.html"
+    - title: Migrazione a VMware Cloud su AWS
+      entries:
+      - title: Acquisire le configurazioni VM correnti
+        url: "/capture-vm-configurations.html"
+      - title: Creare un piano di distribuzione utilizzando il Migration Advisor
+        url: "/launch-onboarding-advisor.html"
+      - title: Implementa il file system FSX per ONTAP consigliato
+        url: "/deploy-fsx-file-system.html"
+      - title: Connetti FSX per ONTAP a VMware Cloud su AWS
+        url: "/connect-sddc-to-fsx.html"
+      - title: Migra i tuoi dati nella nuova infrastruttura
+        url: "/migrate-data.html"
+    - title: Migrazione ad Amazon EC2
+      entries:
+      - title: Acquisire le configurazioni VM correnti
+        url: "/capture-vm-configurations-native.html"
+      - title: Creare un piano di distribuzione utilizzando il Migration Advisor
+        url: "/launch-onboarding-advisor-native.html"
+      - title: Implementa il file system FSX per ONTAP consigliato
+        url: "/deploy-fsx-file-system.html"
+      - title: Migra i tuoi dati nella nuova infrastruttura
+        url: "/migrate-data-native.html"
   - title: Conoscenza e supporto
     entries:
     - title: Registrati per ricevere assistenza

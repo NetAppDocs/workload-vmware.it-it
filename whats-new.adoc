@@ -15,6 +15,16 @@ Scopri le novità di workload Factory grazie al componente VMware Cloud Migratio
 
 
 
+== 1 settembre 2024
+
+
+
+=== Migrazione ad Amazon EC2
+
+Workload Factory per VMware ora supporta la migrazione ad Amazon EC2 utilizzando il Migration ADVISOR di VMware.
+
+
+
 == 7 luglio 2024
 
 
