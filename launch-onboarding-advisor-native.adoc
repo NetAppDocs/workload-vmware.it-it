@@ -92,11 +92,8 @@ Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile c
 Nella parte superiore della pagina vengono descritti i costi mensili per tutte le macchine virtuali distribuite e per i file system FSX per ONTAP. È possibile espandere ogni sezione per visualizzare i dettagli relativi a "Configurazione del file system Amazon FSX consigliata per ONTAP", "analisi dei costi stimata", "Configurazione del volume", "ipotesi di dimensionamento" e "Avvertenze tecniche".
 
 . Una volta soddisfatto del piano di migrazione, hai a disposizione alcune opzioni:
-+
-** Selezionare *Distribuisci* per distribuire i file system FSX per ONTAP per supportare le VM. link:deploy-fsx-file-system.html["Scopri come implementare un file system FSX per ONTAP"].
-** Selezionare *Download plan > VM deployment* per scaricare il piano di migrazione in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.
-** Selezionare *Download plan > Plan report* per scaricare il piano di migrazione in formato .pdf in modo da poter distribuire il piano per la revisione.
-** Selezionare *Esporta piano* per salvare il piano di migrazione come modello in formato .json. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
 
 
+* Selezionare *Download plan > Instance storage deployment* per scaricare il piano di distribuzione del datastore esterno in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.
+* Selezionare *Download plan > Plan report* per scaricare il piano di distribuzione in formato .pdf in modo da poter distribuire il piano per la revisione.
 
