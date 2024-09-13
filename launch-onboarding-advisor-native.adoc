@@ -27,7 +27,7 @@ Puoi migrare le attuali configurazioni delle macchine virtuali in ambienti vSphe
 
 
 .Fasi
-. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
+. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
 . Selezionare *Crea un nuovo piano di distribuzione*.
 . Selezionare il tipo di file di inventario che si intende utilizzare per popolare workload Factory con la configurazione VM corrente e selezionare *Avanti*.
 +
