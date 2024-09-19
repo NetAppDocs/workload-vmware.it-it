@@ -27,7 +27,11 @@ Puoi migrare le attuali configurazioni delle macchine virtuali in ambienti vSphe
 
 
 .Fasi
-. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
+. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la schermata iniziale di VMware Migration Advisor.
++
+Esaminate le informazioni per scoprire i vantaggi del Migration ADVISOR.
+
+. Quando si è pronti, selezionare *Let's start*.
 . Selezionare *Crea un nuovo piano di distribuzione*.
 . Selezionare il tipo di file di inventario che si intende utilizzare per popolare workload Factory con la configurazione VM corrente e selezionare *Avanti*.
 +
@@ -82,18 +86,39 @@ Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile c
 
 
 . Selezionare *Avanti*.
-
-
-. Nella pagina *Review EC2 Volumes* (Rivedi volumi 3D*), esaminare le informazioni sulla VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione.
+. Nella pagina *Review EC2 Volume Assignment* (Revisione assegnazione volume 3D*), esaminare le informazioni sulla VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione.
 . Selezionare *Avanti*.
-. Nella pagina *Rivedi archiviazione istanza*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP.
-. Nella pagina *Revisione del piano di distribuzione*, esaminare il costo mensile stimato per tutte le VM che si intende migrare.
+. Nella pagina *Revisione assegnazione memoria istanza*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP.
+. Nella pagina *verifica del piano di migrazione*, esaminare il costo mensile stimato per tutte le VM che si intende migrare.
 +
-Nella parte superiore della pagina vengono descritti i costi mensili per tutte le macchine virtuali distribuite e per i file system FSX per ONTAP. È possibile espandere ogni sezione per visualizzare i dettagli relativi a "Configurazione del file system Amazon FSX consigliata per ONTAP", "analisi dei costi stimata", "Configurazione del volume", "ipotesi di dimensionamento" e "Avvertenze tecniche".
+In cima alla pagina sono previsti i risparmi mensili per FSX per i file system ONTAP e i volumi EBS. È possibile espandere ogni sezione per visualizzare i dettagli relativi alla configurazione suggerita del file system, alla ripartizione dei risparmi stimati, ai presupposti e alle esclusioni di responsabilità tecniche.
 
 . Una volta soddisfatto del piano di migrazione, hai a disposizione alcune opzioni:
 
 
 * Selezionare *Download plan > Instance storage deployment* per scaricare il piano di distribuzione del datastore esterno in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.
 * Selezionare *Download plan > Plan report* per scaricare il piano di distribuzione in formato .pdf in modo da poter distribuire il piano per la revisione.
+* Selezionare *Esporta piano* per salvare il piano di migrazione come modello in formato .json. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
+
+
+
+
+== Creazione di un piano di distribuzione basato su un piano esistente
+
+Se si sta pianificando una nuova distribuzione simile a un piano di distribuzione esistente utilizzato in passato, è possibile importare tale piano, apportare modifiche e salvarlo come nuovo piano di distribuzione.
+
+.Requisiti
+È necessario avere accesso al file .json per il piano di distribuzione esistente dal sistema sul quale si sta effettuando l'accesso a workload Factory.
+
+.Fasi
+. Accedere a workload Factory.
+. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*.
+. Selezionare *Importa un piano di distribuzione esistente*.
+. Selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file del piano .json esistente che si desidera importare nel Migration ADVISOR.
+. Selezionare *Avanti*.
++
+Viene visualizzata la pagina Review plan (esamina piano).
+
+. È possibile selezionare *precedente* per accedere alle pagine precedenti e modificare le impostazioni del piano come descritto nella sezione precedente.
+. Dopo aver personalizzato il piano in base alle proprie esigenze, è possibile salvarlo o scaricarlo come file PDF.
 
