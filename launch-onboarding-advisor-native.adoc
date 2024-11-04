@@ -78,6 +78,9 @@ Per ottenere performance ottimali e convenienza, si tratta in genere della stess
 . Nella sezione _considerazioni sulla capacità di destinazione e sulla protezione_, selezionare una delle opzioni di archiviazione disponibili.
 +
 .. *Average data Reduction Ratio*: Scegliere tra i tre rapporti di riduzione dei dati comuni. Selezionare "1:1 - Nessuna riduzione", "1:1,25 - riduzione del 20%" o "1:1,5 - riduzione del 33%".
++
+Seleziona *Aiutami a decidere* se non sei sicuro di quale rapporto scegliere. Viene visualizzata la finestra di dialogo _Assistente rapporto di riduzione dati_. Seleziona qualsiasi affermazione che si applica all'inventario delle VM e al patrimonio di storage. L'assistente consiglierà un tasso di riduzione dei dati appropriato. Selezionare *Applica* per utilizzare il rapporto consigliato.
+
 .. *Percentuale spazio di crescita*: Immettere la percentuale di crescita della capacità aggiunta alla capacità dei file system FSX per ONTAP.
 +
 Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile creare snapshot di volume per la protezione e backup a lungo termine.

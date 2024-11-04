@@ -1,0 +1,11 @@
+= Il rapporto di riduzione dei dati di VMware Migration Advisor aiuta
+:allow-uri-read: 
+
+
+
+
+=== Il rapporto di riduzione dei dati di VMware Migration Advisor aiuta
+
+Questa versione di workload Factory per VMware include un assistente al rapporto di riduzione dei dati. L'assistente rapporto di riduzione dei dati ti aiuta a decidere il rapporto migliore per il tuo inventario VMware e la tua proprietà di storage durante la preparazione per l'onboarding nel cloud AWS.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]

@@ -488,4 +488,8 @@
   <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">È possibile selezionare *precedente* per accedere alle pagine precedenti e modificare le impostazioni del piano come descritto nella sezione precedente.</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">Dopo aver personalizzato il piano in base alle proprie esigenze, è possibile salvarlo o scaricarlo come file PDF.</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 settembre 2024</block>
+  <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">Il rapporto di riduzione dei dati di VMware Migration Advisor aiuta</block>
+  <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">Questa versione di workload Factory per VMware include un assistente al rapporto di riduzione dei dati. L'assistente rapporto di riduzione dei dati ti aiuta a decidere il rapporto migliore per il tuo inventario VMware e la tua proprietà di storage durante la preparazione per l'onboarding nel cloud AWS.</block>
+  <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">Seleziona *Aiutami a decidere* se non sei sicuro di quale rapporto scegliere. Viene visualizzata la finestra di dialogo _Assistente rapporto di riduzione dati_. Seleziona qualsiasi affermazione che si applica all'inventario delle VM e al patrimonio di storage. L'assistente consiglierà un tasso di riduzione dei dati appropriato. Selezionare *Applica* per utilizzare il rapporto consigliato.</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 novembre 2024</block>
 </blocks>
