@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: launch-onboarding-advisor-native.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Accedi alla NetApp workload Factory per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze. 
+summary: Accedere alla fabbrica del carico di lavoro NetApp per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze. 
 ---
 = Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: Accedi alla NetApp workload Factory per accedere al consulente per la m
 
 
 [role="lead"]
-Accedi alla NetApp workload Factory per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze.
+Accedere alla fabbrica del carico di lavoro NetApp per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze.
 
-Per accedere a workload Factory è necessario disporre di un nome utente e di una password. Se non si dispone dell'accesso, creare un account ora. Vedere le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"].
+Per accedere alla fabbrica del carico di lavoro, è necessario disporre di un nome utente e di una password. Se non si dispone dell'accesso, creare un account ora. Vedere le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"].
 
 
 
@@ -23,17 +23,18 @@ Puoi migrare le attuali configurazioni delle macchine virtuali in ambienti vSphe
 
 .Requisiti
 * È necessario aver creato il file di inventario dai sistemi esistenti utilizzando il tool di raccolta VM del Migration ADVISOR (file .zip) o RVTools (file.xlsx).
-* È necessario avere accesso al file di inventario dal sistema su cui si sta effettuando l'accesso a workload Factory.
+* È necessario avere accesso al file di inventario dal sistema sul quale si sta effettuando l'accesso alla fabbrica del carico di lavoro.
 
 
 .Fasi
+. Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 . Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la schermata iniziale di VMware Migration Advisor.
 +
 Esaminate le informazioni per scoprire i vantaggi del Migration ADVISOR.
 
 . Quando si è pronti, selezionare *Let's start*.
 . Selezionare *Crea un nuovo piano di distribuzione*.
-. Selezionare il tipo di file di inventario che si intende utilizzare per popolare workload Factory con la configurazione VM corrente e selezionare *Avanti*.
+. Selezionare il tipo di file di inventario che verrà utilizzato per popolare la fabbrica del carico di lavoro con la configurazione VM corrente e selezionare *Avanti*.
 +
 ** Selezionare *Usa il Data Collector VMware del Migration ADVISOR* per utilizzare il file creato utilizzando il Data Collector di VMware.
 ** Selezionare *Usa RVTools* per utilizzare il file .xlsx creato utilizzando RVTools.
@@ -114,7 +115,7 @@ Se si sta pianificando una nuova distribuzione simile a un piano di distribuzion
 È necessario avere accesso al file .json per il piano di distribuzione esistente dal sistema sul quale si sta effettuando l'accesso a workload Factory.
 
 .Fasi
-. Accedere a workload Factory.
+. Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 . Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*.
 . Selezionare *Importa un piano di distribuzione esistente*.
 . Selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file del piano .json esistente che si desidera importare nel Migration ADVISOR.

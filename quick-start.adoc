@@ -13,18 +13,17 @@ summary: Inizia subito con il consulente per la migrazione VMware per spostare l
 [role="lead"]
 Inizia subito con il consulente per la migrazione VMware per spostare la tua infrastruttura attuale su VMware Cloud su AWS, utilizzando Amazon FSX per ONTAP come datastore NFS esterni.
 
-Prima di iniziare, dovresti avere una conoscenza di https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modalità operative"^]
+Prima di iniziare, è necessario conoscere https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modalità operative"^] .
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Registrati e crea un account per workload Factory
-[role="quick-margin-para"]
-Andare a https://console.workloads.netapp.com["Console di workload Factory"^] e iscriversi. https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Ulteriori informazioni sulla creazione di account"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Accedi a workload Factory
+Sarà necessario https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configurare un account con workload factory"^] ed effettuare l'accesso utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Aggiungi credenziali e autorizzazioni AWS al tuo account
 [role="quick-margin-para"]
-Puoi utilizzare workload Factory in modalità _Basic_ senza aggiungere credenziali per accedere al tuo account AWS. L'aggiunta delle credenziali AWS a workload Factory in modalità _Read_ o _Automate_ fornisce all'account workload Factory le autorizzazioni necessarie per creare e gestire i file system FSX per ONTAP e per implementare e gestire i carichi di lavoro in VMware Cloud.
+Puoi utilizzare la fabbrica dei carichi di lavoro in modalità _Basic_ senza aggiungere credenziali per accedere all'account AWS. L'aggiunta delle credenziali AWS alla fabbrica dei carichi di lavoro in modalità _lettura_ o _automatizza_ fornisce all'account della fabbrica dei carichi di lavoro le autorizzazioni necessarie per creare e gestire i file system FSX per ONTAP e per implementare e gestire i carichi di lavoro in VMware Cloud.
 
 [role="quick-margin-para"]
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Informazioni su come aggiungere credenziali e autorizzazioni"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Informazioni su come aggiungere credenziali e autorizzazioni"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"] Acquisisci le tue attuali configurazioni VM nel tuo ambiente vSphere
 [role="quick-margin-para"]
@@ -52,7 +51,7 @@ link:deploy-fsx-file-system.html["Scopri come implementare il tuo nuovo file sys
 Il tuo Software-Defined Data Center (SDDC) offre opzioni di rete per connettersi al file system FSX per ONTAP utilizzando la funzionalità di peering VPC per estendere la connettività di rete a volumi di storage NFS esterni.
 
 [role="quick-margin-para"]
-link:connect-sddc-to-fsx.html["Scopri di più su come migrare i tuoi dati"].
+link:connect-sddc-to-fsx.html["Scopri come connettere i file system FSX per ONTAP"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["Sette"] Migra i dati dai vecchi sistemi ai nuovi file system FSX per ONTAP
 [role="quick-margin-para"]

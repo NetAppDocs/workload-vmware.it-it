@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: Scopri le novità della componente VMware Migration Advisor di workload Factory. 
+summary: Scoprite le novità della componente VMware Migration Advisor di workload Factory. 
 ---
 = Novità
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Scopri le novità della componente VMware Migration Advisor di workload
 
 
 [role="lead"]
-Scopri le novità di workload Factory grazie al componente VMware Cloud Migration Advisor.
+Scopri le novità della workload Factory con il componente VMware Cloud Migration Advisor.
 
 
 
@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Miglioramenti al Migration Advisor di VMware
 
-Questa versione di workload Factory per VMware offre miglioramenti delle funzionalità e della stabilità, nonché la possibilità di importare ed esportare piani di migrazione quando si utilizza il Migration ADVISOR di VMware.
+Questa versione di workload Factory per VMware offre miglioramenti delle funzionalità e della stabilità, nonché la possibilità di importare ed esportare i piani di migrazione quando si utilizza VMware Migration Advisor.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
 
@@ -45,7 +45,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Migrazione ad Amazon EC2
 
-Workload Factory per VMware ora supporta la migrazione ad Amazon EC2 utilizzando il Migration ADVISOR di VMware.
+Workload factory per VMware ora supporta la migrazione ad Amazon EC2 utilizzando il Migration ADVISOR di VMware.
 
 
 
@@ -53,6 +53,6 @@ Workload Factory per VMware ora supporta la migrazione ad Amazon EC2 utilizzando
 
 
 
-=== Release iniziale di workload Factory per VMware
+=== Release iniziale della workload Factory per VMware
 
 La release iniziale include la capacità di utilizzare il consulente per la migrazione di VMware per analizzare le configurazioni delle macchine virtuali correnti negli ambienti vSphere on-premise e generare un piano per implementare i layout delle macchine virtuali raccomandati in VMware Cloud su AWS e utilizzare file system Amazon FSX per NetApp ONTAP personalizzati come datastore esterni.

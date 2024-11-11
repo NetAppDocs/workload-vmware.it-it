@@ -2,20 +2,28 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Workload Factory per VMware offre strumenti per spostare i dati dai sistemi on-premise a VMware Cloud on AWS. Il consulente per la migrazione VMware ti permette di analizzare le configurazioni delle macchine virtuali attuali negli ambienti vSphere on-premise e di generare un piano per implementare layout di macchine virtuali consigliati nei cluster VMware Cloud su AWS vSphere e utilizzare file system Amazon FSX per NetApp ONTAP customizzati come datastore esterni. 
+summary: 'La fabbrica dei carichi di lavoro per VMware offre strumenti per spostare i dati dai sistemi on-premise alla fabbrica dei carichi di lavoro per VMware, che offre strumenti per spostare i dati dai sistemi on-premise in VMware Cloud on AWS (VMC) o Amazon EC2.' 
 ---
-= Leggi le informazioni su workload Factory per VMware
+= Scopri la workload Factory per VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory per VMware offre strumenti per spostare i dati dai sistemi on-premise in VMware Cloud on AWS (VMC) o Amazon EC2. Il consulente per la migrazione VMware ti permette di analizzare le configurazioni delle macchine virtuali attuali negli ambienti vSphere on-premise e di generare un piano per implementare i layout delle macchine virtuali consigliati nei cluster Amazon EC2 o VMware Cloud su AWS vSphere e utilizzare file system Amazon FSX per NetApp ONTAP customizzati come datastore esterni.
+La fabbrica dei carichi di lavoro per VMware offre strumenti per spostare i dati dai sistemi on-premise in VMware Cloud on AWS (VMC) o Amazon EC2.
+
+
+
+== Che cos'è la workload Factory per VMware?
+
+Workload Factory per VMware fornisce un consulente per la migrazione che consente di analizzare le configurazioni correnti delle macchine virtuali negli ambienti vSphere on-premise. Il Migration ADVISOR genera quindi un piano per implementare i layout raccomandati delle VM in Amazon EC2 o VMware Cloud su cluster AWS vSphere e utilizzare file system personalizzati di Amazon FSX per NetApp ONTAP come datastore esterno.
 
 Amazon FSX per NetApp ONTAP è un datastore NFS esterno costruito sul file system ONTAP di NetApp che può essere collegato alle istanze di Amazon EC2 o di VMware Cloud sui cluster AWS vSphere. Non è necessario aggiungere altri host per aumentare lo storage disponibile; al contrario, ti basterà utilizzare FSX per i volumi ONTAP come datastore esterno per integrare i datastore vSAN. Ciò offre un'infrastruttura storage virtualizzata flessibile e dalle performance elevate, che scala indipendentemente dalle risorse di calcolo.
 
 image:diagram-vmware-fsx-overview.png["Un diagramma che mostra l'architettura."]
+
+Per ulteriori informazioni sulla fabbrica dei carichi di lavoro, fare riferimento alla https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["panoramica della fabbrica del carico di lavoro"^].
 
 
 
@@ -55,6 +63,19 @@ Il passaggio delle parti dell'infrastruttura corrente ad Amazon EC2 o a VMware C
 * Possibilità di modificare il throughput dei dati, gli IOPS e le dimensioni del file system, oltre ad aumentare o diminuire le dimensioni dei volumi
 * Alta disponibilità con supporto per implementazioni di zone di disponibilità multiple
 * Riduzione di costi e latenza da configurazioni single-AZ che utilizzano il peering VPC senza richiedere un gateway di transito
+
+
+
+
+== Strumenti per l'utilizzo di workload Factory
+
+È possibile utilizzare la farm di workload BlueXP  con i seguenti tool:
+
+* *Workload Factory Console*: La console workload Factory offre un'interfaccia visiva che offre una visione olistica delle applicazioni e dei progetti.
+* *Console BlueXP *: La console BlueXP  offre un'interfaccia ibrida in modo da poter utilizzare la fabbrica dei workload BlueXP  insieme ad altri servizi BlueXP .
+* *API REST*: Le API REST DI workload Factory ti consentono di implementare e gestire i file system FSX per ONTAP e altre risorse AWS
+* *CloudFormation*: Il codice AWS CloudFormation consente di eseguire le azioni definite nella console del workload factory per modellare, eseguire il provisioning e gestire risorse AWS e di terze parti dallo stack CloudFormation nell'account AWS.
+* *Terraform BlueXP  workload Factory Provider*: Terraform consente di creare e gestire i flussi di lavoro dell'infrastruttura generati nella console di workload Factory.
 
 
 
