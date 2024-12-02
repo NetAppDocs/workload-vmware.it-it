@@ -33,51 +33,45 @@ Puoi migrare le attuali configurazioni delle macchine virtuali in ambienti vSphe
 Esaminate le informazioni per scoprire i vantaggi del Migration ADVISOR.
 
 . Quando si è pronti, selezionare *Let's start*.
-. Selezionare *Crea un nuovo piano di distribuzione*.
-. Selezionare il tipo di file di inventario che verrà utilizzato per popolare la fabbrica del carico di lavoro con la configurazione VM corrente e selezionare *Avanti*.
+. Scegliere il livello di dettaglio e il metodo preferito durante il processo di creazione di un piano di distribuzione:
 +
-** Selezionare *Usa il Data Collector VMware del Migration ADVISOR* per utilizzare il file creato utilizzando il Data Collector di VMware.
-** Selezionare *Usa RVTools* per utilizzare il file .xlsx creato utilizzando RVTools.
+** *Valutazione rapida*: Questa opzione utilizza un file di inventario RVtools per recuperare le informazioni sulle macchine virtuali durante un processo accelerato, con conseguente creazione di un piano di progettazione per la migrazione al cloud.
+** *Pianificazione dettagliata*: Utilizzare il file di inventario del Data Collector del Migration ADVISOR per raccogliere informazioni dettagliate, dando come risultato una progettazione pronta per la distribuzione.
 
 
+
+
+[role="tabbed-block"]
+====
+.Valutazione rapida
+--
+.Fasi
+. Selezionare la sezione *Valutazione rapida* e selezionare *Avanti*.
 +
-Viene visualizzata la pagina "preparazione per l'onboarding del cloud AWS".
+Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
 
-. Nella sezione _carica configurazione VM_, selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file di inventario che si desidera utilizzare.
-+
-** Selezionare il file .zip quando si utilizza Migration ADVISOR VM Collector.
-** Selezionare il file .xlsx quando si utilizza RVTools.
-
-
+. Nella sezione _VM Configuration upload_, selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file .xlsx creato da RVTools.
 +
 La sezione *riepilogo VM* viene popolata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.
 
 . Nella sezione _considerazioni sull'inventario VM_, selezionare le opzioni per filtrare l'elenco delle VM che si desidera migrare.
 +
-.. *Considerare VM*: Indicare quali VM verranno estratte dal file di inventario in base al relativo stato di alimentazione operativa. È possibile portare in tutte le macchine virtuali o solo quelle attivate, disattivate o sospese.
-.. *Storage della VM da considerare*: Selezionare se i datastore creati per ogni VM integrata sono dimensionati in base alle dimensioni attualmente utilizzate (consigliato) o alle dimensioni sottoposte a provisioning.
+.. *Regione*: Selezionare l'area in cui verranno distribuiti i file system Amazon FSX per NetApp ONTAP. Per ottenere performance ottimali e convenienza, si tratta in genere della stessa regione in cui viene implementato il tuo SDDC Amazon EC2 esistente.
+.. Scegli un livello di performance previsto per le VM in questa regione. Si consiglia di iniziare con un'impostazione IOPS più piccola. Puoi aumentare gli IOPS SSD con provisioning dopo la creazione del file system con la migrazione o l'implementazione dei carichi di lavoro:
 +
-I datastore esterni saranno implementati utilizzando Amazon FSX per i volumi del file system NetApp ONTAP.
-
-
-
-. Nella sezione _Configurazione distribuzione cloud_, inserisci i dettagli relativi alla configurazione Amazon EC2 richiesta.
-+
-.. *Regione*: Selezionare l'area in cui verranno distribuiti i file system Amazon FSX per NetApp ONTAP.
-+
-Per ottenere performance ottimali e convenienza, si tratta in genere della stessa regione in cui viene implementato il tuo SDDC Amazon EC2 esistente.
-
-.. *Requisiti prestazionali stimati della VM*: Questa opzione è disponibile solo quando si utilizza RVTools. Il raccoglitore VM di Migration ADVISOR acquisisce queste informazioni dall'ambiente in uso. Fornire i seguenti parametri di prestazioni medie per macchina virtuale che si desidera applicare alle nuove macchine virtuali che verranno distribuite:
-+
-*** *IOPS medi per VM*: Immettere il numero di IOPS richiesti per i file system. In caso di dubbi, è possibile utilizzare il valore predefinito di 3 IOPS per GiB dello storage SSD per file system Amazon FSX per ONTAP. Ad esempio, se implementi 2.000 GiB di capacità, questo verrà tradotto in 6.000 IOPS. Si consiglia di iniziare con un'impostazione IOPS più piccola. Puoi aumentare gli IOPS SSD con provisioning dopo la creazione del file system con la migrazione o l'implementazione dei workload.
-*** *Dimensione media dei blocchi di i/o*: La dimensione di ciascun blocco contenente operazioni di lettura o scrittura. La dimensione predefinita è 4 KB. Una dimensione dei blocchi maggiore potrebbe essere la soluzione migliore per i grandi carichi di lavoro in lettura e scrittura sequenziale. Una dimensione dei blocchi più piccola potrebbe offrire performance migliori per i carichi di lavoro che eseguono piccole scritture casuali su file sparsi o grandi.
-*** *Rapporto di scrittura medio*: La percentuale di operazioni che sono operazioni di scrittura per i carichi di lavoro. Il rapporto predefinito è 30% scritture e 70% letture.
+*** *Prestazioni da standard ad elevate*: Per VM con tassi di i/o medi compresi tra 20 e 5000 IOPS.
+*** *Prestazioni molto elevate*: Per macchine virtuali con tassi di i/o medi superiori a 5000 IOPS.
+*** *Prestazioni molto basse*: Per macchine virtuali con velocità di i/o medie inferiori a 20 IOPS.
 
 
 
 
 . Nella sezione _considerazioni sulla capacità di destinazione e sulla protezione_, selezionare una delle opzioni di archiviazione disponibili.
 +
+.. *Storage della VM da considerare*: Selezionare se i datastore creati per ogni VM integrata sono dimensionati in base alle dimensioni attualmente utilizzate (consigliato) o alle dimensioni sottoposte a provisioning.
++
+I datastore esterni saranno implementati utilizzando Amazon FSX per i volumi del file system NetApp ONTAP.
+
 .. *Average data Reduction Ratio*: Scegliere tra i tre rapporti di riduzione dei dati comuni. Selezionare "1:1 - Nessuna riduzione", "1:1,25 - riduzione del 20%" o "1:1,5 - riduzione del 33%".
 +
 Seleziona *Aiutami a decidere* se non sei sicuro di quale rapporto scegliere. Viene visualizzata la finestra di dialogo _Assistente rapporto di riduzione dati_. Seleziona qualsiasi affermazione che si applica all'inventario delle VM e al patrimonio di storage. L'assistente consiglierà un tasso di riduzione dei dati appropriato. Selezionare *Applica* per utilizzare il rapporto consigliato.
@@ -90,20 +84,65 @@ Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile c
 
 
 . Selezionare *Avanti*.
-. Nella pagina *Review EC2 Volume Assignment* (Revisione assegnazione volume 3D*), esaminare le informazioni sulla VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione.
-. Selezionare *Avanti*.
-. Nella pagina *Revisione assegnazione memoria istanza*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP.
-. Nella pagina *verifica del piano di migrazione*, esaminare il costo mensile stimato per tutte le VM che si intende migrare.
+. Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione al cloud AWS, quindi selezionare *Avanti*.
+. Nella pagina *Classify* (classificazione), esaminare le informazioni della VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione, quindi selezionare *Next* (Avanti).
+. Nella pagina *pacchetto*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP, quindi selezionare *Avanti*.
+. Nella pagina *Rivedi piano*, esaminare i risparmi mensili stimati e le stime dei costi per tutte le VM che si prevede di migrare.
 +
 In cima alla pagina sono previsti i risparmi mensili per FSX per i file system ONTAP e i volumi EBS. È possibile espandere ogni sezione per visualizzare i dettagli relativi alla configurazione suggerita del file system, alla ripartizione dei risparmi stimati, ai presupposti e alle esclusioni di responsabilità tecniche.
 
-. Una volta soddisfatto del piano di migrazione, hai a disposizione alcune opzioni:
 
+
+--
+.Pianificazione dettagliata
+--
+.Fasi
+. Selezionare il riquadro *pianificazione dettagliata* e selezionare *Avanti*.
++
+Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
+
+. Nella sezione _VM Configuration upload_, selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file .zip creato dal Data Collector del Migration ADVISOR.
++
+La sezione *riepilogo VM* viene popolata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.
+
+. Nella sezione _considerazioni sull'inventario VM_, seleziona l'area in cui verranno distribuiti i file system Amazon FSX per NetApp ONTAP. Per ottenere performance ottimali e convenienza, si tratta in genere della stessa regione in cui viene implementato il tuo SDDC Amazon EC2 esistente.
+. Nella sezione _considerazioni sulla capacità di destinazione e sulla protezione_, selezionare una delle opzioni di archiviazione disponibili.
++
+.. *Storage della VM da considerare*: Selezionare se i datastore creati per ogni VM integrata sono dimensionati in base alle dimensioni attualmente utilizzate (consigliato) o alle dimensioni sottoposte a provisioning.
++
+I datastore esterni saranno implementati utilizzando Amazon FSX per i volumi del file system NetApp ONTAP.
+
+.. *Average data Reduction Ratio*: Scegliere tra i tre rapporti di riduzione dei dati comuni. Selezionare "1:1 - Nessuna riduzione", "1:1,25 - riduzione del 20%" o "1:1,5 - riduzione del 33%".
++
+Seleziona *Aiutami a decidere* se non sei sicuro di quale rapporto scegliere. Viene visualizzata la finestra di dialogo _Assistente rapporto di riduzione dati_. Seleziona qualsiasi affermazione che si applica all'inventario delle VM e al patrimonio di storage. L'assistente consiglierà un tasso di riduzione dei dati appropriato. Selezionare *Applica* per utilizzare il rapporto consigliato.
+
+.. *Percentuale spazio di crescita*: Immettere la percentuale di crescita della capacità aggiunta alla capacità dei file system FSX per ONTAP.
++
+Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile creare snapshot di volume per la protezione e backup a lungo termine.
+
+.. *Protezione snapshot VM*: Abilitare questa opzione per proteggere le VM con snapshot.
+
+
+. Selezionare *Avanti*.
+. Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione al cloud AWS, quindi selezionare *Avanti*.
+. Nella pagina *Classify* (classificazione), esaminare le informazioni della VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione, quindi selezionare *Next* (Avanti).
+. Nella pagina *pacchetto*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP, quindi selezionare *Avanti*.
+. Nella pagina *Rivedi piano*, esaminare i risparmi mensili stimati e le stime dei costi per tutte le VM che si prevede di migrare.
++
+In cima alla pagina sono previsti i risparmi mensili per FSX per i file system ONTAP e i volumi EBS. È possibile espandere ogni sezione per visualizzare i dettagli relativi alla configurazione suggerita del file system, alla ripartizione dei risparmi stimati, ai presupposti e alle esclusioni di responsabilità tecniche.
+
+
+
+--
+====
+Una volta soddisfatto del piano di migrazione, hai a disposizione alcune opzioni:
 
 * Selezionare *Download plan > Instance storage deployment* per scaricare il piano di distribuzione del datastore esterno in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.
 * Selezionare *Download plan > Plan report* per scaricare il piano di distribuzione in formato .pdf in modo da poter distribuire il piano per la revisione.
 * Selezionare *Esporta piano* per salvare il piano di migrazione come modello in formato .json. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
 
+
+È possibile selezionare *fatto* per tornare alla pagina dei consulenti per la migrazione VMware.
 
 
 
@@ -117,11 +156,10 @@ Se si sta pianificando una nuova distribuzione simile a un piano di distribuzion
 .Fasi
 . Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 . Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*.
-. Selezionare *Importa un piano di distribuzione esistente*.
-. Selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file del piano .json esistente che si desidera importare nel Migration ADVISOR.
-. Selezionare *Avanti*.
+. Selezionare *Importa piano*.
+. Selezionare il file del piano .json esistente che si desidera importare nel Migration ADVISOR, quindi selezionare *Apri*.
 +
-Viene visualizzata la pagina Review plan (esamina piano).
+Viene visualizzata la pagina *Rivedi piano*.
 
 . È possibile selezionare *precedente* per accedere alle pagine precedenti e modificare le impostazioni del piano come descritto nella sezione precedente.
 . Dopo aver personalizzato il piano in base alle proprie esigenze, è possibile salvarlo o scaricarlo come file PDF.

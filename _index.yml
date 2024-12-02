@@ -9,7 +9,7 @@ indexpage:
   tiles:
   - title: Inizia subito
     links:
-    - title: Scopri la workload Factory per VMware
+    - title: Scopri la fabbrica di workload BlueXP  per VMware
       url: learn-about-vmware-workloads.html
     - title: 'Avvio rapido: Migrazione a VMware Cloud su AWS'
       url: quick-start.html
@@ -35,5 +35,3 @@ indexpage:
       url: launch-onboarding-advisor-native.html
     - title: Implementa il file system FSX per ONTAP consigliato
       url: deploy-fsx-file-system.html
-    - title: Migra i tuoi dati nella nuova infrastruttura
-      url: migrate-data-native.html

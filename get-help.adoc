@@ -7,7 +7,7 @@ summary: 'NetApp offre il supporto per la fabbrica di carichi di lavoro in vari 
 = Richiedi assistenza
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
