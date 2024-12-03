@@ -352,7 +352,6 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">Assicurarsi di copiare il numero di serie dell'account (960xxxx) utilizzato in precedenza per il campo del numero di serie. In questo modo, l'elaborazione dell'account sarà più rapida.</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp dovrebbe contattarti durante questo processo. Si tratta di un esercizio di assunzione per i nuovi utenti.</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">Una volta ottenuto l'account per il sito di supporto NetApp, associare l'account al login BlueXP completando la procedura descritta in <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">Novità</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">7 luglio 2024</block>
   <block id="9bab53a02593423437540c8ac9802fde" category="paragraph">La release iniziale include la capacità di utilizzare il consulente per la migrazione di VMware per analizzare le configurazioni delle macchine virtuali correnti negli ambienti vSphere on-premise e generare un piano per implementare i layout delle macchine virtuali raccomandati in VMware Cloud su AWS e utilizzare file system Amazon FSX per NetApp ONTAP personalizzati come datastore esterni.</block>
   <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">Ottimizza le migrazioni dagli ambienti vSphere on-premise a VMware Cloud su AWS e implementa file system FSX per ONTAP personalizzati come datastore esterno.</block>
@@ -367,13 +366,11 @@
   <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">È necessario aver creato il file di inventario dai sistemi esistenti utilizzando il raccoglitore VM del Migration ADVISOR (file.csv) o RVTools (file.xlsx).</block>
   <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.</block>
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Migrazione ad Amazon EC2</block>
-  <block id="1f1840a1cd78fc828b7bf5b09ef626dd" category="doc">Acquisisci le tue attuali configurazioni VM prima di effettuare la migrazione ad Amazon EC2</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">Eseguire lo script di raccolta dati scaricato e specificare l'opzione di raccolta dati per le statistiche VM "giornaliere" o "orarie".</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">Lo script genera un file compresso con un indicatore data e ora nel nome nella directory di lavoro corrente. Il file .zip contiene un elenco di tutte le VM e le relative proprietà, insieme ai relativi dati IOPS e throughput.</block>
   <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph">Per<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block> ulteriori informazioni, vedere il capitolo "parametri della riga di comando" nella.</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">Creare un piano di implementazione Amazon EC2 utilizzando il Migration ADVISOR</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>.</block>
-  <block id="2937dfbcdcb41e8eba68b50ecd25d526" category="doc">Acquisisci le tue attuali configurazioni delle macchine virtuali prima di effettuare la migrazione a VMware Cloud</block>
   <block id="ad593b2d0fe3cbb86e53650eaaf4824a" category="list-text">Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*.</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">Viene visualizzata la pagina principale di VMware Migration Advisor.</block>
   <block id="0c9cddf33e5d4dde0908a43c0281f4c9" category="inline-link-macro">Crea un piano di implementazione di VMware Cloud on AWS usando il Migration ADVISOR</block>
@@ -391,7 +388,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile creare snapshot di volume per la protezione e backup a lungo termine.</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">*Protezione snapshot VM*: Abilitare questa opzione per proteggere le VM con snapshot.</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">Nella parte superiore della pagina vengono descritti i costi mensili per tutte le macchine virtuali distribuite e per i file system FSX per ONTAP. È possibile espandere ogni sezione per visualizzare i dettagli relativi a "Configurazione del file system Amazon FSX consigliata per ONTAP", "analisi dei costi stimata", "Configurazione del volume", "ipotesi di dimensionamento" e "Avvertenze tecniche".</block>
-  <block id="772ab2cb66607567ceddf170a9c148d1" category="doc">Crea un piano di implementazione per VMware Cloud on AWS utilizzando il Migration ADVISOR</block>
   <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">Durante la migrazione a VMware Cloud, puoi utilizzare il Migration ADVISOR per creare un piano di implementazione per i seguenti scenari:</block>
   <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">Per migrare il tuo attuale ambiente vSphere on-premise nel cloud VMware.</block>
   <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
@@ -405,12 +401,10 @@
   <block id="5cf77a6cd1a6546f96141615c376acb2" category="inline-link">Consultare la documentazione di VMware HCX</block>
   <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> per ulteriori informazioni.</block>
   <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">Inizia con il consulente per la migrazione VMware per spostare la tua infrastruttura attuale su Amazon EC2 utilizzando Amazon FSX per ONTAP come datastore NFS esterni.</block>
-  <block id="294f9af291a855904cc69ccf0e3c306f" category="doc">Guida rapida per la migrazione ad Amazon EC2 utilizzando il Migration ADVISOR di VMware</block>
   <block id="9cd1f8c893219dcc9697141d6585e5d9" category="paragraph"><block ref="ab4df44eb8806514d8649fc0b63ead31" category="inline-link-macro-rx"></block>.</block>
   <block id="d645e6b9cc715485914696dcaeed7e40" category="paragraph">Lancia il consulente per la migrazione VMware e seleziona le macchine virtuali che desideri migrare sull'infrastruttura Amazon EC2, utilizzando un file system Amazon FSX per ONTAP come datastore NFS esterni. È possibile apportare alcune modifiche prima di salvare il piano.</block>
   <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>.</block>
   <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">Implementa il nuovo file system FSX per ONTAP che fornirà i datastore per le tue macchine virtuali nella tua infrastruttura Amazon EC2.</block>
-  <block id="d8329106d0f4da40a239ea890e93904c" category="doc">Quick start per la migrazione a VMware Cloud on AWS utilizzando il Migration Advisor di VMware</block>
   <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">Avvio rapido: Migrazione a VMware Cloud su AWS</block>
   <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">Avvio rapido: Migrazione ad Amazon EC2</block>
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">Migrazione a VMware Cloud su AWS</block>
@@ -511,4 +505,16 @@
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">1 dicembre 2024</block>
   <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 1 settembre 2024</block>
+  <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">Acquisisci le configurazioni VM prima di eseguire la migrazione ad Amazon EC2 con i carichi di lavoro VMware</block>
+  <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">Acquisisci le configurazioni delle tue macchine virtuali prima di eseguire la migrazione verso VMware Cloud con i carichi di lavoro VMware</block>
+  <block id="3173329d2df7808ef89c684e36fe95db" category="doc">Implementa il file system FSX per ONTAP consigliato per i carichi di lavoro VMware</block>
+  <block id="bbdbb1a9bdd5ede393b6116d9f10e1dc" category="doc">Assistenza nella farm di workload BlueXP  per VMware</block>
+  <block id="d426ad1d2770909e76d9ec998753048e" category="doc">Crea un piano di implementazione per Amazon EC2 usando il consulente per la migrazione dei workload VMware</block>
+  <block id="9aed60fda8e95affae05b540b6cbe03a" category="doc">Crea un piano di implementazione per VMware Cloud on AWS utilizzando il consulente per la migrazione dei carichi di lavoro VMware</block>
+  <block id="9e568012fe6f23b1555756d444007015" category="doc">Note legali per la fabbrica di workload BlueXP  per VMware</block>
+  <block id="6ea93b9b9da308faf45f55074d8c73cb" category="doc">Migra i tuoi dati nella nuova infrastruttura con la farm di carico di lavoro BlueXP  per VMware</block>
+  <block id="09bf5c9e5640bf75b6e024bb49783cc9" category="doc">Guida rapida per la migrazione ad Amazon EC2 utilizzando il consulente per la migrazione dei workload VMware</block>
+  <block id="ecdd552e8f9e5da2a61e6db8b8030056" category="doc">Rapido avvio della migrazione a VMware Cloud su AWS utilizzando il consulente per la migrazione dei carichi di lavoro VMware</block>
+  <block id="9db9ff1e14360eb723369155da355a69" category="doc">Registrati per ricevere supporto per BlueXP  workload Factory per VMware</block>
+  <block id="06d7f560c7d6e855b18ae8d7b5014e05" category="doc">Novità della farm di workload BlueXP  per VMware</block>
 </blocks>

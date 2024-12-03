@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: Accedere alla fabbrica del carico di lavoro NetApp per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze. 
 ---
-= Crea un piano di implementazione per VMware Cloud on AWS utilizzando il Migration ADVISOR
+= Crea un piano di implementazione per VMware Cloud on AWS utilizzando il consulente per la migrazione dei carichi di lavoro VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

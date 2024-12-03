@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: Inizia con il consulente per la migrazione VMware per spostare la tua infrastruttura attuale su Amazon EC2 utilizzando Amazon FSX per ONTAP come datastore NFS esterni. 
 ---
-= Guida rapida per la migrazione ad Amazon EC2 utilizzando il Migration ADVISOR di VMware
+= Guida rapida per la migrazione ad Amazon EC2 utilizzando il consulente per la migrazione dei workload VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -16,6 +16,7 @@ Inizia con il consulente per la migrazione VMware per spostare la tua infrastrut
 Prima di iniziare, è necessario conoscere https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modalità operative"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Accedi a workload Factory
+[role="quick-margin-para"]
 Sarà necessario https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configurare un account con workload factory"^] ed effettuare l'accesso utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Aggiungi credenziali e autorizzazioni AWS al tuo account
