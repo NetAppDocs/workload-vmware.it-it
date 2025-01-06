@@ -17,7 +17,7 @@ summary: È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o
 ====
 .Utilizzare lo script di raccolta VM di Migration ADVISOR
 --
-Lo script di raccolta delle VM del Migration ADVISOR di NetApp raccoglie le informazioni di configurazione delle VM dal vCenter in modo simile a quanto raccolto da RVTools, tuttavia acquisisce i dati correnti relativi alle performance delle VM per fornire IOPS in lettura e scrittura e statistiche di throughput effettivi.
+Lo script di raccolta delle VM del Migration ADVISOR di NetApp raccoglie le informazioni di configurazione delle VM dal vCenter in modo simile a quanto raccolto da RVTools, tuttavia acquisisce i dati correnti relativi alle performance delle VM per fornire IOPS in lettura e scrittura e statistiche di throughput effettivi. È possibile utilizzare lo script in una delle due modalità: * Raccolta dati a breve termine * raccolta dati a lungo termine
 
 È necessario avviare Migration ADVISOR per copiare lo script di raccolta VM di Migration ADVISOR dalla finestra Codebox.
 
@@ -60,7 +60,7 @@ Sostituire <server_IP> con l'indirizzo IP o il nome host del server VMware.
 dove:
 
 +
-*** *True* raccoglie i dati di IOPS e throughput delle ultime 24 ore con intervalli di 5 minuti
+*** *True* raccoglie i dati di IOPS e throughput per un periodo di tempo personalizzato a intervalli di 1 ore.
 *** *False* raccoglie i dati di IOPS e throughput dell'ultima 1 ora con intervalli di 20 secondi.
 
 

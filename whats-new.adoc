@@ -15,6 +15,22 @@ Scopri le novità della workload Factory con il componente VMware Cloud Migratio
 
 
 
+== 5 gennaio 2025
+
+
+
+=== Miglioramenti al Migration ADVISOR di Amazon EC2
+
+Questa release di BlueXP  workload Factory per VMware presenta diversi miglioramenti all'esperienza del Migration Advisor:
+
+* *Salvare o scaricare un piano di migrazione*: È ora possibile salvare o scaricare un piano di migrazione e caricare il piano di migrazione per popolare il consulente per la migrazione. Quando si salva un piano di migrazione, il piano viene salvato con l'account workload Factory.
+* *Selezione VM migliorata*: BlueXP  workload Factory per VMware ora supporta il filtraggio e la ricerca nell'elenco delle VM che si desidera includere nella distribuzione della migrazione.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
+
+
+
 == 1 dicembre 2024
 
 
@@ -40,11 +56,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 Questa versione di workload Factory per VMware include un assistente al rapporto di riduzione dei dati. L'assistente rapporto di riduzione dei dati ti aiuta a decidere il rapporto migliore per il tuo inventario VMware e la tua proprietà di storage durante la preparazione per l'onboarding nel cloud AWS.
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
-
-
-
-== 19 settembre 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"] == 19 settembre 2024
 
 
 
@@ -52,7 +64,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 Questa versione di workload Factory per VMware offre miglioramenti delle funzionalità e della stabilità, nonché la possibilità di importare ed esportare i piani di migrazione quando si utilizza VMware Migration Advisor.
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"] == 1 settembre 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
+
+
+
+== 1 settembre 2024
 
 
 

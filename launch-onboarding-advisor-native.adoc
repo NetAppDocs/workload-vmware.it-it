@@ -52,7 +52,10 @@ Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
 
 . Nella sezione _VM Configuration upload_, selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file .xlsx creato da RVTools.
 +
-La sezione *riepilogo VM* viene popolata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.
+La sezione *Dettagli raccolta dati* fornisce l'intervallo di date e il numero di ore di dati raccolti utilizzando il data collector di Onboarding Advisor.
+
++
+La sezione *riepilogo inventario VM* viene popolata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.
 
 . Nella sezione _considerazioni sull'inventario VM_, selezionare le opzioni per filtrare l'elenco delle VM che si desidera migrare.
 +
@@ -84,7 +87,8 @@ Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile c
 
 
 . Selezionare *Avanti*.
-. Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione al cloud AWS, quindi selezionare *Avanti*.
+. Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione AWS. Puoi filtrare l'elenco in base allo stato di alimentazione di ciascuna macchina virtuale e al centro dati e al cluster in cui risiede la macchina virtuale.
+. Selezionare *Avanti*.
 . Nella pagina *Classify* (classificazione), esaminare le informazioni della VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione, quindi selezionare *Next* (Avanti).
 . Nella pagina *pacchetto*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP, quindi selezionare *Avanti*.
 . Nella pagina *Rivedi piano*, esaminare i risparmi mensili stimati e le stime dei costi per tutte le VM che si prevede di migrare.
@@ -103,7 +107,10 @@ Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
 
 . Nella sezione _VM Configuration upload_, selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file .zip creato dal Data Collector del Migration ADVISOR.
 +
-La sezione *riepilogo VM* viene popolata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.
+La sezione *Dettagli raccolta dati* fornisce l'intervallo di date e il numero di ore di dati raccolti utilizzando il data collector di Onboarding Advisor.
+
++
+La sezione *riepilogo inventario VM* viene popolata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.
 
 . Nella sezione _considerazioni sull'inventario VM_, seleziona l'area in cui verranno distribuiti i file system Amazon FSX per NetApp ONTAP. Per ottenere performance ottimali e convenienza, si tratta in genere della stessa regione in cui viene implementato il tuo SDDC Amazon EC2 esistente.
 . Nella sezione _considerazioni sulla capacità di destinazione e sulla protezione_, selezionare una delle opzioni di archiviazione disponibili.
@@ -124,7 +131,11 @@ Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile c
 
 
 . Selezionare *Avanti*.
-. Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione al cloud AWS, quindi selezionare *Avanti*.
+. Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione AWS. Puoi filtrare l'elenco in base allo stato di alimentazione di ciascuna macchina virtuale e al centro dati e al cluster in cui risiede la macchina virtuale.
++
+Nell'elenco VM, è possibile selezionare i tipi di informazioni VM da visualizzare come colonne.
+
+. Selezionare *Avanti*.
 . Nella pagina *Classify* (classificazione), esaminare le informazioni della VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione, quindi selezionare *Next* (Avanti).
 . Nella pagina *pacchetto*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP, quindi selezionare *Avanti*.
 . Nella pagina *Rivedi piano*, esaminare i risparmi mensili stimati e le stime dei costi per tutte le VM che si prevede di migrare.
@@ -137,9 +148,10 @@ In cima alla pagina sono previsti i risparmi mensili per FSX per i file system O
 ====
 Una volta soddisfatto del piano di migrazione, hai a disposizione alcune opzioni:
 
-* Selezionare *Download plan > Instance storage deployment* per scaricare il piano di distribuzione del datastore esterno in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.
-* Selezionare *Download plan > Plan report* per scaricare il piano di distribuzione in formato .pdf in modo da poter distribuire il piano per la revisione.
-* Selezionare *Esporta piano* per salvare il piano di migrazione come modello in formato .json. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
+* Selezionare *Gestisci piano > Salva un piano* per salvare i dati del piano di distribuzione nell'account, consentendo di importare il piano in un secondo momento da utilizzare come modello quando si distribuiscono sistemi con requisiti simili. È possibile assegnare un nome al piano prima di salvarlo.
+* Selezionare *Gestisci piano > Esporta un piano* per salvare il piano di migrazione come modello in formato .json sul computer. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
+* Selezionare *Gestisci piano > Scarica un rapporto* per scaricare il piano di distribuzione in formato .pdf in modo da poter distribuire il piano per la revisione.
+* Selezionare *Gestisci piano > Scarica implementazione storage istanza* per scaricare il piano di distribuzione del datastore esterno in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.
 
 
 È possibile selezionare *fatto* per tornare alla pagina dei consulenti per la migrazione VMware.
@@ -157,10 +169,21 @@ Se si sta pianificando una nuova distribuzione simile a un piano di distribuzion
 . Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 . Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*.
 . Selezionare *Importa piano*.
-. Selezionare il file del piano .json esistente che si desidera importare nel Migration ADVISOR, quindi selezionare *Apri*.
+. Effettuare una delle seguenti operazioni:
 +
-Viene visualizzata la pagina *Rivedi piano*.
+** Selezionare *carica piano salvato*.
++
+... Dall'elenco, selezionare il piano da importare.
+... Selezionare *carica*.
 
-. È possibile selezionare *precedente* per accedere alle pagine precedenti e modificare le impostazioni del piano come descritto nella sezione precedente.
-. Dopo aver personalizzato il piano in base alle proprie esigenze, è possibile salvarlo o scaricarlo come file PDF.
 
+** Selezionare *dal computer*.
++
+... Selezionare il file del piano .json esistente che si desidera importare nel Migration ADVISOR, quindi selezionare *Apri*.
+
+
+
+
+
+
+Viene visualizzata la pagina *Rivedi piano*. . È possibile selezionare *precedente* per accedere alle pagine precedenti e modificare le impostazioni del piano come descritto nella sezione precedente. . Dopo aver personalizzato il piano in base alle proprie esigenze, è possibile salvarlo o scaricarlo come file PDF.
