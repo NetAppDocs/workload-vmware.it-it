@@ -34,7 +34,7 @@ Tenere presente che se si intende acquisire statistiche a lungo termine dalle ma
 
 .Fasi
 . Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la schermata iniziale di VMware Migration Advisor.
+. Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la schermata iniziale di VMware Migration Advisor.
 +
 Esaminate le informazioni per scoprire i vantaggi del Migration ADVISOR.
 

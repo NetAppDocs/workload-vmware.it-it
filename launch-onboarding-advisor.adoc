@@ -34,7 +34,7 @@ Puoi migrare le attuali configurazioni delle macchine virtuali negli ambienti vS
 
 .Fasi
 . Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*.
+. Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione a VMware Cloud su AWS*.
 +
 Viene visualizzata la pagina principale di VMware Migration Advisor.
 
@@ -158,7 +158,7 @@ Se si sta pianificando una nuova implementazione simile a un piano di distribuzi
 
 .Fasi
 . Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione a VMware Cloud su AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
+. Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione a VMware Cloud su AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
 . Selezionare *Importa un piano di distribuzione esistente*.
 . Selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file del piano esistente che si desidera importare nel Migration ADVISOR.
 . Selezionare *successivo* per visualizzare la pagina Review plan (esamina piano).

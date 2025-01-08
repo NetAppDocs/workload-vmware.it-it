@@ -28,7 +28,7 @@ Puoi migrare le attuali configurazioni delle macchine virtuali in ambienti vSphe
 
 .Fasi
 . Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la schermata iniziale di VMware Migration Advisor.
+. Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la schermata iniziale di VMware Migration Advisor.
 +
 Esaminate le informazioni per scoprire i vantaggi del Migration ADVISOR.
 
@@ -148,7 +148,7 @@ In cima alla pagina sono previsti i risparmi mensili per FSX per i file system O
 ====
 Una volta soddisfatto del piano di migrazione, hai a disposizione alcune opzioni:
 
-* Selezionare *Gestisci piano > Salva un piano* per salvare i dati del piano di distribuzione nell'account, consentendo di importare il piano in un secondo momento da utilizzare come modello quando si distribuiscono sistemi con requisiti simili. È possibile assegnare un nome al piano prima di salvarlo.
+* Selezionare *Gestisci piano > Salva un piano* per salvare i dati del piano di distribuzione nell'account, consentendo di importare il piano in un secondo momento da utilizzare come modello quando si distribuiscono sistemi con requisiti simili. È possibile assegnare un nome al piano prima di salvarlo (il nome utente e la data e l'ora vengono aggiunti al nome fornito).
 * Selezionare *Gestisci piano > Esporta un piano* per salvare il piano di migrazione come modello in formato .json sul computer. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
 * Selezionare *Gestisci piano > Scarica un rapporto* per scaricare il piano di distribuzione in formato .pdf in modo da poter distribuire il piano per la revisione.
 * Selezionare *Gestisci piano > Scarica implementazione storage istanza* per scaricare il piano di distribuzione del datastore esterno in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.
@@ -167,7 +167,7 @@ Se si sta pianificando una nuova distribuzione simile a un piano di distribuzion
 
 .Fasi
 . Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro carichi di lavoro VMware, selezionare *accesso e pianificazione*, quindi selezionare *migrazione al calcolo nativo AWS*.
+. Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione al calcolo nativo AWS*.
 . Selezionare *Importa piano*.
 . Effettuare una delle seguenti operazioni:
 +
@@ -180,10 +180,13 @@ Se si sta pianificando una nuova distribuzione simile a un piano di distribuzion
 ** Selezionare *dal computer*.
 +
 ... Selezionare il file del piano .json esistente che si desidera importare nel Migration ADVISOR, quindi selezionare *Apri*.
++
+Viene visualizzata la pagina *Rivedi piano*.
 
 
 
 
 
+. È possibile selezionare *precedente* per accedere alle pagine precedenti e modificare le impostazioni del piano come descritto nella sezione precedente.
+. Dopo aver personalizzato il piano in base alle proprie esigenze, è possibile salvarlo o scaricarlo come file PDF.
 
-Viene visualizzata la pagina *Rivedi piano*. . È possibile selezionare *precedente* per accedere alle pagine precedenti e modificare le impostazioni del piano come descritto nella sezione precedente. . Dopo aver personalizzato il piano in base alle proprie esigenze, è possibile salvarlo o scaricarlo come file PDF.
