@@ -88,8 +88,15 @@ Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile c
 
 . Selezionare *Avanti*.
 . Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione AWS. Puoi filtrare l'elenco in base allo stato di alimentazione di ciascuna macchina virtuale e al centro dati e al cluster in cui risiede la macchina virtuale.
++
+Nell'elenco VM, è possibile selezionare i tipi di informazioni VM da visualizzare come colonne. Ad esempio, selezionando _tipo di istanza stimato_ viene visualizzata una colonna con il tipo di istanza Amazon EC2 stimato per ciascuna VM, in base ai requisiti delle risorse della VM.
+
 . Selezionare *Avanti*.
 . Nella pagina *Classify* (classificazione), esaminare le informazioni della VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione, quindi selezionare *Next* (Avanti).
++
+
+NOTE: Se un volume ha requisiti di capacità o performance che superano le capacità di un file system Amazon FSX per NetApp ONTAP in una regione specifica, il Migration Advisor consiglia di implementare il volume in un file system Amazon EBS.
+
 . Nella pagina *pacchetto*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP, quindi selezionare *Avanti*.
 . Nella pagina *Rivedi piano*, esaminare i risparmi mensili stimati e le stime dei costi per tutte le VM che si prevede di migrare.
 +
@@ -133,10 +140,14 @@ Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile c
 . Selezionare *Avanti*.
 . Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione AWS. Puoi filtrare l'elenco in base allo stato di alimentazione di ciascuna macchina virtuale e al centro dati e al cluster in cui risiede la macchina virtuale.
 +
-Nell'elenco VM, è possibile selezionare i tipi di informazioni VM da visualizzare come colonne.
+Nell'elenco VM, è possibile selezionare i tipi di informazioni VM da visualizzare come colonne. Ad esempio, selezionando _tipo di istanza stimato_ viene visualizzata una colonna con il tipo di istanza Amazon EC2 stimato per ciascuna VM, in base ai requisiti delle risorse della VM.
 
 . Selezionare *Avanti*.
 . Nella pagina *Classify* (classificazione), esaminare le informazioni della VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione, quindi selezionare *Next* (Avanti).
++
+
+NOTE: Se un volume ha requisiti di capacità o performance che superano le capacità di un file system Amazon FSX per NetApp ONTAP in una regione specifica, il Migration Advisor consiglia di implementare il volume in un file system Amazon EBS.
+
 . Nella pagina *pacchetto*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP, quindi selezionare *Avanti*.
 . Nella pagina *Rivedi piano*, esaminare i risparmi mensili stimati e le stime dei costi per tutte le VM che si prevede di migrare.
 +

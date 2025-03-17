@@ -11,7 +11,24 @@ summary: Scoprite le novità della componente VMware Migration Advisor di worklo
 
 
 [role="lead"]
-Scopri le novità della workload Factory con il componente VMware Cloud Migration Advisor.
+Scoprite le novità della componente VMware Migration Advisor di workload Factory.
+
+
+
+== 2 marzo 2025
+
+
+
+=== Miglioramenti al Migration ADVISOR di Amazon EC2
+
+Questa release della fabbrica di workload BlueXP  per VMware presenta diversi miglioramenti all'esperienza del Migration Advisor di Amazon EC2:
+
+* *Tipo di istanza stimato*: Il Migration ADVISOR può ora esaminare i requisiti dell'ambiente e fornire un tipo di istanza Amazon EC2 stimato per ogni VM. Puoi scegliere di includere il tipo di istanza stimata per ogni macchina virtuale durante la fase di ambito del Migration Advisor.
+* *Capacità di consigliare i volumi Amazon EBS*: Il Migration ADVISOR può ora consigliare la migrazione dei volumi di dati ad Amazon Elastic Block Store (EBS) invece di Amazon FSX per NetApp ONTAP a causa di specifiche esigenze di capacità o performance di una determinata regione.
+* *Assegnazione automatica avanzata del filesystem*: L'assegnazione del filesystem Amazon FSX for NetApp ONTAP è stata migliorata per ottimizzare meglio i costi e ridurre al minimo la velocità di trasmissione.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
 
 
 
@@ -44,11 +61,7 @@ Questa release di BlueXP  workload Factory per VMware presenta diversi migliora
 * *Esperienza rapida e avanzata*: Quando si utilizza il Migration ADVISOR, è ora possibile scegliere un'esperienza di migrazione rapida, utilizzando RVtools o l'esperienza avanzata, che utilizza il data collector del Migration ADVISOR.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
-
-
-
-== 3 novembre 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"] == 3 novembre 2024
 
 
 
@@ -56,7 +69,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 Questa versione di workload Factory per VMware include un assistente al rapporto di riduzione dei dati. L'assistente rapporto di riduzione dei dati ti aiuta a decidere il rapporto migliore per il tuo inventario VMware e la tua proprietà di storage durante la preparazione per l'onboarding nel cloud AWS.
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"] == 19 settembre 2024
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
+
+
+
+== 19 settembre 2024
 
 
 

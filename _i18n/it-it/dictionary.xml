@@ -405,7 +405,6 @@
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">Il rapporto di riduzione dei dati di VMware Migration Advisor aiuta</block>
   <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">Questa versione di workload Factory per VMware include un assistente al rapporto di riduzione dei dati. L'assistente rapporto di riduzione dei dati ti aiuta a decidere il rapporto migliore per il tuo inventario VMware e la tua proprietà di storage durante la preparazione per l'onboarding nel cloud AWS.</block>
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">Seleziona *Aiutami a decidere* se non sei sicuro di quale rapporto scegliere. Viene visualizzata la finestra di dialogo _Assistente rapporto di riduzione dati_. Seleziona qualsiasi affermazione che si applica all'inventario delle VM e al patrimonio di storage. L'assistente consiglierà un tasso di riduzione dei dati appropriato. Selezionare *Applica* per utilizzare il rapporto consigliato.</block>
-  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 novembre 2024</block>
   <block id="0a51c23a9b33a88216f2dbd3a38c1be3" category="doc">Release iniziale della workload Factory per VMware</block>
   <block id="c9b4182f157d4d581536f53df8cd512d" category="paragraph">Workload factory per VMware ora supporta la migrazione ad Amazon EC2 utilizzando il Migration ADVISOR di VMware.</block>
   <block id="21558f6938275b17b39171353ad95a65" category="paragraph">Questa versione di workload Factory per VMware offre miglioramenti delle funzionalità e della stabilità, nonché la possibilità di importare ed esportare i piani di migrazione quando si utilizza VMware Migration Advisor.</block>
@@ -442,7 +441,6 @@
   <block id="0df1d5b9b1a14b5b9e7736c356eb7cb8" category="paragraph"><block ref="45ba3a90dd25508f5576e9402f61bd51" category="inline-link-macro-rx"></block>.</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">Prima di poter aprire un caso di supporto con il supporto tecnico NetApp, devi aggiungere un account del sito di supporto NetApp alla workload factory e quindi registrarti per il supporto.</block>
   <block id="034aea94174faaaaa75a9f1c1ac4b15a" category="summary">Scoprite le novità della componente VMware Migration Advisor di workload Factory.</block>
-  <block id="5df361f1373a0606daf80b69ecfa0a96" category="paragraph">Scopri le novità della workload Factory con il componente VMware Cloud Migration Advisor.</block>
   <block id="c3aaf7c410f8a7244dafe42037dc12ce" category="sidebar">Fabbrica di workload BlueXP  per la documentazione di VMware</block>
   <block id="1d194f6c398ca78aaffd8c430203e1ec" category="doc">Miglioramenti al Migration ADVISOR di Amazon EC2</block>
   <block id="1e5e06dbbf4cb0bb655126bc90757161" category="paragraph">Questa release di BlueXP  workload Factory per VMware presenta diversi miglioramenti all'esperienza del Migration Advisor:</block>
@@ -505,7 +503,6 @@
   <block id="246fd576936aa6a7e609ed87c073c207" category="paragraph">La sezione *Dettagli raccolta dati* fornisce l'intervallo di date e il numero di ore di dati raccolti utilizzando il data collector di Onboarding Advisor.</block>
   <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">La sezione *riepilogo inventario VM* viene popolata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.</block>
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione AWS. Puoi filtrare l'elenco in base allo stato di alimentazione di ciascuna macchina virtuale e al centro dati e al cluster in cui risiede la macchina virtuale.</block>
-  <block id="06be6f495115a5a35b66e96726f02c68" category="paragraph">Nell'elenco VM, è possibile selezionare i tipi di informazioni VM da visualizzare come colonne.</block>
   <block id="a1d4e19ec2439c8dc7cd938fc77c75bf" category="list-text">Selezionare *Gestisci piano &gt; Esporta un piano* per salvare il piano di migrazione come modello in formato .json sul computer. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.</block>
   <block id="edb193ada9589bdd34ce3be340dd56b8" category="list-text">Selezionare *Gestisci piano &gt; Scarica un rapporto* per scaricare il piano di distribuzione in formato .pdf in modo da poter distribuire il piano per la revisione.</block>
   <block id="12b1a213ece510a085b9e12a71432992" category="list-text">Selezionare *Gestisci piano &gt; Scarica implementazione storage istanza* per scaricare il piano di distribuzione del datastore esterno in formato .csv in modo da poterlo utilizzare per creare la nuova infrastruttura dati intelligente basata sul cloud.</block>
@@ -517,7 +514,6 @@
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">La registrazione del supporto è necessaria per ricevere supporto tecnico specifico per la fabbrica di carichi di lavoro BlueXP  e per le sue soluzioni e servizi di storage. È necessario registrarsi per il supporto dalla console BlueXP , che è una console basata su Web separata da workload Factory.</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">La registrazione per il supporto non attiva il supporto NetApp per un file service provider cloud. Per il supporto tecnico relativo a un file service del cloud provider, alla sua infrastruttura o a qualsiasi soluzione che utilizzi il servizio, fare riferimento a "Assistenza" nella documentazione del workload factory relativa a quel prodotto.</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">5 gennaio 2025</block>
-  <block id="c12526e52dcc59e8997a1d5b998bdbcb" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 19 settembre 2024</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">1 settembre 2024</block>
   <block id="c86d184e30a296fa80a6a87a91997466" category="list-text">Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione al calcolo nativo AWS*. Viene visualizzata la schermata iniziale di VMware Migration Advisor.</block>
   <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione a VMware Cloud su AWS*.</block>
@@ -536,4 +532,17 @@
   <block id="cd37b5cf2c47ed75e8cfcfb7e7f8bb1f" category="paragraph">Lo script di raccolta delle VM del Migration ADVISOR di NetApp raccoglie le informazioni di configurazione delle VM dal vCenter in modo simile a quanto raccolto da RVTools, tuttavia acquisisce i dati correnti relativi alle performance delle VM per fornire IOPS in lettura e scrittura e statistiche di throughput effettivi. È possibile utilizzare lo script in una delle due modalità seguenti:</block>
   <block id="883783e9620901e0ec065bb8ae5613d2" category="list-text">Raccolta oraria dei dati</block>
   <block id="f90051c528271959eb69e542599c2556" category="list-text">Raccolta giornaliera dei dati</block>
+  <block id="cec87a8931004e5402a3f18575682723" category="paragraph">Questa release della fabbrica di workload BlueXP  per VMware presenta diversi miglioramenti all'esperienza del Migration Advisor di Amazon EC2:</block>
+  <block id="13ba1ae4c82947e19de7e94ee0eaab45" category="list-text">*Tipo di istanza stimato*: Il Migration ADVISOR può ora esaminare i requisiti dell'ambiente e fornire un tipo di istanza Amazon EC2 stimato per ogni VM. Puoi scegliere di includere il tipo di istanza stimata per ogni macchina virtuale durante la fase di ambito del Migration Advisor.</block>
+  <block id="3006f7737352e976899743eaf6e2b28e" category="list-text">*Capacità di consigliare i volumi Amazon EBS*: Il Migration ADVISOR può ora consigliare la migrazione dei volumi di dati ad Amazon Elastic Block Store (EBS) invece di Amazon FSX per NetApp ONTAP a causa di specifiche esigenze di capacità o performance di una determinata regione.</block>
+  <block id="b4a4e72af96c527b186a3d8f12952f22" category="list-text">*Assegnazione automatica avanzata del filesystem*: L'assegnazione del filesystem Amazon FSX for NetApp ONTAP è stata migliorata per ottimizzare meglio i costi e ridurre al minimo la velocità di trasmissione.</block>
+  <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">Nell'elenco VM, è possibile selezionare i tipi di informazioni VM da visualizzare come colonne. Ad esempio, selezionando _tipo di istanza stimato_ viene visualizzata una colonna con il tipo di istanza Amazon EC2 stimato per ciascuna VM, in base ai requisiti delle risorse della VM.</block>
+  <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">Se un volume ha requisiti di capacità o performance che superano le capacità di un file system Amazon FSX per NetApp ONTAP in una regione specifica, il Migration Advisor consiglia di implementare il volume in un file system Amazon EBS.</block>
+  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 marzo 2025</block>
+  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 3 novembre 2024</block>
+  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 settembre 2024</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blog BlueXP</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
 </blocks>
