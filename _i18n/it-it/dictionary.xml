@@ -478,7 +478,6 @@
   <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">BlueXP  workload Factory per VMware offre un consulente per la migrazione che consente di analizzare le configurazioni delle macchine virtuali correnti negli ambienti vSphere on-premise. Il Migration ADVISOR genera quindi un piano per implementare i layout raccomandati delle VM in Amazon EC2 o VMware Cloud su cluster AWS vSphere e utilizzare file system personalizzati di Amazon FSX per NetApp ONTAP come datastore esterno.</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">Fabbrica dei carichi di lavoro BlueXP</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
-  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">1 dicembre 2024</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">Acquisisci le configurazioni VM prima di eseguire la migrazione ad Amazon EC2 con i carichi di lavoro VMware</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">Acquisisci le configurazioni delle tue macchine virtuali prima di eseguire la migrazione verso VMware Cloud con i carichi di lavoro VMware</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">Implementa il file system FSX per ONTAP consigliato per i carichi di lavoro VMware</block>
@@ -539,10 +538,14 @@
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">Nell'elenco VM, è possibile selezionare i tipi di informazioni VM da visualizzare come colonne. Ad esempio, selezionando _tipo di istanza stimato_ viene visualizzata una colonna con il tipo di istanza Amazon EC2 stimato per ciascuna VM, in base ai requisiti delle risorse della VM.</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">Se un volume ha requisiti di capacità o performance che superano le capacità di un file system Amazon FSX per NetApp ONTAP in una regione specifica, il Migration Advisor consiglia di implementare il volume in un file system Amazon EBS.</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 marzo 2025</block>
-  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 3 novembre 2024</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">19 settembre 2024</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blog BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
+  <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">*Guida avanzata all'assegnazione dei volumi*: Le informazioni sull'assegnazione dei volumi nei passaggi "Classify" e "Package" del Migration ADVISOR EC2 offrono una leggibilità e una fruibilità migliorate. Vengono visualizzate informazioni più utili su ciascun volume, che consentono di identificare meglio i volumi e di determinarne l'assegnazione.</block>
+  <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">*Miglioramenti all'efficienza degli script di raccolta dati*: Lo script di raccolta dati del Migration ADVISOR EC2 ottimizza l'utilizzo della CPU durante la raccolta dei dati per implementazioni VM di dimensioni inferiori.</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 marzo 2025</block>
+  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 1 dicembre 2024</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">3 novembre 2024</block>
 </blocks>

@@ -1,0 +1,15 @@
+= Miglioramenti al Migration ADVISOR di Amazon EC2
+:allow-uri-read: 
+
+
+
+
+=== Miglioramenti al Migration ADVISOR di Amazon EC2
+
+Questa release della fabbrica di workload BlueXP  per VMware presenta diversi miglioramenti all'esperienza del Migration Advisor di Amazon EC2:
+
+* *Guida avanzata all'assegnazione dei volumi*: Le informazioni sull'assegnazione dei volumi nei passaggi "Classify" e "Package" del Migration ADVISOR EC2 offrono una leggibilità e una fruibilità migliorate. Vengono visualizzate informazioni più utili su ciascun volume, che consentono di identificare meglio i volumi e di determinarne l'assegnazione.
+* *Miglioramenti all'efficienza degli script di raccolta dati*: Lo script di raccolta dati del Migration ADVISOR EC2 ottimizza l'utilizzo della CPU durante la raccolta dei dati per implementazioni VM di dimensioni inferiori.
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
