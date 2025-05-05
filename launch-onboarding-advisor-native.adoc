@@ -36,17 +36,17 @@ Esaminate le informazioni per scoprire i vantaggi del Migration ADVISOR.
 . Scegliere il livello di dettaglio e il metodo preferito durante il processo di creazione di un piano di distribuzione:
 +
 ** *Valutazione rapida*: Questa opzione utilizza un file di inventario RVtools per recuperare le informazioni sulle macchine virtuali durante un processo accelerato, con conseguente creazione di un piano di progettazione per la migrazione al cloud.
-** *Pianificazione dettagliata*: Utilizzare il file di inventario del Data Collector del Migration ADVISOR per raccogliere informazioni dettagliate, dando come risultato una progettazione pronta per la distribuzione.
+** *Pianificazione dettagliata*: Queste opzioni utilizzano il file di inventario del Data Collector del Migration ADVISOR o l'accesso diretto API a NetApp Data Infrastructure Insights per raccogliere informazioni dettagliate, dando come risultato una progettazione pronta per la distribuzione.
 
 
 
 
 [role="tabbed-block"]
 ====
-.Valutazione rapida
+.RVTools (valutazione rapida)
 --
 .Fasi
-. Selezionare la sezione *Valutazione rapida* e selezionare *Avanti*.
+. Selezionare il riquadro *RVTools* e selezionare *Avanti*.
 +
 Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
 
@@ -105,10 +105,10 @@ In cima alla pagina sono previsti i risparmi mensili per FSX per i file system O
 
 
 --
-.Pianificazione dettagliata
+.Data collector del Migration ADVISOR (pianificazione dettagliata)
 --
 .Fasi
-. Selezionare il riquadro *pianificazione dettagliata* e selezionare *Avanti*.
+. Selezionare il riquadro *Migration ADVISOR data collector* e selezionare *Next*.
 +
 Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
 
@@ -118,6 +118,62 @@ La sezione *Dettagli raccolta dati* fornisce l'intervallo di date e il numero di
 
 +
 La sezione *riepilogo inventario VM* viene popolata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.
+
+. Nella sezione _considerazioni sull'inventario VM_, seleziona l'area in cui verranno distribuiti i file system Amazon FSX per NetApp ONTAP. Per ottenere performance ottimali e convenienza, si tratta in genere della stessa regione in cui viene implementato il tuo SDDC Amazon EC2 esistente.
+. Nella sezione _considerazioni sulla capacità di destinazione e sulla protezione_, selezionare una delle opzioni di archiviazione disponibili.
++
+.. *Storage della VM da considerare*: Selezionare se i datastore creati per ogni VM integrata sono dimensionati in base alle dimensioni attualmente utilizzate (consigliato) o alle dimensioni sottoposte a provisioning.
++
+I datastore esterni saranno implementati utilizzando Amazon FSX per i volumi del file system NetApp ONTAP.
+
+.. *Average data Reduction Ratio*: Scegliere tra i tre rapporti di riduzione dei dati comuni. Selezionare "1:1 - Nessuna riduzione", "1:1,25 - riduzione del 20%" o "1:1,5 - riduzione del 33%".
++
+Seleziona *Aiutami a decidere* se non sei sicuro di quale rapporto scegliere. Viene visualizzata la finestra di dialogo _Assistente rapporto di riduzione dati_. Seleziona qualsiasi affermazione che si applica all'inventario delle VM e al patrimonio di storage. L'assistente consiglierà un tasso di riduzione dei dati appropriato. Selezionare *Applica* per utilizzare il rapporto consigliato.
+
+.. *Percentuale spazio di crescita*: Immettere la percentuale di crescita della capacità aggiunta alla capacità dei file system FSX per ONTAP.
++
+Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile creare snapshot di volume per la protezione e backup a lungo termine.
+
+.. *Protezione snapshot VM*: Abilitare questa opzione per proteggere le VM con snapshot.
+
+
+. Selezionare *Avanti*.
+. Nella pagina *Scope*, selezionare le VM dall'elenco che si desidera includere nella migrazione AWS. Puoi filtrare l'elenco in base allo stato di alimentazione di ciascuna macchina virtuale e al centro dati e al cluster in cui risiede la macchina virtuale.
++
+Nell'elenco VM, è possibile selezionare i tipi di informazioni VM da visualizzare come colonne. Ad esempio, selezionando _tipo di istanza stimato_ viene visualizzata una colonna con il tipo di istanza Amazon EC2 stimato per ciascuna VM, in base ai requisiti delle risorse della VM.
+
+. Selezionare *Avanti*.
+. Nella pagina *Classify* (classificazione), esaminare le informazioni della VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati durante la distribuzione, quindi selezionare *Next* (Avanti).
++
+
+NOTE: Se un volume ha requisiti di capacità o performance che superano le capacità di un file system Amazon FSX per NetApp ONTAP in una regione specifica, il Migration Advisor consiglia di implementare il volume in un file system Amazon EBS.
+
+. Nella pagina *pacchetto*, esaminare le istanze EC2 e i volumi assegnati a diversi cluster FSX per ONTAP, quindi selezionare *Avanti*.
+. Nella pagina *Rivedi piano*, esaminare i risparmi mensili stimati e le stime dei costi per tutte le VM che si prevede di migrare.
++
+In cima alla pagina sono previsti i risparmi mensili per FSX per i file system ONTAP e i volumi EBS. È possibile espandere ogni sezione per visualizzare i dettagli relativi alla configurazione suggerita del file system, alla ripartizione dei risparmi stimati, ai presupposti e alle esclusioni di responsabilità tecniche.
+
+
+
+--
+.Informazioni sull'infrastruttura dati NetApp (pianificazione dettagliata)
+--
+.Fasi
+. Selezionare il riquadro *informazioni sull'infrastruttura dati NetApp* e selezionare *Avanti*.
++
+Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
+
+. Nella sezione _Configurazione connessione NetApp Insight dell'infrastruttura dati_, immettere l'endpoint tenant per informazioni sull'infrastruttura dati.
++
+Questo deve essere l'URL utilizzato per accedere a Data Infrastructure Insights.
+
+. Se non è stato ancora generato un token di accesso API per Data Infrastructure Insights, seguire le istruzioni nella pagina per crearne uno. In caso contrario, incollare il token di accesso API nella casella di testo *Inserisci token di accesso API*.
+. Selezionare *Connect*.
++
+Workload Factory raccoglie informazioni da Data Infrastructure Insights.
+
++
+La sezione *riepilogo inventario VM* viene compilata a partire dalle informazioni raccolte in modo da riflettere il numero di VM e la capacità di archiviazione totale.
 
 . Nella sezione _considerazioni sull'inventario VM_, seleziona l'area in cui verranno distribuiti i file system Amazon FSX per NetApp ONTAP. Per ottenere performance ottimali e convenienza, si tratta in genere della stessa regione in cui viene implementato il tuo SDDC Amazon EC2 esistente.
 . Nella sezione _considerazioni sulla capacità di destinazione e sulla protezione_, selezionare una delle opzioni di archiviazione disponibili.

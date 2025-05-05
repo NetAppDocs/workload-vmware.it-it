@@ -11,11 +11,33 @@ summary: È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o
 
 
 [role="lead"]
-È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o RVTools per acquisire le configurazioni VM correnti. Si consiglia di utilizzare lo script di raccolta VM di Migration ADVISOR perché raccoglie sia i dati di configurazione VM che i dati sulle prestazioni per il piano più accurato.
+È possibile utilizzare lo script di raccolta dati VM del Migration ADVISOR, RVTools o NetApp Data Infrastructure Insights per acquisire le configurazioni VM correnti. Si consiglia di utilizzare lo script di raccolta VM del Migration ADVISOR o Data Infrastructure Insights, poiché queste opzioni raccolgono sia i dati di configurazione VM che quelli relativi alle prestazioni per il piano più accurato.
 
 [role="tabbed-block"]
 ====
-.Utilizzare lo script di raccolta VM di Migration ADVISOR
+.Utilizzo di RVTools (valutazione rapida)
+--
+RVTools è un'applicazione Windows che interagisce con vCenter e ESX Server (da 5.x a 8,0) per acquisire informazioni sugli ambienti virtuali VMware. Raccoglie informazioni su VM, CPU, memoria, dischi, cluster, host ESX, datastore e altro ancora. È possibile esportare queste informazioni in un file xlsx da utilizzare con il Migration ADVISOR.
+
+https://www.robware.net/home["Ulteriori informazioni su RVTools"^]
+
+.Fasi
+. Scaricare e installare RVTools 4.4.2 o versione successiva da https://www.robware.net/download["Sito Web RVTools"^]
+. Avviare RVTools e accedere al vCenter Server di destinazione.
++
+In questo modo verranno acquisite le informazioni su vCenter Server.
+
+. Esportare le informazioni VMware in un file xlsx o xls.
++
+Per https://resources.robware.net/resources/prod/RVTools.pdf["Documentazione di RVTools"^] ulteriori informazioni, vedere il capitolo "parametri della riga di comando" nella.
+
+
+
+.Risultato
+Il file xlsx o xls che contiene i risultati viene salvato nella directory di lavoro.
+
+--
+.Utilizzo dello script di raccolta VM di Migration ADVISOR (pianificazione dettagliata)
 --
 Lo script di raccolta delle VM del Migration ADVISOR di NetApp raccoglie le informazioni di configurazione delle VM dal vCenter in modo simile a quanto raccolto da RVTools, tuttavia acquisisce i dati correnti relativi alle performance delle VM per fornire IOPS in lettura e scrittura e statistiche di throughput effettivi. È possibile utilizzare lo script in una delle due modalità seguenti:
 
@@ -85,26 +107,35 @@ Facoltativamente, è possibile eseguire lo script di raccolta dati senza specifi
 Lo script genera un file compresso con un indicatore data e ora nel nome nella directory di lavoro corrente. Il file .zip contiene un elenco di tutte le VM e le relative proprietà, insieme ai relativi dati IOPS e throughput.
 
 --
-.Utilizzare il software RVTools
+.Utilizzo delle informazioni sull'infrastruttura dati NetApp (pianificazione dettagliata)
 --
-RVTools è un'applicazione Windows che interagisce con vCenter e ESX Server (da 5.x a 8,0) per acquisire informazioni sugli ambienti virtuali VMware. Raccoglie informazioni su VM, CPU, memoria, dischi, cluster, host ESX, datastore e altro ancora. È possibile esportare queste informazioni in un file xlsx da utilizzare con il Migration ADVISOR.
+NetApp Data Infrastructure Insights è un tool di monitoraggio dell'infrastruttura cloud che ti offre visibilità sulla tua completa infrastruttura. È necessario abilitare la comunicazione API temporanea tra il consulente per la migrazione e Data Infrastructure Insights in modo che il consulente per la migrazione possa raccogliere informazioni sull'infrastruttura VMware.
 
-https://www.robware.net/home["Ulteriori informazioni su RVTools"^]
+https://docs.netapp.com/us-en/data-infrastructure-insights/["Scopri di più su Data Infrastructure Insights"^]
 
 .Fasi
-. Scaricare e installare RVTools 4.4.2 o versione successiva da https://www.robware.net/download["Sito Web RVTools"^]
-. Avviare RVTools e accedere al vCenter Server di destinazione.
+. Accedi al tuo account Data Infrastructure Insights.
+. Nel menu di navigazione laterale, selezionare *Ammin*.
+. Nel menu visualizzato, selezionare *accesso API*.
+. Nella scheda *token di accesso API*, selezionare *+ token di accesso API*.
 +
-In questo modo verranno acquisite le informazioni su vCenter Server.
+Viene visualizzata la finestra di dialogo Crea token di accesso API.
 
-. Esportare le informazioni VMware in un file xlsx o xls.
+. Fornire un nome e una descrizione per il token API.
+. In *che tipo di API verrà utilizzato questo token per chiamare* selezionare una delle seguenti opzioni:
 +
-Per https://resources.robware.net/resources/prod/RVTools.pdf["Documentazione di RVTools"^] ulteriori informazioni, vedere il capitolo "parametri della riga di comando" nella.
+** Unità di acquisizione
+** Risorse
+** Raccolta di dati
 
 
+. In *autorizzazioni* selezionare *sola lettura*.
+. In *il token scade in*, scegliere la durata di validità del token API.
+. Deselezionare *ruota automaticamente i token per Kubernetes*.
+. Selezionare *Salva*.
+. Selezionare *Copia token di accesso API*.
+. Salva questo token in preparazione all'utilizzo con il consulente per la migrazione in fabbrica dei workload.
 
-.Risultato
-Il file xlsx o xls che contiene i risultati viene salvato nella directory di lavoro.
 
 --
 ====
