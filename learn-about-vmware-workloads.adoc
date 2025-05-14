@@ -65,7 +65,20 @@ Il passaggio delle parti dell'infrastruttura corrente ad Amazon EC2 o a VMware C
 * Riduzione di costi e latenza da configurazioni single-AZ che utilizzano il peering VPC senza richiedere un gateway di transito
 
 
-https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
+
+
+== Strumenti per l'utilizzo di workload Factory
+
+È possibile utilizzare la farm di workload BlueXP  con i seguenti tool:
+
+* *Workload Factory Console*: La console workload Factory offre una visione visiva e olistica delle applicazioni e dei progetti.
+* *Console BlueXP *: La console BlueXP  offre un'interfaccia ibrida in modo da poter utilizzare la fabbrica dei workload BlueXP  insieme ad altri servizi BlueXP .
+* *Chiedimi*: Utilizza l'assistente Ask me ai per porre domande e saperne di più sulla fabbrica di workload senza abbandonare l'interfaccia utente web della fabbrica di workload. Accedere a Chiedimi dal menu della guida di fabbrica del carico di lavoro.
+* *CLI CloudShell*: Workload Factory include una CLI CloudShell per gestire e utilizzare ambienti AWS e NetApp tra diversi account da un'unica CLI basata su browser. Accedi a CloudShell dalla barra superiore della console workload Factory.
+* *API REST*: Utilizza le API REST DI workload factory per implementare e gestire i file system FSX per ONTAP e altre risorse AWS.
+* *CloudFormation*: Utilizzare il codice AWS CloudFormation per eseguire le azioni definite nella console workload factory in modo da modellare, eseguire il provisioning e gestire risorse AWS e di terze parti dallo stack CloudFormation nell'account AWS.
+* *Terraform BlueXP  workload Factory Provider*: USA Terraform per costruire e gestire i flussi di lavoro infrastrutturali generati nella console di workload Factory.
+
 
 
 
