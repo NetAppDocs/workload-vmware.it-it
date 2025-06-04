@@ -21,7 +21,7 @@ Sarà necessario https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Aggiungi credenziali e autorizzazioni AWS al tuo account
 [role="quick-margin-para"]
-Puoi utilizzare la fabbrica dei carichi di lavoro in modalità _Basic_ senza aggiungere credenziali per accedere all'account AWS. L'aggiunta delle credenziali AWS alla fabbrica dei carichi di lavoro in modalità _lettura_ o _automatizza_ fornisce all'account della fabbrica dei carichi di lavoro le autorizzazioni necessarie per creare e gestire i file system FSX per ONTAP e per implementare e gestire i carichi di lavoro in VMware Cloud.
+Puoi utilizzare la fabbrica dei carichi di lavoro in modalità _Basic_ senza aggiungere credenziali per accedere all'account AWS. L'aggiunta delle credenziali AWS alla Workload Factory in modalità _sola lettura_ o _lettura/scrittura_ fornisce all'account della Workload Factory le autorizzazioni necessarie per creare e gestire i file system FSx for ONTAP e per distribuire e gestire i carichi di lavoro all'interno di VMware Cloud.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Informazioni su come aggiungere credenziali e autorizzazioni"^].
