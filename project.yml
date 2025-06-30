@@ -23,12 +23,20 @@ sidebar:
     entries:
     - title: Scopri la fabbrica di workload BlueXP  per VMware
       url: "/learn-about-vmware-workloads.html"
-    - title: Avvio rapido per la migrazione a VMware Cloud su AWS
-      url: "/quick-start.html"
+    - title: Avvio rapido per la migrazione ad Amazon EVS
+      url: "/quick-start-evs.html"
     - title: Guida rapida per la migrazione ad Amazon EC2
       url: "/quick-start-native.html"
+    - title: Avvio rapido per la migrazione a VMware Cloud su AWS
+      url: "/quick-start.html"
   - title: USA il consulente per la migrazione di VMware
     entries:
+    - title: Migrazione ad Amazon Elastic VMware Service
+      entries:
+      - title: Creare un piano di distribuzione utilizzando il Migration Advisor
+        url: "/launch-migration-advisor-evs-manual.html"
+      - title: Implementa il file system FSX per ONTAP consigliato
+        url: "/deploy-fsx-file-system-evs.html"
     - title: Migrazione ad Amazon EC2
       entries:
       - title: Acquisire le configurazioni VM correnti

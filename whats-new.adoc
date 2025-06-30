@@ -15,6 +15,18 @@ Scoprite le novità della componente VMware Migration Advisor di workload Factor
 
 
 
+== 29 giugno 2025
+
+
+
+=== Introduzione del supporto di Migration Advisor per Amazon Elastic VMWare Service
+
+BlueXP Workload Factory per VMware ora supporta Amazon Elastic VMware Service. Puoi migrare rapidamente i tuoi carichi di lavoro VMware on-premise ad Amazon Elastic VMware Service utilizzando il consulente per la migrazione, ottimizzando i costi e ottenendo un maggiore controllo sul tuo ambiente VMware senza dover riorganizzare o riconfigurare le applicazioni.
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Crea un piano di distribuzione per Amazon EVS utilizzando il consulente per la migrazione"]
+
+
+
 == 4 maggio 2025
 
 
@@ -47,11 +59,7 @@ Questa release della fabbrica di workload BlueXP  per VMware presenta diversi m
 * *Miglioramenti all'efficienza degli script di raccolta dati*: Lo script di raccolta dati del Migration ADVISOR EC2 ottimizza l'utilizzo della CPU durante la raccolta dei dati per implementazioni VM di dimensioni inferiori.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
-
-
-
-== 2 marzo 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"] == 2 marzo 2025
 
 
 
@@ -64,7 +72,11 @@ Questa release della fabbrica di workload BlueXP  per VMware presenta diversi m
 * *Assegnazione automatica avanzata del filesystem*: L'assegnazione del filesystem Amazon FSX for NetApp ONTAP è stata migliorata per ottimizzare meglio i costi e ridurre al minimo la velocità di trasmissione.
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"] == 5 gennaio 2025
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["Crea un piano di implementazione per Amazon EC2 utilizzando il Migration Advisor"]
+
+
+
+== 5 gennaio 2025
 
 
 
