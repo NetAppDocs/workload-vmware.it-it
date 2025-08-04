@@ -79,6 +79,16 @@ Se si abilita l'opzione *Adatta la configurazione del gruppo di sicurezza ai dat
 .. *Credenziali VM di archiviazione* (solo creazione avanzata): Immettere e confermare la password VM di archiviazione. La password può essere specifica per questo file system oppure è possibile utilizzare la stessa password immessa per le credenziali ONTAP.
 
 
+. Nella sezione "Allegato al cluster EVS", inserisci le seguenti informazioni:
++
+.. *Opzioni di montaggio del datastore*: facoltativamente, abilitare l'opzione *Monta i datastore sul cluster EVS* per connettere automaticamente i datastore al cluster Amazon EVS.  Questa opzione fa sì che Workload Factory configuri anche le impostazioni dell'host VMware ESXi in modo che corrispondano alle raccomandazioni delle best practice ONTAP .  Prima di distribuire il file system, è possibile rivedere i dettagli del piano nella sezione *Riepilogo* per vedere le impostazioni modificate.
+.. *Dettagli della console EVS Cluster vSphere*: immettere l'indirizzo IP o il nome di dominio completo del server VMware vCenter che deve connettersi ad Amazon EVS.
+.. *ARN segreto delle credenziali di amministratore vSphere*: selezionare l'ARN segreto per le credenziali di amministratore vSphere.  Queste credenziali vengono utilizzate per montare gli archivi dati e configurare le impostazioni VMware consigliate.
++
+Se Amazon EVS non è disponibile in questa regione o se il tuo account non dispone delle autorizzazioni per recuperare l'elenco degli ARN segreti disponibili, puoi immettere manualmente un valore ARN segreto.
+
+
+
 . Nella sezione *Riepilogo*, è possibile visualizzare la configurazione del file system e del datastore di FSX per ONTAP progettata in base alle informazioni.
 . Selezionare *Crea* per distribuire il file system FSX per ONTAP. Questo processo può richiedere fino a 2 ore.
 +
