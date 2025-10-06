@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: Dopo aver verificato che il file system FSX per ONTAP, o file system, consigliato in alcuni casi soddisfi i tuoi requisiti precisi, puoi utilizzare la fabbrica di carichi di lavoro per implementare il sistema nel tuo ambiente AWS. 
+summary: Dopo aver verificato che il file system FSx per ONTAP consigliato, o in alcuni casi i file system, soddisfano esattamente i tuoi requisiti, puoi utilizzare Workload Factory per distribuire il sistema nel tuo ambiente AWS. 
 ---
 = Implementa il file system FSX per ONTAP consigliato
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: Dopo aver verificato che il file system FSX per ONTAP, o file system, c
 
 
 [role="lead"]
-Dopo aver verificato che il file system FSX per ONTAP consigliato (o più file system in alcuni casi) soddisfi i tuoi requisiti precisi, puoi utilizzare la fabbrica di carichi di lavoro per implementare il sistema nel tuo ambiente AWS.
+Dopo aver verificato che il file system FSx for ONTAP consigliato (o più file system in alcuni casi) soddisfa esattamente i tuoi requisiti, puoi utilizzare Workload Factory per distribuire il sistema nel tuo ambiente AWS.
 
-Seguire le istruzioni in  per implementare il file system FSX per ONTAP in link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Crea un file system FSX per ONTAP in una farm di workload BlueXP"^]base alla configurazione consigliata da workload Factory. È possibile utilizzare i passaggi *creazione avanzata* nelle istruzioni per personalizzare completamente il file system.
+Seguire le istruzioni inlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Creare un file system FSx per ONTAP in NetApp Workload Factory"^] per distribuire il file system FSx for ONTAP in base alla configurazione consigliata da Workload Factory.  È possibile utilizzare i passaggi di *Creazione avanzata* indicati nelle istruzioni per personalizzare completamente il file system.

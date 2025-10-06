@@ -35,7 +35,7 @@ Il sistema in cui verrà eseguito lo script di raccolta deve soddisfare i seguen
 Tenere presente che se si intende acquisire statistiche a lungo termine dalle macchine virtuali (statistiche quotidiane), è necessario attivare statistiche di livello 3 o superiore nella console di gestione vSphere (ambiente di gestione VMware).
 
 .Fasi
-. Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
+. Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 . Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione a VMware Cloud su AWS*.
 +
 Viene visualizzata la pagina principale di VMware Migration Advisor.

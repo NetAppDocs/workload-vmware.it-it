@@ -1,17 +1,27 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations-native.html 
+permalink: upload-vm-inventory.html 
 keywords: vm workloads, capture vm details 
-summary: È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o RVTools per acquisire le configurazioni VM correnti. Si consiglia di utilizzare lo script di raccolta VM di Migration ADVISOR perché raccoglie sia i dati di configurazione VM che i dati sulle prestazioni per il piano più accurato. 
+summary: È possibile utilizzare il Planning Center per caricare informazioni sul proprio ambiente VMware attuale. 
 ---
-= Acquisisci le configurazioni VM prima di eseguire la migrazione ad Amazon EC2 con i carichi di lavoro VMware
+= Carica i dati dell'inventario della VM su NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-È possibile utilizzare lo script di raccolta dati VM del Migration ADVISOR, RVTools o NetApp Data Infrastructure Insights per acquisire le configurazioni VM correnti. Si consiglia di utilizzare lo script di raccolta VM del Migration ADVISOR o Data Infrastructure Insights, poiché queste opzioni raccolgono sia i dati di configurazione VM che quelli relativi alle prestazioni per il piano più accurato.
+Prima di poter creare un piano di migrazione, è necessario caricare i dati dell'inventario della VM.
+
+.Fasi
+. Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
+. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.
++
+Dal centro di pianificazione è possibile caricare i dati dell'inventario della macchina virtuale, visualizzare i caricamenti precedenti dei dati dell'inventario e pianificare una migrazione utilizzando uno qualsiasi dei set di dati dell'inventario della macchina virtuale.
+
+. Selezionare *Carica inventario VM*.
+. Scegli quale metodo di raccolta dati utilizzare:
+
 
 [role="tabbed-block"]
 ====
@@ -22,6 +32,11 @@ RVTools è un'applicazione Windows che interagisce con vCenter e ESX Server (da 
 https://www.robware.net/home["Ulteriori informazioni su RVTools"^]
 
 .Fasi
+. Selezionare il riquadro *RVTools* e selezionare *Avanti*.
++
+Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
+
+. Inserisci un nome per il set di dati dell'inventario VM che creerai.
 . Scaricare e installare RVTools 4.4.2 o versione successiva da https://www.robware.net/download["Sito Web RVTools"^]
 . Avviare RVTools e accedere al vCenter Server di destinazione.
 +
@@ -31,13 +46,13 @@ In questo modo verranno acquisite le informazioni su vCenter Server.
 +
 Per https://resources.robware.net/resources/prod/RVTools.pdf["Documentazione di RVTools"^] ulteriori informazioni, vedere il capitolo "parametri della riga di comando" nella.
 
+. Selezionareimage:button-upload-file.png["il pulsante carica"] e scegli il file RVTools che hai esportato.
+. Seleziona *Carica*.
+. Selezionare *Fine*.
 
-
-.Risultato
-Il file xlsx o xls che contiene i risultati viene salvato nella directory di lavoro.
 
 --
-.Utilizzo dello script di raccolta VM di Migration ADVISOR (pianificazione dettagliata)
+.Utilizzare il raccoglitore dati (pianificazione dettagliata)
 --
 Lo script di raccolta delle VM del Migration ADVISOR di NetApp raccoglie le informazioni di configurazione delle VM dal vCenter in modo simile a quanto raccolto da RVTools, tuttavia acquisisce i dati correnti relativi alle performance delle VM per fornire IOPS in lettura e scrittura e statistiche di throughput effettivi. È possibile utilizzare lo script in una delle due modalità seguenti:
 
@@ -59,16 +74,7 @@ Il sistema in cui verrà eseguito lo script di raccolta deve soddisfare i seguen
 Tenere presente che se si intende acquisire statistiche a lungo termine dalle macchine virtuali (statistiche quotidiane), è necessario attivare statistiche di livello 3 o superiore nella console di gestione vSphere (ambiente di gestione VMware).
 
 .Fasi
-. Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.
-+
-Dal centro di pianificazione, puoi caricare i dati dell'inventario della tua VM, visualizzare i caricamenti precedenti dei dati dell'inventario e pianificare una migrazione utilizzando uno qualsiasi dei set di dati dell'inventario della VM, quindi selezionare *Migrazione al calcolo nativo AWS*.  Viene visualizzata la schermata iniziale di VMware Migration Advisor.
-
-+
-Esaminate le informazioni per scoprire i vantaggi del Migration ADVISOR.
-
-. Quando si è pronti, selezionare *Let's start*.
-. Selezionare la sezione *pianificazione dettagliata*, quindi selezionare *Avanti*.
+. Selezionare il riquadro *Raccolta dati* e selezionare *Avanti*.
 +
 La finestra Codebox viene visualizzata sul lato destro della pagina.
 
@@ -104,10 +110,11 @@ dove:
 +
 Facoltativamente, è possibile eseguire lo script di raccolta dati senza specificare alcuna opzione; ciò consente di selezionare il periodo di raccolta dati dal menu interattivo.
 
++
++ Lo script genera un file compresso con un timestamp nel nome nella directory di lavoro corrente.  Il file .zip contiene un elenco di tutte le VM e delle relative proprietà, insieme ai dati relativi a IOPS e throughput.
 
+. Seleziona *Carica*.
 
-.Risultato
-Lo script genera un file compresso con un indicatore data e ora nel nome nella directory di lavoro corrente. Il file .zip contiene un elenco di tutte le VM e le relative proprietà, insieme ai relativi dati IOPS e throughput.
 
 --
 .Utilizzo delle informazioni sull'infrastruttura dati NetApp (pianificazione dettagliata)
@@ -117,30 +124,29 @@ NetApp Data Infrastructure Insights è un tool di monitoraggio dell'infrastruttu
 https://docs.netapp.com/us-en/data-infrastructure-insights/["Scopri di più su Data Infrastructure Insights"^]
 
 .Fasi
-. Accedi al tuo account Data Infrastructure Insights.
-. Nel menu di navigazione laterale, selezionare *Ammin*.
-. Nel menu visualizzato, selezionare *accesso API*.
-. Nella scheda *token di accesso API*, selezionare *+ token di accesso API*.
+. Selezionare il riquadro * Data Infrastructure Insights* e selezionare *Avanti*.
 +
-Viene visualizzata la finestra di dialogo Crea token di accesso API.
+Viene visualizzata la pagina *preparazione per l'onboarding di AWS Cloud*.
 
-. Fornire un nome e una descrizione per il token API.
-. In *che tipo di API verrà utilizzato questo token per chiamare* selezionare una delle seguenti opzioni:
+. Inserisci un nome per il set di dati dell'inventario VM che creerai.
+. Immettere l'endpoint del tenant per Data Infrastructure Insights.
 +
-** Unità di acquisizione
-** Risorse
-** Raccolta di dati
+Questo deve essere l'URL utilizzato per accedere a Data Infrastructure Insights.
 
+. Se non è stato ancora generato un token di accesso API per Data Infrastructure Insights, seguire le istruzioni nella pagina per crearne uno. In caso contrario, incollare il token di accesso API nella casella di testo *Inserisci token di accesso API*.
+. Seleziona *Carica*.
++
+Workload Factory raccoglie informazioni da Data Infrastructure Insights.
 
-. In *autorizzazioni* selezionare *sola lettura*.
-. In *il token scade in*, scegliere la durata di validità del token API.
-. Deselezionare *ruota automaticamente i token per Kubernetes*.
-. Selezionare *Salva*.
-. Selezionare *Copia token di accesso API*.
-. Salva questo token in preparazione all'utilizzo con il consulente per la migrazione di Workload Factory.
 
 
 --
 ====
 .Quali sono le prossime novità?
-link:launch-onboarding-advisor-native.html["Creare un piano di implementazione Amazon EC2 utilizzando il Migration ADVISOR"].
+Gestisci i dati dell'inventario delle VM caricati dal centro di pianificazione oppure crea un piano di distribuzione.
+
+* link:explore-planning-center.html["Esplora il centro di pianificazione dei carichi di lavoro VMware"]
+* link:launch-onboarding-advisor.html["Creare un piano di distribuzione Amazon VMware Cloud"]
+* link:launch-migration-advisor-evs.html["Creare un piano di distribuzione di Amazon Elastic VMware Service"]
+* link:launch-onboarding-advisor-native.html["Creare un piano di distribuzione Amazon EC2"]
+

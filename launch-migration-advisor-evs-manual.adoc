@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar 
 permalink: launch-migration-advisor-evs-manual.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works, migration, advisor, manual, specification, deploy, deployment, plan 
-summary: Accedere alla fabbrica del carico di lavoro NetApp per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze. 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan 
+summary: Accedi a NetApp Workload Factory per accedere al centro di pianificazione VMware.  È possibile creare manualmente un piano di distribuzione per EVS. 
 ---
-= Crea un piano di distribuzione per Amazon EVS utilizzando il consulente per la migrazione dei carichi di lavoro VMware
+= Creare manualmente un piano di distribuzione per Amazon EVS
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Accedere alla fabbrica del carico di lavoro NetApp per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze.
+Accedi a NetApp Workload Factory per accedere al centro di pianificazione VMware.  Da lì, puoi creare manualmente un piano di distribuzione o un piano di migrazione per Amazon EVS personalizzato in base alle tue esigenze.
 
-Per accedere alla fabbrica del carico di lavoro, è necessario disporre di un nome utente e di una password. Se non si dispone dell'accesso, creare un account ora. Vedere le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"].
+Tieni presente che per accedere a Workload Factory è necessario disporre di un nome utente e di una password.  Se non hai accesso, crea un account ora.  Vedi le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"] .
 
 
 
@@ -26,10 +26,9 @@ Per accedere alla fabbrica del carico di lavoro, è necessario disporre di un no
 
 
 .Fasi
-. Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Facoltativamente, se hai effettuato l'accesso a Workload Factory dalla console Workload Factory, dal riquadro dei carichi di lavoro VMware, seleziona *Pianifica e crea* e quindi seleziona *Servizio Amazon Elastic VMware*. Viene visualizzata la schermata iniziale di VMware Migration Advisor.
-. Selezionare il riquadro *Servizio Amazon Elastic VMware*.
-. Quando si è pronti, selezionare *Let's start*.
+. Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
+. Facoltativamente, se si accede a Workload Factory dalla console di Workload Factory, dal riquadro dei carichi di lavoro VMware, selezionare *VMware Planning Center* e quindi *VMware Planning Center*.  Viene visualizzato il centro di pianificazione VMware.
+. Seleziona *Crea manualmente il piano EVS*.
 . Inserisci i requisiti per il tuo ambiente VM.
 +
 [NOTE]
@@ -42,13 +41,13 @@ Tieni presenti i seguenti requisiti e raccomandazioni sulle prestazioni per la m
 
 
 ====
-. Quando sei pronto, seleziona *Avanti* per rivedere il piano di migrazione.
+. Quando sei pronto, seleziona *Revisiona piano* per rivedere il piano di migrazione.
 . Rivedere il piano. Espandi ciascuna sezione per visualizzare i dettagli del piano.
-. Facoltativamente, quando sei soddisfatto del piano di migrazione, puoi salvarlo come modello o PDF:
 +
-** Selezionare *Esporta piano* per salvare il piano di migrazione come modello in un  `.json` formato sul tuo computer. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
-** Seleziona *Scarica piano* per scaricare il piano di distribuzione in un  `.pdf` formato in modo da poter distribuire il piano per la revisione.
+Per impostazione predefinita, Workload Factory salva il piano di migrazione nel centro di pianificazione.  È possibile deselezionare questa opzione nella parte superiore della pagina.
+
+. Facoltativamente, quando sei soddisfatto del piano di migrazione, puoi scaricare i dettagli del piano come documento PDF selezionando *Esporta piano (PDF)*.
+. Quando sei pronto per effettuare il provisioning del piano di distribuzione, seleziona *Provisioning*.
 
 
-. link:deploy-fsx-file-system-evs.html["Implementa il file system FSX per ONTAP consigliato per i carichi di lavoro VMware"].
-
+link:deploy-fsx-file-system-evs.html["Implementa il file system FSX per ONTAP consigliato per i carichi di lavoro VMware"].

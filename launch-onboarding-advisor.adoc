@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: launch-onboarding-advisor.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Accedere alla fabbrica del carico di lavoro NetApp per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze. 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: Accedi a NetApp Workload Factory per utilizzare il consulente per la migrazione VMware.  Seguirai i passaggi della procedura guidata per creare un piano di distribuzione o un piano di migrazione personalizzato in base alle tue esigenze. 
 ---
 = Crea un piano di implementazione per VMware Cloud on AWS utilizzando il consulente per la migrazione dei carichi di lavoro VMware
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: Accedere alla fabbrica del carico di lavoro NetApp per accedere al cons
 
 
 [role="lead"]
-Accedere alla fabbrica del carico di lavoro NetApp per accedere al consulente per la migrazione VMware. Seguire i passaggi della procedura guidata per creare un piano di distribuzione o di migrazione personalizzato in base alle proprie esigenze.
+Accedi a NetApp Workload Factory per utilizzare il consulente per la migrazione VMware.  Seguirai i passaggi della procedura guidata per creare un piano di distribuzione o un piano di migrazione personalizzato in base alle tue esigenze.
 
 Durante la migrazione a VMware Cloud, puoi utilizzare il Migration ADVISOR per creare un piano di implementazione per i seguenti scenari:
 
 * <<Creare un piano di implementazione basato su un ambiente vSphere on-premise,Per migrare il tuo attuale ambiente vSphere on-premise nel cloud VMware.>>
-* <<Creazione di un piano di distribuzione basato su un piano esistente,Per implementare un sistema nel cloud sulla base di un piano di implementazione esistente che abbia requisiti simili.>>
+* <<Create a deployment plan based on an existing plan,Per implementare un sistema nel cloud sulla base di un piano di implementazione esistente che abbia requisiti simili.>>
 
 
-Per accedere alla fabbrica del carico di lavoro, è necessario disporre di un nome utente e di una password. Se non si dispone dell'accesso, creare un account ora. Vedere le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"].
+Tieni presente che per accedere a Workload Factory è necessario disporre di un nome utente e di una password.  Se non hai accesso, crea un account ora.  Vedi le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"] .
 
 
 
@@ -29,17 +29,17 @@ Puoi migrare le attuali configurazioni delle macchine virtuali negli ambienti vS
 
 .Requisiti
 * È necessario aver creato il file di inventario dai sistemi esistenti utilizzando il raccoglitore VM del Migration ADVISOR (file.csv) o RVTools (file.xlsx).
-* È necessario avere accesso al file di inventario dal sistema sul quale si sta effettuando l'accesso alla fabbrica del carico di lavoro.
+* È necessario avere accesso al file di inventario dal sistema tramite il quale si effettua l'accesso a Workload Factory.
 
 
 .Fasi
-. Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione a VMware Cloud su AWS*.
+. Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
+. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.
 +
-Viene visualizzata la pagina principale di VMware Migration Advisor.
+Viene visualizzato il centro di pianificazione.
 
-. Selezionare *Crea un nuovo piano di distribuzione*.
-. Selezionare il tipo di file di inventario che verrà utilizzato per popolare la fabbrica del carico di lavoro con la configurazione VM corrente e selezionare *Avanti*.
+. Selezionare *Pianifica e crea VMC*.
+. Seleziona il tipo di file di inventario che utilizzerai per popolare Workload Factory con la configurazione della tua VM corrente e seleziona *Avanti*.
 +
 ** Selezionare *utilizzare il Data Collector VMware del Migration ADVISOR* per utilizzare il file .csv creato utilizzando il Data Collector di VMware.
 ** Selezionare *Usa RVTools* per utilizzare il file .xlsx creato utilizzando RVTools.
@@ -145,23 +145,4 @@ Nella parte superiore della pagina vengono descritti i costi mensili per tutte l
 ** Selezionare *Esporta piano* per salvare il piano di migrazione come modello in formato .json. È possibile importare il piano in un secondo momento per utilizzarlo come modello quando si distribuiscono sistemi con requisiti simili.
 
 
-
-
-
-
-== Creazione di un piano di distribuzione basato su un piano esistente
-
-Se si sta pianificando una nuova implementazione simile a un piano di distribuzione esistente utilizzato in passato, è possibile importare tale piano, apportare modifiche e salvarlo come nuovo piano di distribuzione.
-
-.Requisiti
-È necessario avere accesso al file .json per il piano di distribuzione esistente dal sistema sul quale si sta effettuando l'accesso a workload Factory.
-
-.Fasi
-. Accedere a workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione a VMware Cloud su AWS*. Viene visualizzata la pagina principale di VMware Migration Advisor.
-. Selezionare *Importa un piano di distribuzione esistente*.
-. Selezionare image:button-upload-file.png["il pulsante carica"] e selezionare il file del piano esistente che si desidera importare nel Migration ADVISOR.
-. Selezionare *successivo* per visualizzare la pagina Review plan (esamina piano).
-. È possibile selezionare *precedente* per accedere alla pagina _prepara per l'onboarding di VMware Cloud_ e alla pagina _Seleziona VM_ per modificare le impostazioni del piano come descritto nella sezione precedente.
-. Dopo aver personalizzato il piano in base ai tuoi requisiti, puoi salvare il piano o avviare il processo di implementazione dei datastore su file system FSX per ONTAP.
 

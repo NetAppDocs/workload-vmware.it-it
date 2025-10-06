@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: Dopo aver verificato che il file system FSX per ONTAP, o file system, consigliato in alcuni casi soddisfi i tuoi requisiti precisi, puoi utilizzare la fabbrica di carichi di lavoro per implementare il sistema nel tuo ambiente AWS. 
+summary: Dopo aver verificato che il file system FSx per ONTAP consigliato, o in alcuni casi i file system, soddisfano esattamente i tuoi requisiti, puoi utilizzare Workload Factory per distribuire il sistema nel tuo ambiente AWS. 
 ---
 = Implementa il file system FSX per ONTAP consigliato
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: Dopo aver verificato che il file system FSX per ONTAP, o file system, c
 
 
 [role="lead"]
-Dopo aver verificato che il file system FSX per ONTAP consigliato (o più file system in alcuni casi) soddisfi i tuoi requisiti precisi, puoi utilizzare la fabbrica di carichi di lavoro per implementare il sistema nel tuo ambiente AWS.
+Dopo aver verificato che il file system FSx for ONTAP consigliato (o più file system in alcuni casi) soddisfa esattamente i tuoi requisiti, puoi utilizzare Workload Factory per distribuire il sistema nel tuo ambiente AWS.
 
-A seconda dei criteri e delle autorizzazioni aggiunti all'account Workload Factory, è possibile distribuire completamente il file system FSx for ONTAP utilizzando Workload Factory (in modalità lettura/scrittura). Se si dispone di meno autorizzazioni (modalità di sola lettura) o di nessuna autorizzazione (modalità di base), sarà necessario utilizzare le informazioni di CloudFormation dal Codebox e distribuire autonomamente il file system FSx for ONTAP in AWS.
+A seconda dei criteri e delle autorizzazioni aggiunti al tuo account Workload Factory, puoi distribuire completamente il file system FSx for ONTAP utilizzando Workload Factory (in modalità lettura/scrittura).  Se si dispone di meno autorizzazioni (modalità di sola lettura) o di nessuna autorizzazione (modalità di base), sarà necessario utilizzare le informazioni di CloudFormation da Codebox e distribuire autonomamente il file system FSx for ONTAP in AWS.
 
 .Requisiti per le implementazioni in VMware Cloud su AWS
 * Devi utilizzare VMware Cloud su SDDC (Software-Defined Data Center) AWS versione 1,20 o superiore per implementare FSX per i file system ONTAP.
@@ -29,7 +29,7 @@ La maggior parte dei campi che definiscono il file system FSX per ONTAP sono com
 +
 È possibile utilizzare l'opzione creazione rapida o creazione avanzata. Advanced create offre alcuni parametri di archiviazione aggiuntivi che è possibile personalizzare. https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Scopri cosa offrono queste due opzioni"]
 
-. *Credenziali AWS*: Seleziona o Aggiungi credenziali che forniranno a workload Factory le autorizzazioni necessarie per creare direttamente il file system FSX per ONTAP. Puoi anche selezionare il codice CloudFormation da Codebox e distribuire il file system FSX per ONTAP in AWS.
+. *Credenziali AWS*: seleziona o aggiungi le credenziali che forniranno a Workload Factory le autorizzazioni necessarie per creare direttamente il tuo file system FSx for ONTAP .  Puoi anche selezionare il codice CloudFormation da Codebox e distribuire autonomamente il file system FSx for ONTAP in AWS.
 . *Nome file system*: Immettere il nome che si desidera utilizzare per questo file system FSX per ONTAP.
 . *Tag*: Se si desidera, è possibile aggiungere tag per categorizzare questo file system FSX per ONTAP.
 . Nella sezione "rete e sicurezza", immettere le seguenti informazioni:

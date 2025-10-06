@@ -15,23 +15,23 @@ Inizia subito con il consulente per la migrazione VMware per spostare la tua inf
 
 Prima di iniziare, è necessario conoscere https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modalità operative"^] .
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Accedi a workload Factory
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"]Accedi a Workload Factory
 [role="quick-margin-para"]
-Sarà necessario https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configurare un account con workload factory"^] ed effettuare l'accesso utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
+Avrai bisogno di https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["creare un account con Workload Factory"^] e accedi utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Aggiungi credenziali e autorizzazioni AWS al tuo account
 [role="quick-margin-para"]
-Puoi utilizzare la fabbrica dei carichi di lavoro in modalità _Basic_ senza aggiungere credenziali per accedere all'account AWS. L'aggiunta delle credenziali AWS alla Workload Factory in modalità _sola lettura_ o _lettura/scrittura_ fornisce all'account della Workload Factory le autorizzazioni necessarie per creare e gestire i file system FSx for ONTAP e per distribuire e gestire i carichi di lavoro all'interno di VMware Cloud.
+Puoi utilizzare Workload Factory in modalità _Basic_ senza aggiungere credenziali per accedere al tuo account AWS. L'aggiunta delle credenziali AWS a Workload Factory in modalità _sola lettura_ o _lettura/scrittura_ fornisce al tuo account Workload Factory le autorizzazioni necessarie per creare e gestire i file system FSx for ONTAP e per distribuire e gestire i carichi di lavoro all'interno di VMware Cloud.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Informazioni su come aggiungere credenziali e autorizzazioni"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"] Acquisisci le tue attuali configurazioni VM nel tuo ambiente vSphere
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"]Carica i dati dell'inventario della VM
 [role="quick-margin-para"]
-È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o RVTools per acquisire le configurazioni VM correnti al fine di creare un piano di distribuzione. È inoltre possibile importare un piano di distribuzione esistente come modello e quindi modificare gli attributi richiesti.
+È possibile utilizzare il centro di pianificazione per caricare i dettagli dell'inventario relativi all'ambiente VM corrente.  Utilizzare lo script di raccolta dati, RVTools o NetApp Data Infrastructure Insights per acquisire la configurazione corrente della VM e caricare i dati nel centro di pianificazione.
 
 [role="quick-margin-para"]
-link:capture-vm-configurations.html["Scopri come acquisire le attuali configurazioni VM"].
+link:upload-vm-inventory.html["Scopri come caricare i dati dell'inventario della VM"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quattro"] Creare un piano di distribuzione utilizzando il consulente per la migrazione di VMware
 [role="quick-margin-para"]

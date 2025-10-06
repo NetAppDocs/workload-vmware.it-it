@@ -4,7 +4,7 @@ permalink: migrate-data.html
 keywords: vm workloads, fsx for ontap, migration, data migration, vmware hcx 
 summary: Utilizza uno strumento come VMware Hybrid Cloud Extension per spostare i dati dallo storage della vecchia macchina virtuale ai volumi FSX per NetApp ONTAP connessi alle nuove macchine virtuali. La funzionalità core di VMware HCX ti consente di migrare in modo trasparente i carichi di lavoro dai data center on-premise al tuo SDDC. 
 ---
-= Migra i tuoi dati nella nuova infrastruttura con la farm di carico di lavoro BlueXP  per VMware
+= Migra i tuoi dati sulla nuova infrastruttura con NetApp Workload Factory per VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
