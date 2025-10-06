@@ -6,7 +6,7 @@
 
 === Supporto migliorato del consulente per la migrazione per Amazon Elastic VMWare Service
 
-Il consulente per la migrazione di Amazon Elastic VMware Service supporta ora la distribuzione e il montaggio automatici del file system Amazon FSx for NetApp ONTAP .  Ciò consente di iniziare a distribuire le VM sui filesystem FSx for ONTAP una volta completata la migrazione all'ambiente Amazon EVS.
+NetApp Workload Factory ora supporta la distribuzione e il montaggio automatici del file system Amazon FSx for NetApp ONTAP .  Ciò consente di iniziare a distribuire le VM sui file system FSx per ONTAP una volta completata la migrazione all'ambiente Amazon EVS.
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["Crea un piano di distribuzione per Amazon EVS utilizzando il consulente per la migrazione"]
 
