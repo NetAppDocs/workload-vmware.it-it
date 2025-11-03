@@ -93,16 +93,16 @@ Se è necessario modificare i dettagli del commento per un piano di migrazione, 
 
 
 
-=== Creare un report PDF di un piano di migrazione
+=== Creare un report PDF o CSV di un piano di migrazione
 
-Crea un report PDF con i dettagli di un piano di migrazione.
+Crea un report PDF o CSV con i dettagli di un piano di migrazione.
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 . Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.  Appare il centro di pianificazione.
-. Selezionare *Piani di migrazione*.
-. Selezionare il menu Azioni (...) per il piano di migrazione per il quale si desidera creare un report PDF e selezionare *Crea report*.
-. Inserisci un nome per il PDF del report e seleziona *Salva*.
+. Seleziona *Piani di migrazione*.
+. Selezionare il menu Azioni (...) per il piano di migrazione per il quale si desidera creare un report PDF o CSV e selezionare *Scarica piano (PDF)* o *Scarica report VM (CSV)*.
+. Inserisci un nome per il report e seleziona *Salva*.
 
 
 

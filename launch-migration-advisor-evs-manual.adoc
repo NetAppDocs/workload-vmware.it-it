@@ -13,19 +13,20 @@ summary: Accedi a NetApp Workload Factory per accedere al centro di pianificazio
 [role="lead"]
 Accedi a NetApp Workload Factory per accedere al centro di pianificazione VMware.  Da lì, puoi creare manualmente un piano di distribuzione o un piano di migrazione per Amazon EVS personalizzato in base alle tue esigenze.
 
-Tieni presente che per accedere a Workload Factory è necessario disporre di un nome utente e di una password.  Se non hai accesso, crea un account ora.  Vedi le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"] .
-
-
-
-== Crea un piano di distribuzione specificando manualmente i requisiti ambientali
-
 È possibile specificare manualmente i requisiti per le macchine virtuali in Amazon Elastic VMware Service e utilizzare i file system Amazon FSx for NetApp ONTAP personalizzati come datastore esterni.
 
-.Requisiti
+
+
+== Requisiti
+
+* Per accedere a Workload Factory è necessario disporre di un nome utente e di una password.  Se non hai accesso, crea un account ora.  Vedi le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"] .
 * È necessario disporre di un abbonamento ad Amazon Elastic VMware Service.
 
 
-.Fasi
+
+
+== Fasi
+
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 . Facoltativamente, se si accede a Workload Factory dalla console di Workload Factory, dal riquadro dei carichi di lavoro VMware, selezionare *VMware Planning Center* e quindi *VMware Planning Center*.  Viene visualizzato il centro di pianificazione VMware.
 . Seleziona *Crea manualmente il piano EVS*.
@@ -46,7 +47,10 @@ Tieni presenti i seguenti requisiti e raccomandazioni sulle prestazioni per la m
 +
 Per impostazione predefinita, Workload Factory salva il piano di migrazione nel centro di pianificazione.  È possibile deselezionare questa opzione nella parte superiore della pagina.
 
-. Facoltativamente, quando sei soddisfatto del piano di migrazione, puoi scaricare i dettagli del piano come documento PDF selezionando *Esporta piano (PDF)*.
+. Facoltativamente, puoi esportare il piano di migrazione come file PDF o CSV selezionando *Gestisci piano* in alto a destra della pagina e quindi *Scarica un report (.pdf)* o *Scarica distribuzione di archiviazione VM (.csv)*.
++
+Il file .csv crea una mappa di tutte le VM incluse nel piano di migrazione, insieme ai volumi di archiviazione assegnati.
+
 . Quando sei pronto per effettuare il provisioning del piano di distribuzione, seleziona *Provisioning*.
 
 

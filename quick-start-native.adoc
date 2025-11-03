@@ -19,9 +19,15 @@ Prima di iniziare, è necessario conoscere https://docs.netapp.com/us-en/workloa
 [role="quick-margin-para"]
 Avrai bisogno di https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["creare un account con Workload Factory"^] e accedi utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Aggiungi credenziali e autorizzazioni AWS al tuo account
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"]Aggiungi credenziali e autorizzazioni
 [role="quick-margin-para"]
-Puoi utilizzare Workload Factory in modalità _Basic_ senza aggiungere credenziali per accedere al tuo account AWS. L'aggiunta delle credenziali AWS a Workload Factory in modalità _sola lettura_ o _lettura/scrittura_ fornisce al tuo account Workload Factory le autorizzazioni necessarie per creare e gestire i file system FSx for ONTAP e per distribuire e gestire i carichi di lavoro all'interno di Amazon EC2.
+Scegli il https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["politiche di autorizzazione"] per soddisfare le tue esigenze.
+
+[role="quick-margin-para"]
+Se si sceglie di non concedere le autorizzazioni, è possibile iniziare a utilizzare Workload Factory for Databases per copiare campioni di codice parzialmente completati.
+
+[role="quick-margin-para"]
+Se scegli di concedere le autorizzazioni, dovrai https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["aggiungere manualmente le credenziali a un account"] che include la selezione delle funzionalità del carico di lavoro, come database e intelligenza artificiale, e la creazione di policy IAM per le autorizzazioni richieste.
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Informazioni su come aggiungere credenziali e autorizzazioni"^].

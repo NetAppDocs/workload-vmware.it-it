@@ -13,19 +13,20 @@ summary: Dal centro di pianificazione VMware, puoi avviare il consulente per la 
 [role="lead"]
 Dal centro di pianificazione VMware, puoi avviare il consulente per la migrazione di Amazon EVS per creare un piano di migrazione personalizzato in base alle tue esigenze.
 
-Tieni presente che per accedere a Workload Factory è necessario disporre di un nome utente e di una password.  Se non hai accesso, crea un account ora.  Vedi le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"] .
-
-
-
-== Creare un piano di distribuzione utilizzando il Migration Advisor
-
 È possibile creare un piano di distribuzione per migrare le macchine virtuali su Amazon Elastic VMware Service e utilizzare i file system Amazon FSx for NetApp ONTAP personalizzati come datastore esterni.  Le opzioni disponibili nel consulente per la migrazione potrebbero variare a seconda dello strumento utilizzato per raccogliere i dati di inventario delle VM.
 
-.Requisiti
+
+
+== Requisiti
+
+* Per accedere a Workload Factory è necessario disporre di un nome utente e di una password.  Se non hai accesso, crea un account ora.  Vedi le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"] .
 * È necessario disporre di un abbonamento ad Amazon Elastic VMware Service.
 
 
-.Fasi
+
+
+== Fasi
+
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
 . Facoltativamente, se si accede a Workload Factory dalla console di Workload Factory, dal riquadro dei carichi di lavoro VMware, selezionare *VMware Planning Center* e quindi *VMware Planning Center*.  Viene visualizzato il centro di pianificazione VMware.
 . Selezionare dall'elenco un inventario di VM che si desidera utilizzare per creare un piano di distribuzione e selezionare *Avvia pianificazione* nella riga.
@@ -91,7 +92,7 @@ Nell'elenco delle VM è possibile selezionare quali tipi di informazioni sulle V
 [discrete]
 ===== Progetto
 
-. Nella pagina *Assegnazione dell'archiviazione dell'istanza ClassReview*, rivedere le informazioni sulla VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati come parte della distribuzione, quindi selezionare *Avanti*.
+* Nella pagina *Assegnazione dell'archiviazione dell'istanza ClassReview*, rivedere le informazioni sulla VM, le regole di classificazione dei volumi, le assegnazioni dei volumi e l'elenco dei volumi che verranno migrati come parte della distribuzione, quindi selezionare *Avanti*.
 
 
 [discrete]
@@ -103,6 +104,10 @@ In cima alla pagina sono previsti i risparmi mensili per FSX per i file system O
 
 +
 Per impostazione predefinita, il piano di migrazione viene salvato automaticamente nell'elenco dei piani nel centro di pianificazione.
+
+. Facoltativamente, puoi esportare il piano di migrazione come file PDF o CSV selezionando *Gestisci piano* in alto a destra della pagina e quindi *Scarica un report (.pdf)* o *Scarica distribuzione di archiviazione VM (.csv)*.
++
+Il file .csv crea una mappa di tutte le VM incluse nel piano di migrazione, insieme ai volumi di archiviazione assegnati.
 
 . Quando sei pronto a procedere con il piano, seleziona *Provision* per iniziare a distribuire il file system Amazon FSx for NetApp ONTAP consigliato.
 
