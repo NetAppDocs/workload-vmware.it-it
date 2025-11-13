@@ -13,7 +13,7 @@ summary: Inizia con VMware Migration Advisor per spostare la tua infrastruttura 
 [role="lead"]
 Inizia con VMware Migration Advisor per spostare la tua infrastruttura attuale su Amazon EVS utilizzando Amazon FSx for ONTAP come datastore NFS esterni.
 
-Prima di iniziare, è necessario conoscere https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modalità operative"^] .
+Prima di iniziare, è necessario comprendere quanto segue: https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [autorizzazioni per NetApp Workload Factory^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"]Accedi a Workload Factory
 [role="quick-margin-para"]

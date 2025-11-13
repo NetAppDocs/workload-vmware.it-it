@@ -19,17 +19,17 @@ summary: È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o
 --
 RVTools è un'applicazione Windows che interagisce con vCenter e ESX Server (da 5.x a 8,0) per acquisire informazioni sugli ambienti virtuali VMware. Raccoglie informazioni su VM, CPU, memoria, dischi, cluster, host ESX, datastore e altro ancora. È possibile esportare queste informazioni in un file xlsx da utilizzare con il Migration ADVISOR.
 
-https://www.robware.net/home["Ulteriori informazioni su RVTools"^]
+https://www.dell.com/en-us/shop/vmware/sl/rvtools["Ulteriori informazioni su RVTools"^]
 
 .Fasi
-. Scaricare e installare RVTools 4.4.2 o versione successiva da https://www.robware.net/download["Sito Web RVTools"^]
+. Scarica e installa RVTools 4.4.2 o versione successiva da https://www.dell.com/en-us/shop/vmware/sl/rvtools["Sito Web RVTools"^]
 . Avviare RVTools e accedere al vCenter Server di destinazione.
 +
 In questo modo verranno acquisite le informazioni su vCenter Server.
 
 . Esportare le informazioni VMware in un file xlsx o xls.
 +
-Per https://resources.robware.net/resources/prod/RVTools.pdf["Documentazione di RVTools"^] ulteriori informazioni, vedere il capitolo "parametri della riga di comando" nella.
+Vedere il capitolo sui "parametri della riga di comando" nel https://www.dell.com/en-us/shop/vmware/sl/rvtools["Documentazione di RVTools"^] per i dettagli.
 
 
 
