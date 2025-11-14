@@ -13,8 +13,6 @@ summary: È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o
 [role="lead"]
 È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o RVTools per acquisire le configurazioni VM correnti. Si consiglia di utilizzare lo script di raccolta VM di Migration ADVISOR perché raccoglie sia i dati di configurazione VM che i dati sulle prestazioni per il piano più accurato.
 
-Se si prevede di distribuire un nuovo sistema basato su un piano di distribuzione esistente salvato in precedenza localmente, è possibile ignorare questo passaggio e selezionare il piano di distribuzione esistente. link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["Scopri come utilizzare un piano esistente per creare un nuovo piano"].
-
 [role="tabbed-block"]
 ====
 .Utilizzare lo script di raccolta VM di Migration ADVISOR

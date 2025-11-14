@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">È possibile utilizzare lo script di raccolta VM di Migration ADVISOR o RVTools per acquisire le configurazioni VM correnti. Si consiglia di utilizzare lo script di raccolta VM di Migration ADVISOR perché raccoglie sia i dati di configurazione VM che i dati sulle prestazioni per il piano più accurato.</block>
-  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">Scopri come utilizzare un piano esistente per creare un nuovo piano</block>
-  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">Se si prevede di distribuire un nuovo sistema basato su un piano di distribuzione esistente salvato in precedenza localmente, è possibile ignorare questo passaggio e selezionare il piano di distribuzione esistente. <block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>.</block>
   <block id="c423127be094663f098066c3efa8a37a" category="open-title">Utilizzare lo script di raccolta VM di Migration ADVISOR</block>
   <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">Lo script di raccolta delle VM del Migration ADVISOR di NetApp raccoglie le informazioni di configurazione delle VM dal vCenter in modo simile a quanto raccolto da RVTools, tuttavia acquisisce i dati correnti relativi alle performance delle VM per fornire IOPS in lettura e scrittura e statistiche di throughput effettivi.</block>
   <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">È necessario avviare Migration ADVISOR per copiare lo script di raccolta VM di Migration ADVISOR dalla finestra Codebox.</block>
@@ -154,8 +152,6 @@
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Chiudi caso*: Fornisci i dettagli sul motivo per cui stai chiudendo il caso e seleziona *Chiudi caso*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Una schermata che mostra le azioni che è possibile eseguire dopo aver selezionato il menu nell'ultima colonna della tabella.</block>
   <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">Per implementare un sistema nel cloud sulla base di un piano di implementazione esistente che abbia requisiti simili.</block>
-  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">qui</block>
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">Creare un piano di implementazione basato su un ambiente vSphere on-premise</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">Puoi migrare le attuali configurazioni delle macchine virtuali negli ambienti vSphere on-premise su macchine virtuali in VMware Cloud su AWS e utilizzare file system Amazon FSX per NetApp ONTAP customizzati come datastore esterni.</block>
@@ -327,9 +323,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">Si noti che se si seleziona una quantità inferiore al 20% non sarà possibile creare snapshot di volume per la protezione e backup a lungo termine.</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">*Protezione snapshot VM*: Abilitare questa opzione per proteggere le VM con snapshot.</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">Nella parte superiore della pagina vengono descritti i costi mensili per tutte le macchine virtuali distribuite e per i file system FSX per ONTAP. È possibile espandere ogni sezione per visualizzare i dettagli relativi a "Configurazione del file system Amazon FSX consigliata per ONTAP", "analisi dei costi stimata", "Configurazione del volume", "ipotesi di dimensionamento" e "Avvertenze tecniche".</block>
-  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">Durante la migrazione a VMware Cloud, puoi utilizzare il Migration ADVISOR per creare un piano di implementazione per i seguenti scenari:</block>
-  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">Per migrare il tuo attuale ambiente vSphere on-premise nel cloud VMware.</block>
-  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">*Average data Reduction Ratio* (rapporto medio di riduzione dei dati): Scegliere tra i tre valori comuni di selezione per la riduzione dei dati. Selezionare "1:1 - Nessuna riduzione", "1:1,25 - riduzione del 20%" o "1:1,5 - riduzione del 33%".</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">*VSAN Fault Tolerance*: Selezionare il livello di tolleranza di errore richiesto per le VM. È possibile scegliere "Auto" (automatico), che è consigliato, o tra una varietà di livelli RAID.</block>
   <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">Il passaggio delle parti dell'infrastruttura corrente ad Amazon EC2 o a VMware Cloud su AWS utilizzando Amazon FSX per ONTAP come datastore NFS esterni offre i seguenti benefici:</block>
@@ -767,4 +760,5 @@
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">Scarica e installa RVTools 4.4.2 o versione successiva da<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">Documentazione di RVTools disponibile nella sezione Risorse</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">Vedere il capitolo sui "parametri della riga di comando" nel<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> per i dettagli.</block>
+  <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">Quando si esegue la migrazione a VMware Cloud, è possibile utilizzare il consulente per la migrazione per migrare l'attuale ambiente vSphere on-premise a VMWare Cloud.</block>
 </blocks>

@@ -13,11 +13,7 @@ summary: Accedi a NetApp Workload Factory per utilizzare il consulente per la mi
 [role="lead"]
 Accedi a NetApp Workload Factory per utilizzare il consulente per la migrazione VMware.  Seguirai i passaggi della procedura guidata per creare un piano di distribuzione o un piano di migrazione personalizzato in base alle tue esigenze.
 
-Durante la migrazione a VMware Cloud, puoi utilizzare il Migration ADVISOR per creare un piano di implementazione per i seguenti scenari:
-
-* <<Creare un piano di implementazione basato su un ambiente vSphere on-premise,Per migrare il tuo attuale ambiente vSphere on-premise nel cloud VMware.>>
-* <<Create a deployment plan based on an existing plan,Per implementare un sistema nel cloud sulla base di un piano di implementazione esistente che abbia requisiti simili.>>
-
+Quando si esegue la migrazione a VMware Cloud, è possibile utilizzare il consulente per la migrazione per migrare l'attuale ambiente vSphere on-premise a VMWare Cloud.
 
 Tieni presente che per accedere a Workload Factory è necessario disporre di un nome utente e di una password.  Se non hai accesso, crea un account ora.  Vedi le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"] .
 
