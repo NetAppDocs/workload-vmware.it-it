@@ -468,14 +468,11 @@
   <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">Segui questi passaggi per scoprire i potenziali risparmi derivanti da una migrazione pianificata verso un ambiente Amazon EVS.</block>
   <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">Prima di procedere, leggi l'informativa in fondo al calcolatore di risparmio per capire meglio come vengono calcolate le stime dei prezzi.</block>
   <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">Dal riquadro dei carichi di lavoro VMware, seleziona *Esplora risparmi* e poi *Amazon Elastic VMware Service (EVS)*.  Viene visualizzato il calcolatore dei risparmi.</block>
-  <block id="d8307a61b3e78cafe3dd2ba07854d83f" category="paragraph">Il riquadro *Preferenze ambiente* fornisce cursori che puoi regolare in base alle esigenze del tuo ambiente.</block>
   <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">Regola i seguenti cursori secondo necessità per visualizzare i calcoli del risparmio in tempo reale per i valori scelti.  Se si utilizza una tastiera, è possibile apportare piccole modifiche utilizzando i tasti freccia:</block>
   <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*CPU fisica richiesta (conteggio)*</block>
   <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*Memoria fisica richiesta (GiB)*</block>
   <block id="739cbbb6eaaeacf2d24f8a62a80b3ffe" category="list-text">*Archiviazione VM richiesta (TiB)*</block>
-  <block id="24bfaef9fff964e64a0151dab805a3f3" category="list-text">*Piano di fatturazione EVS*</block>
   <block id="7f2cda45c5fe4fce268e76d710242e93" category="inline-link-macro">creare un piano di distribuzione</block>
-  <block id="daf54dbe224e77cbcdfb24a59c9f9099" category="list-text">Per utilizzare il consulente per la migrazione<block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> per un ambiente Amazon EVS, seleziona *Crea una valutazione dettagliata*.</block>
   <block id="27cecac020f0eb3b6379d7eaa39d9edb" category="list-text">Selezionare *Chiudi* per chiudere il calcolatore TCO.</block>
   <block id="f38938fbcb9223342e98b8ed0b99af19" category="list-text">Nella sezione "Allegato al cluster EVS", inserisci le seguenti informazioni:</block>
   <block id="a1a0d005c4592b98541d6f6fb0d51c8e" category="list-text">*Dettagli della console EVS Cluster vSphere*: immettere l'indirizzo IP o il nome di dominio completo del server VMware vCenter che deve connettersi ad Amazon EVS.</block>
@@ -761,4 +758,13 @@
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">Documentazione di RVTools disponibile nella sezione Risorse</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">Vedere il capitolo sui "parametri della riga di comando" nel<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> per i dettagli.</block>
   <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">Quando si esegue la migrazione a VMware Cloud, è possibile utilizzare il consulente per la migrazione per migrare l'attuale ambiente vSphere on-premise a VMWare Cloud.</block>
+  <block id="e738192b7a8dc90f6d5e566ceb909da3" category="doc">Calcola il risparmio sui costi della migrazione ad Amazon Elastic VMware Service per regioni specifiche</block>
+  <block id="d4a40d01192a627963ffd40503ef4713" category="paragraph">Ora puoi esplorare il valore delle diverse opzioni di distribuzione per la migrazione al cloud, ottimizzare gli sforzi investiti nella valutazione delle soluzioni e approfondire le soluzioni che hanno il potenziale per offrire valore e risparmi nel cloud.</block>
+  <block id="de480346f69aff69cc4e4e1e5d52ea98" category="paragraph">È inoltre possibile esaminare i risparmi di core vCPU ottenibili utilizzando FSx per ONTAP per una distribuzione EVS.</block>
+  <block id="389870bd93c88ff4cb5e7f6216054ce2" category="paragraph"><block ref="389870bd93c88ff4cb5e7f6216054ce2" category="inline-link-rx"></block></block>
+  <block id="0031d357ae0128729164b1d7b297533b" category="paragraph">Nel riquadro *Preferenze ambiente*, puoi selezionare la regione di distribuzione EVS e adattare di conseguenza le previsioni di TCO e risparmio.</block>
+  <block id="66171c1365145e2d4c36586982cac308" category="list-text">Dall'elenco a discesa *Regione*, seleziona la regione di distribuzione EVS per calcolare i risparmi.</block>
+  <block id="6706b7bf4c170433cc0ab592c9e594f8" category="list-text">In *Piano di fatturazione EVS*, seleziona il piano che stai utilizzando.</block>
+  <block id="74ce259d0d76a9e0cd46f6300bcc2371" category="list-text">Per utilizzare il consulente per la migrazione <block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> per un ambiente Amazon EVS, seleziona *Pianifica migrazione EVS*.</block>
+  <block id="815e75619b370a1b845eccec6979ed74" category="section-title">27 novembre 2025</block>
 </blocks>

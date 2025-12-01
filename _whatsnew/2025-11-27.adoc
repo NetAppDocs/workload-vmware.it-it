@@ -1,0 +1,13 @@
+= Calcola il risparmio sui costi della migrazione ad Amazon Elastic VMware Service per regioni specifiche
+:allow-uri-read: 
+
+
+
+
+=== Calcola il risparmio sui costi della migrazione ad Amazon Elastic VMware Service per regioni specifiche
+
+Ora puoi esplorare il valore delle diverse opzioni di distribuzione per la migrazione al cloud, ottimizzare gli sforzi investiti nella valutazione delle soluzioni e approfondire le soluzioni che hanno il potenziale per offrire valore e risparmi nel cloud.
+
+È inoltre possibile esaminare i risparmi di core vCPU ottenibili utilizzando FSx per ONTAP per una distribuzione EVS.
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["Scopri i risparmi per Amazon Elastic VMware Service con NetApp Workload Factory"]
