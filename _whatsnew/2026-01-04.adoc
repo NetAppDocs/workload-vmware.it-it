@@ -1,0 +1,9 @@
+= Chiedimi l'integrazione della home page dell'assistente AI
+:allow-uri-read: 
+
+
+
+
+=== Chiedimi l'integrazione della home page dell'assistente AI
+
+La home page della console Workload Factory incorpora l'assistente Chiedimi AI, che ti consente di porre domande sul tuo spazio di archiviazione, ottenere informazioni personalizzate direttamente dal tuo ambiente e fare riferimento a conversazioni precedenti. Puoi interagire con Ask me per comprendere i tuoi carichi di lavoro, risolvere problemi e scoprire di più su Workload Factory, il tutto senza uscire dalla console.
