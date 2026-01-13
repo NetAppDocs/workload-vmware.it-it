@@ -33,7 +33,10 @@ Quando sei pronto a utilizzare Workload Factory, puoi caricare i dati dell'inven
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.  Appare il centro di pianificazione.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
 . Selezionare il menu Azioni (...) per il set di dati che si desidera rinominare e selezionare *Rinomina*.
 . Inserisci un nuovo nome per il set di dati e seleziona *Salva*.
 
@@ -46,7 +49,10 @@ Quando un set di dati non è più necessario, è possibile eliminarlo in qualsia
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.  Appare il centro di pianificazione.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
 . Selezionare il menu Azioni (...) per il set di dati che si desidera eliminare e selezionare *Elimina*.
 . Selezionare *Elimina* per confermare l'azione.
 
@@ -65,8 +71,11 @@ Puoi selezionare un piano di migrazione e predisporlo in modo che le VM vengano 
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.  Appare il centro di pianificazione.
-. Selezionare il menu *Piani di migrazione*.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
+. Seleziona *Piani di migrazione*.
 . Selezionare il menu Azioni (...) per il piano di migrazione che si desidera predisporre e selezionare *Provisioning*.
 . A seconda del piano di migrazione, fare riferimento alle istruzioni per distribuire il file system:
 +
@@ -85,8 +94,11 @@ Se è necessario modificare i dettagli del commento per un piano di migrazione, 
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.  Appare il centro di pianificazione.
-. Selezionare *Piani di migrazione*.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
+. Seleziona *Piani di migrazione*.
 . Selezionare il menu Azioni (...) per il piano di migrazione che si desidera modificare e selezionare *Modifica commento*.
 . Inserisci un commento e seleziona *Salva*.
 
@@ -99,7 +111,10 @@ Crea un report PDF o CSV con i dettagli di un piano di migrazione.
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.  Appare il centro di pianificazione.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
 . Seleziona *Piani di migrazione*.
 . Selezionare il menu Azioni (...) per il piano di migrazione per il quale si desidera creare un report PDF o CSV e selezionare *Scarica piano (PDF)* o *Scarica report VM (CSV)*.
 . Inserisci un nome per il report e seleziona *Salva*.
@@ -113,8 +128,11 @@ Quando un piano di migrazione non è più necessario, è possibile eliminarlo in
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.  Appare il centro di pianificazione.
-. Selezionare *Piani di migrazione*.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
+. Seleziona *Piani di migrazione*.
 . Selezionare il menu Azioni (...) per il piano di migrazione che si desidera eliminare e selezionare *Elimina*.
 . Confermare l'azione selezionando *Elimina*.
 

@@ -34,10 +34,16 @@ Tenere presente che se si intende acquisire statistiche a lungo termine dalle ma
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro carichi di lavoro VMware, selezionare *valuta e pianifica*, quindi selezionare *migrazione a VMware Cloud su AWS*.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
+. Dal menu VMware, seleziona *Valuta e pianifica*, quindi seleziona *Migrazione a VMware Cloud su AWS*.
 +
 Viene visualizzata la pagina principale di VMware Migration Advisor.
 
+. Selezionare *Pianifica e crea VMC*.
+. Seleziona *Iniziamo!*. Puoi scegliere di non visualizzare più questa pagina selezionando la casella di controllo.
 . Selezionare *Crea un nuovo piano di distribuzione*, selezionare l'opzione *Usa il Data Collector VMware del Migration ADVISOR*, quindi selezionare *Avanti*.
 +
 Viene visualizzata la pagina *prepara per la migrazione a VMware Cloud su AWS*.

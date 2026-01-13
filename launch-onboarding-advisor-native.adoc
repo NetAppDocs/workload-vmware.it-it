@@ -27,7 +27,7 @@ Puoi migrare le attuali configurazioni delle macchine virtuali in ambienti vSphe
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
 +
 Viene visualizzato il centro di pianificazione.
 

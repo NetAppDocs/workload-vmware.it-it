@@ -28,7 +28,10 @@ Dal centro di pianificazione VMware, puoi avviare il consulente per la migrazion
 == Fasi
 
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Facoltativamente, se si accede a Workload Factory dalla console di Workload Factory, dal riquadro dei carichi di lavoro VMware, selezionare *VMware Planning Center* e quindi *VMware Planning Center*.  Viene visualizzato il centro di pianificazione VMware.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
 . Selezionare dall'elenco un inventario di VM che si desidera utilizzare per creare un piano di distribuzione e selezionare *Avvia pianificazione* nella riga.
 . Selezionare *EVS* dal menu a discesa visualizzato.
 +

@@ -26,7 +26,11 @@ NOTE: Prima di procedere, leggi l'informativa in fondo al calcolatore di risparm
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *Esplora risparmi* e poi *Amazon Elastic VMware Service (EVS)*.  Viene visualizzato il calcolatore dei risparmi.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
+. Dal menu VMware, seleziona *Esplora risparmi*. Viene visualizzato il calcolatore dei risparmi.
 +
 Nel riquadro *Preferenze ambiente*, puoi selezionare la regione di distribuzione EVS e adattare di conseguenza le previsioni di TCO e risparmio.
 

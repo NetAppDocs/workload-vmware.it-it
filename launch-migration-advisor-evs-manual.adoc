@@ -28,7 +28,10 @@ Accedi a NetApp Workload Factory per accedere al centro di pianificazione VMware
 == Fasi
 
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Facoltativamente, se si accede a Workload Factory dalla console di Workload Factory, dal riquadro dei carichi di lavoro VMware, selezionare *VMware Planning Center* e quindi *VMware Planning Center*.  Viene visualizzato il centro di pianificazione VMware.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
++
+Viene visualizzato il centro di pianificazione.
+
 . Seleziona *Crea manualmente il piano EVS*.
 . Inserisci i requisiti per il tuo ambiente VM.
 +

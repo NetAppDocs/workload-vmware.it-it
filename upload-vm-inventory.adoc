@@ -15,9 +15,9 @@ Prima di poter creare un piano di migrazione, è necessario caricare i dati dell
 
 .Fasi
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
-. Dal riquadro dei carichi di lavoro VMware, seleziona *VMware Planning Center*.
+. Seleziona il menu image:workloads-menu-icon.png["L'icona del menu hamburger viene utilizzata per navigare tra carichi di lavoro quali storage, eda, ai, database, vmware e amministrazione."] e quindi selezionare *VMware*.
 +
-Dal centro di pianificazione è possibile caricare i dati dell'inventario della macchina virtuale, visualizzare i caricamenti precedenti dei dati dell'inventario e pianificare una migrazione utilizzando uno qualsiasi dei set di dati dell'inventario della macchina virtuale.
+Viene visualizzato il centro di pianificazione. Dal centro di pianificazione è possibile caricare i dati dell'inventario della macchina virtuale, visualizzare i caricamenti precedenti dei dati dell'inventario e pianificare una migrazione utilizzando uno qualsiasi dei set di dati dell'inventario della macchina virtuale.
 
 . Selezionare *Carica inventario VM*.
 . Scegli quale metodo di raccolta dati utilizzare:
