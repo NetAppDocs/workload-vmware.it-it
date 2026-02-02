@@ -1,0 +1,19 @@
+= Analisi well-architected per Amazon Elastic VMware Service
+:allow-uri-read: 
+
+
+
+
+=== Analisi well-architected per Amazon Elastic VMware Service
+
+Workload Factory ora fornisce un'analisi automatizzata well-architected per i tuoi ambienti Amazon Elastic VMware Service (EVS). Le scansioni giornaliere identificano disallineamenti di configurazione e offrono raccomandazioni dettagliate per la remediation, aiutandoti a mantenere operatività, sicurezza ed efficienza dei costi ottimali.
+
+Le scansioni vengono eseguite utilizzando le API AWS—non sono necessarie credenziali vSphere o connettività vCenter. I risultati sono disponibili nella nuova scheda *Well-architected status* all'interno dei dettagli dell'ambiente EVS.
+
+Questa release include approfondimenti su:
+
+* *Stato di protezione da arresto/terminazione dell'istanza*: identifica i nodi EVS senza protezione da arresto o terminazione EC2. L'arresto o la terminazione dei nodi EVS dalla console EC2 può causare la non disponibilità o la perdita di dati della macchina virtuale.
+* *Allineamento del posizionamento delle partizioni dei nodi del cluster*: rileva disallineamenti di partizionamento che potrebbero causare perdite significative di potenza di elaborazione o tempi di inattività in caso di guasto di una partizione all'interno di una AWS Availability Zone. Ogni insight include livelli di gravità, risultati dettagliati con informazioni sulle risorse interessate e procedure di correzione dettagliate basate sulle AWS best practice.
+
+
+link:view-evs-well-architected.html["Implementare configurazioni ben architettate"]

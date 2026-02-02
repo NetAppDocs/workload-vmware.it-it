@@ -45,6 +45,12 @@ indexpage:
       url: connect-sddc-to-fsx.html
     - title: Migra i tuoi dati nella nuova infrastruttura
       url: migrate-data.html
+  - title: Amministrare e monitorare
+    links:
+    - title: Analisi della configurazione per configurazioni EVS
+      url: configuration-analysis.html
+    - title: Implementare configurazioni EVS ben architettate
+      url: view-evs-well-architected.html
   - title: Blog e community
     links:
     - title: Console NetApp

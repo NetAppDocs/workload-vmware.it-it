@@ -78,7 +78,13 @@ Il passaggio delle parti dell'infrastruttura corrente ad Amazon EC2 o a VMware C
 
 
 
-== Costo
+== Analisi well-architected per ambienti EVS
+
+La scheda Well-architected fornisce un'analisi giornaliera automatizzata degli ambienti Amazon Elastic VMware Service (EVS) per garantirne l'allineamento con le best practice di AWS e NetApp. La scheda identifica i problemi di configurazione e fornisce indicazioni dettagliate per la risoluzione, aiutandoti a mantenere operatività, sicurezza ed efficienza dei costi ottimali.
+
+Le scansioni automatiche vengono eseguite utilizzando le API AWS—non sono necessarie credenziali vSphere. I risultati sono organizzati per area di configurazione, con ogni risultato che include stato, livelli di gravità, dettagli sulle risorse interessate e procedure di correzione passo-passo.
+
+link:view-evs-well-architected.html["Implementare configurazioni EVS ben architettate in Workload Factory"]. == Costo
 
 L'utilizzo di Workload Factory per VMware non comporta alcun costo.
 
