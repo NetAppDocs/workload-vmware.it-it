@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
-summary: 'NetApp Workload Factory per VMware fornisce strumenti per spostare i dati dai sistemi locali ad Amazon EVS, VMware Cloud on AWS (VMC) o Amazon EC2.' 
+summary: 'NetApp Workload Factory per VMware fornisce strumenti per spostare i dati dai sistemi on-premises ad Amazon EVS, VMware Cloud on AWS (VMC), Amazon EC2 o Google Cloud VMware Engine.' 
 ---
 = Scopri di più su NetApp Workload Factory per VMware
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: 'NetApp Workload Factory per VMware fornisce strumenti per spostare i d
 
 
 [role="lead"]
-NetApp Workload Factory per VMware fornisce strumenti per spostare i dati dai sistemi locali ad Amazon Elastic VMware Service (EVS), VMware Cloud on AWS (VMC) o Amazon EC2.
+NetApp Workload Factory per VMware fornisce strumenti per spostare i dati dai sistemi on-premises ad Amazon Elastic VMware Service (EVS), VMware Cloud on AWS (VMC), Amazon EC2 o Google Cloud VMware Engine.
 
 
 
 == Che cos'è NetApp Workload Factory per VMware?
 
-NetApp Workload Factory per VMware offre un centro di pianificazione e consulenti per la migrazione che consentono di analizzare le attuali configurazioni delle macchine virtuali negli ambienti vSphere on-premise.  I consulenti per la migrazione generano quindi un piano per distribuire i layout VM consigliati nei cluster Amazon EVS, Amazon EC2 o VMware Cloud su AWS vSphere e utilizzare i file system Amazon FSx for NetApp ONTAP personalizzati come datastore esterni.  Il centro di pianificazione, che funge da dashboard di Workload Factory per VMware, consente di gestire i set di dati di inventario delle VM salvati e i piani di migrazione salvati, nonché di eseguire il provisioning di tutti i piani di migrazione salvati.
+NetApp Workload Factory per VMware offre un centro di pianificazione e consulenti per la migrazione che consentono di analizzare le attuali configurazioni delle macchine virtuali negli ambienti vSphere on-premises. I consulenti per la migrazione generano quindi un piano per distribuire i layout di VM consigliati su Amazon EVS, Amazon EC2, VMware Cloud on AWS vSphere cluster o Google Cloud VMware Engine, utilizzando storage cloud-native personalizzato come datastore esterni. Per gli ambienti AWS, questo include Amazon FSx for NetApp ONTAP file system. Per gli ambienti Google Cloud, questo include Google Cloud NetApp Volumes. Il centro di pianificazione, che funge da dashboard di Workload Factory per VMware, consente di gestire i set di dati di inventario delle VM salvati e i piani di migrazione salvati, nonché di effettuare il provisioning di qualsiasi piano di migrazione salvato.
 
-Amazon FSx for NetApp ONTAP è un datastore NFS esterno basato sul file system ONTAP di NetApp che può essere collegato alle istanze Amazon EVS o Amazon EC2 o ai cluster VMware Cloud on AWS vSphere.  Non è necessario aggiungere altri host per aumentare lo spazio di archiviazione disponibile; è sufficiente utilizzare FSx per volumi ONTAP come datastore esterni per integrare i datastore vSAN.  Ciò fornisce un'infrastruttura di storage virtualizzata, flessibile e ad alte prestazioni, che si adatta in modo indipendente alle risorse di elaborazione.
+Amazon FSx for NetApp ONTAP è un datastore NFS esterno basato sul file system ONTAP di NetApp che può essere collegato a istanze Amazon EVS o Amazon EC2 o a cluster VMware Cloud on AWS vSphere. Analogamente, Google Cloud NetApp Volumes fornisce datastore NFS esterni per ambienti Google Cloud VMware Engine. Non è necessario aggiungere altri host per aumentare lo storage disponibile; basta utilizzare questi volumi di storage cloud-native come datastore esterni per integrare i datastore vSAN. Questo offre un'infrastruttura di storage virtualizzata flessibile e dalle performance elevate, che si scala indipendentemente dalle risorse di elaborazione.
 
 Per ulteriori informazioni su Workload Factory, fare riferimento a https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["Panoramica di Workload Factory"^] .
 
@@ -27,7 +27,7 @@ Per ulteriori informazioni su Workload Factory, fare riferimento a https://docs.
 
 == Come funzionano i consulenti per la migrazione VMware
 
-I consulenti per la migrazione possono aiutarti a spostare macchine virtuali (VM) locali e i relativi dati, in esecuzione su qualsiasi datastore supportato da VMware, su datastore Amazon EVS, Amazon EC2 o VMware Cloud, che includono datastore NFS supplementari su un file system FSx for ONTAP .
+I consulenti per la migrazione possono aiutarti a spostare macchine virtuali (VM) locali e i relativi dati, in esecuzione su qualsiasi datastore supportato da VMware, su datastore Amazon EVS, Amazon EC2, VMware Cloud o Google Cloud VMware Engine, che includono datastore NFS supplementari su un file system FSx for ONTAP o Google Cloud NetApp Volumes.
 
 È possibile collegare fino a quattro (4) volumi FSX per ONTAP a un singolo cluster vSphere su VMware Cloud su AWS.
 
@@ -38,19 +38,19 @@ I consulenti per la migrazione possono aiutarti a spostare macchine virtuali (VM
 I consulenti per la migrazione forniscono le seguenti funzionalità:
 
 * Analizza le configurazioni correnti delle macchine virtuali on-premise
-* Determina quali VM migrare su Amazon EC2, Amazon EVS o VMware Cloud su AWS
-* Identifica lo spazio richiesto in FSX per i volumi ONTAP da utilizzare come datastore esterni di macchine virtuali
+* Determina quali VM migrare su Amazon EC2, Amazon EVS, VMware Cloud on AWS o Google Cloud VMware Engine
+* Identificare lo spazio richiesto sui volumi di storage cloud-native da utilizzare come datastore esterni VM
 * Esaminare il rapporto risultante per comprendere le fasi di distribuzione
-* Eseguire l'implementazione effettiva
+* Eseguire la distribuzione effettiva (per Amazon EC2, Amazon EVS e VMware Cloud on AWS)
 
 
-Il consulente per la migrazione supporta la pianificazione della configurazione per una singola istanza Amazon EVS o Amazon EC2 o un cluster VMware Cloud on AWS connesso a un singolo file system FSx for ONTAP .
+Il consulente per la migrazione supporta la pianificazione della configurazione per un singolo Amazon EVS, Amazon EC2 o cluster VMware Cloud on AWS connesso ai file system Amazon FSx for NetApp ONTAP, o un cluster Google Cloud VMware Engine connesso a Google Cloud NetApp Volumes.
 
 
 
 == Vantaggi dell'utilizzo dei consulenti per la migrazione
 
-Il passaggio delle parti dell'infrastruttura corrente ad Amazon EC2 o a VMware Cloud su AWS utilizzando Amazon FSX per ONTAP come datastore NFS esterni offre i seguenti benefici:
+La transizione di parti della tua infrastruttura attuale ad Amazon EC2, Amazon EVS, VMware Cloud on AWS o Google Cloud VMware Engine utilizzando storage cloud-native come datastore NFS esterni offre i seguenti vantaggi:
 
 * Ottimizzazione dei costi grazie al disaccoppiamento di host e storage e all'efficienza dei dati avanzata
 * Possibilità di aumentare la capacità dello storage in base alle esigenze senza acquistare ulteriori istanze di host

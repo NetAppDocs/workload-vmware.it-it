@@ -149,4 +149,5 @@ Gestisci i dati dell'inventario delle VM caricati dal centro di pianificazione o
 * link:launch-onboarding-advisor.html["Creare un piano di distribuzione Amazon VMware Cloud"]
 * link:launch-migration-advisor-evs.html["Creare un piano di distribuzione di Amazon Elastic VMware Service"]
 * link:launch-onboarding-advisor-native.html["Creare un piano di distribuzione Amazon EC2"]
+* link:launch-migration-advisor-gcve.html["Crea un piano di distribuzione di Google Cloud VMware Engine"]
 
