@@ -1,0 +1,13 @@
+= Supporto per l'istanza i7i.metal-24xl nel calcolatore TCO di EVS
+:allow-uri-read: 
+
+
+
+
+=== Supporto per l'istanza i7i.metal-24xl nel calcolatore TCO di EVS
+
+Il calcolatore TCO di EVS ora supporta le istanze EC2 AWS i7i.metal-24xl come host del cluster. Rispetto alle configurazioni i4i.metal, queste istanze riducono il costo iniziale di EVS di circa 33% per il compute e 25% per lo storage vSAN.
+
+Il calcolatore confronta automaticamente entrambi i tipi di istanza e seleziona l'opzione più conveniente. Una nuova sezione di confronto mostra le configurazioni degli host EVS affiancate, rendendo più facile trovare la configurazione migliore per le tue esigenze.
+
+link:calculate-evs-savings.html["Calcola il risparmio stimato per EVS"]
