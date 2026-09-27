@@ -4,6 +4,7 @@
 
 
 
+[[migrate-to-amazon-ec2]]
 === Migrazione ad Amazon EC2
 
 Workload factory per VMware ora supporta la migrazione ad Amazon EC2 utilizzando il Migration ADVISOR di VMware.

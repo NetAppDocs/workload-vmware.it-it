@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: view-evs-well-architected.html 
-keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: Esaminare lo stato di buona architettura delle configurazioni EVS in Workload Factory e seguire le linee guida di correzione basate su AWS e NetApp best practice. 
 ---
 = Implementare configurazioni EVS ben architettate
@@ -15,6 +15,7 @@ Utilizza l'analisi della configurazione di Workload Factory per verificare lo st
 
 
 
+[[about-this-task]]
 == Informazioni su questa attività
 
 Le scansioni giornaliere automatiche di tutti gli ambienti EVS rilevati tramite le API AWS analizzano la configurazione EVS e identificano potenziali problemi che potrebbero influire su disponibilità, resilienza, sicurezza o ottimizzazione dei costi. I risultati sono organizzati per area di configurazione, con ogni risultato che include stato, livelli di gravità, dettagli sulle risorse interessate e procedure di risoluzione dettagliate passo dopo passo.
@@ -29,6 +30,7 @@ Le caratteristiche principali includono:
 
 
 
+[[understanding-well-architected-insights]]
 === Comprendere le well-architected insights
 
 La scheda Well-architected mostra quanto segue:
@@ -43,6 +45,7 @@ La scheda Well-architected mostra quanto segue:
 
 
 
+[[scan-frequency]]
 === Frequenza di scansione
 
 Le scansioni well-architected vengono eseguite automaticamente per tutte le configurazioni EVS rilevate. Dettagli chiave sulla pianificazione delle scansioni:
@@ -58,6 +61,7 @@ NOTE: L'esecuzione on-demand di scansioni well-architected non è attualmente su
 
 
 
+[[before-you-begin]]
 == Prima di iniziare
 
 * È necessario avere https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["aggiunte credenziali AWS"^] le autorizzazioni _Visualizzazione, pianificazione e analisi_ per i carichi di lavoro VMware.
@@ -66,6 +70,7 @@ NOTE: L'esecuzione on-demand di scansioni well-architected non è attualmente su
 
 
 
+[[access-the-well-architected-status-tab]]
 == Accedi alla scheda dello stato well-architected
 
 .Fasi
@@ -89,10 +94,12 @@ Vengono visualizzati i seguenti elementi:
 
 
 
+[[view-well-architected-assessments]]
 == Visualizza valutazioni well-architected
 
 
 
+[[cluster-node-management]]
 === Gestione dei nodi del cluster
 
 Questo valuta se i nodi del cluster EVS hanno una protezione di arresto e terminazione EC2 configurata in modo appropriato.
@@ -137,6 +144,7 @@ Per risolvere questo problema, abilita la protezione di arresto e terminazione p
 
 
 
+[[evs-environment-resiliency]]
 === Resilienza dell'ambiente EVS
 
 Questo valuta se i nodi del cluster EVS sono distribuiti correttamente tra i gruppi di posizionamento delle partizioni.
@@ -193,6 +201,7 @@ Quando si crea o si espande un ambiente EVS, eseguire il provisioning di tutti i
 
 
 
+[[whats-next]]
 == Cosa c'è dopo
 
 Dopo aver esaminato le tue well-architected insights e aver implementato le modifiche consigliate:

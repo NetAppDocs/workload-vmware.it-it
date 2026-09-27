@@ -17,6 +17,7 @@ Accedi a NetApp Workload Factory per accedere al centro di pianificazione VMware
 
 
 
+[[requirements]]
 == Requisiti
 
 * Per accedere a Workload Factory è necessario disporre di un nome utente e di una password.  Se non hai accesso, crea un account ora.  Vedi le istruzioni https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["qui"] .
@@ -25,6 +26,7 @@ Accedi a NetApp Workload Factory per accedere al centro di pianificazione VMware
 
 
 
+[[steps]]
 == Fasi
 
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .

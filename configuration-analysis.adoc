@@ -23,22 +23,27 @@ Le principali funzionalità includono:
 
 
 
+[[how-it-works]]
 == Come funziona
 
 Workload Factory analizza quotidianamente i carichi di lavoro in esecuzione sulle implementazioni dei file system Amazon FSx for NetApp ONTAP. L'analisi fornisce stato ben architettato, approfondimenti e raccomandazioni.
 
 Al termine dell'analisi giornaliera, le configurazioni vengono visualizzate come "ottimizzate" o "non ottimizzate" nella dashboard Well-architected per la distribuzione. Troverai il punteggio di ottimizzazione totale, i problemi di configurazione per categoria e un elenco di problemi di configurazione e raccomandazioni. Puoi esaminare le raccomandazioni relative ai problemi di configurazione. Alcuni problemi possono essere risolti automaticamente da Workload Factory, mentre altri richiedono un intervento manuale. In questo caso, Workload Factory fornisce istruzioni dettagliate per aiutarti a implementare le modifiche consigliate.
 
-È possibile ignorare l'analisi delle configurazioni che non si applicano ai propri ambienti. In questo modo si evitano avvisi non necessari e risultati di ottimizzazione imprecisi. Quando si ignora un'analisi di configurazione specifica, Workload Factory non include la configurazione nel punteggio di ottimizzazione totale.
+Puoi ignorare l'analisi delle configurazioni che non si applicano ai tuoi ambienti. Questo evita avvisi non necessari e risultati di ottimizzazione imprecisi.
+
+Puoi anche creare regole personalizzate in linguaggio naturale per convalidare i tuoi ambienti rispetto agli standard della tua organizzazione e alle best practice di NetApp. Prova le regole con una simulazione, poi pianifica la loro esecuzione su tutti i tuoi ambienti. link:https://docs.netapp.com/us-en/console-well-architected/learn-custom-rules.html["Scopri di più sulle regole personalizzate"^].
 
 
 
+[[why-it-matters]]
 == Perché è importante
 
 Workload Factory applica le best practice ad ambienti di storage, database e VMware di grandi dimensioni, combinando valutazioni continue con suggerimenti e interventi correttivi. Le correzioni automatiche applicate nella console di Workload Factory riducono gli errori umani, garantiscono una gestione uniforme e preservano prestazioni e affidabilità nelle infrastrutture di workload.
 
 
 
+[[analysis-requirements]]
 == Requisiti di analisi
 
 Per un'analisi completa della configurazione, è necessario eseguire le seguenti operazioni:
@@ -56,6 +61,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Sc
 
 
 
+[[best-practices-and-recommendations-for-evs-workloads]]
 == Best practice e raccomandazioni per i carichi di lavoro EVS
 
 Workload Factory fornisce best practice e raccomandazioni per l'operatività di carichi di lavoro Amazon Elastic VMware Service (EVS) ben progettati. L'analisi well-architected valuta le configurazioni EVS per contribuire a garantire che gli ambienti VMware siano ottimizzati per affidabilità, sicurezza, eccellenza operativa, ottimizzazione dei costi ed efficienza delle prestazioni. Dalla scheda dello stato well-architected in VMware, troverai approfondimenti e raccomandazioni per aiutarti a implementare le best practice well-architected per i tuoi ambienti EVS.
@@ -64,6 +70,7 @@ L'analisi well-architected categorizza le configurazioni nei seguenti pilastri d
 
 
 
+[[reliability]]
 === Affidabilità
 
 L'affidabilità garantisce che i carichi di lavoro svolgano le funzioni previste in modo corretto e coerente, anche in presenza di interruzioni.
@@ -76,6 +83,7 @@ Assicuratevi che i nodi del cluster EVS siano correttamente distribuiti tra i gr
 
 
 
+[[security]]
 === Sicurezza
 
 La sicurezza si concentra sulla protezione di dati, sistemi e asset attraverso valutazioni del rischio e strategie di mitigazione.

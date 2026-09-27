@@ -17,6 +17,7 @@ Se il calcolatore dei risparmi determina che lo storage più conveniente è FSx 
 
 
 
+[[explore-savings-for-evs-environments]]
 == Esplora i risparmi per gli ambienti EVS
 
 Segui questi passaggi per scoprire i potenziali risparmi derivanti da una migrazione pianificata verso un ambiente Amazon EVS.

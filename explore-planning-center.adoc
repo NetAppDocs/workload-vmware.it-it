@@ -15,18 +15,21 @@ Il centro di pianificazione VMware consente di caricare nuovi dati di inventario
 
 
 
+[[manage-vm-inventory-data]]
 == Gestire i dati dell'inventario delle VM
 
 Utilizzare il centro di pianificazione per creare e gestire i dati di inventario delle VM.
 
 
 
+[[upload-vm-inventory-data]]
 === Carica i dati dell'inventario della VM
 
 Quando sei pronto a utilizzare Workload Factory, puoi caricare i dati dell'inventario delle VM per esplorare le opzioni di migrazione verso gli ambienti Amazon AWS.  Fare riferimento alink:upload-vm-inventory.html["Carica i dati dell'inventario della VM"] per istruzioni.
 
 
 
+[[rename-a-dataset]]
 === Rinominare un set di dati
 
 È possibile modificare il nome di un set di dati salvato.
@@ -43,6 +46,7 @@ Viene visualizzato il centro di pianificazione.
 
 
 
+[[delete-a-dataset]]
 === Elimina un set di dati
 
 Quando un set di dati non è più necessario, è possibile eliminarlo in qualsiasi momento.
@@ -59,12 +63,14 @@ Viene visualizzato il centro di pianificazione.
 
 
 
+[[manage-migration-plans]]
 == Gestire i piani di migrazione
 
 Utilizzare il centro migrazioni per creare e gestire i piani di migrazione.
 
 
 
+[[provision-a-migration-plan]]
 === Fornire un piano di migrazione
 
 Puoi selezionare un piano di migrazione e predisporlo in modo che le VM vengano migrate nell'ambiente Amazon AWS di tua scelta.
@@ -88,6 +94,7 @@ Viene visualizzato il centro di pianificazione.
 
 
 
+[[edit-the-comment-for-a-migration-plan]]
 === Modifica il commento per un piano di migrazione
 
 Se è necessario modificare i dettagli del commento per un piano di migrazione, modificare il commento dall'interno del centro di pianificazione.
@@ -105,6 +112,7 @@ Viene visualizzato il centro di pianificazione.
 
 
 
+[[create-a-pdf-or-csv-report-of-a-migration-plan]]
 === Creare un report PDF o CSV di un piano di migrazione
 
 Crea un report PDF o CSV con i dettagli di un piano di migrazione.
@@ -122,6 +130,7 @@ Viene visualizzato il centro di pianificazione.
 
 
 
+[[delete-a-migration-plan]]
 === Eliminare un piano di migrazione
 
 Quando un piano di migrazione non è più necessario, è possibile eliminarlo in qualsiasi momento.

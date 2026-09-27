@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Miglioramenti al Migration ADVISOR di Amazon EC2
 
 Questa versione di BlueXP Workload Factory per VMware presenta diversi miglioramenti all'esperienza di consulenza sulla migrazione:

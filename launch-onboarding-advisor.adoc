@@ -19,6 +19,7 @@ Tieni presente che per accedere a Workload Factory è necessario disporre di un 
 
 
 
+[[create-a-deployment-plan-based-on-an-on-premises-vsphere-environment]]
 == Creare un piano di implementazione basato su un ambiente vSphere on-premise
 
 Puoi migrare le attuali configurazioni delle macchine virtuali negli ambienti vSphere on-premise su macchine virtuali in VMware Cloud su AWS e utilizzare file system Amazon FSX per NetApp ONTAP customizzati come datastore esterni.

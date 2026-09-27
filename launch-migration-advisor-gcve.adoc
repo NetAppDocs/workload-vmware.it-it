@@ -17,6 +17,7 @@ Dal centro di pianificazione VMware, puoi avviare il migration advisor di Google
 
 
 
+[[requirements]]
 == Requisiti
 
 * Devi averelink:upload-vm-inventory.html["caricato un inventario VM"] .
@@ -26,6 +27,7 @@ Dal centro di pianificazione VMware, puoi avviare il migration advisor di Google
 
 
 
+[[steps]]
 == Fasi
 
 . Accedi a Workload Factory utilizzando uno dei https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["esperienze di console"^] .
@@ -43,6 +45,7 @@ Viene visualizzata la procedura guidata *Prepare for Google Cloud onboarding*.
 
 
 
+[[configure-migration-preferences]]
 === Configura le preferenze di migrazione
 
 . Nella sezione _Caricamento configurazione VM_, rivedi le informazioni sul set di dati che stai utilizzando per creare un piano di migrazione.  La sezione *Riepilogo inventario VM* viene compilata dal file di inventario per riflettere il numero di VM e la capacità di archiviazione totale.
@@ -96,6 +99,7 @@ NOTE: Se si seleziona un margine inferiore al 20%, la protezione snapshot viene 
 
 
 
+[[select-a-cluster-configuration]]
 === Seleziona una configurazione del cluster
 
 . Nella pagina *Seleziona la configurazione preferita del cluster Google Cloud VMware Engine*, configura le preferenze del tuo cluster Google Cloud VMware Engine e rivedi le configurazioni consigliate.
@@ -128,6 +132,7 @@ La prima configurazione (quella con il costo più basso) viene selezionata per i
 
 
 
+[[select-a-vm-layout]]
 === Seleziona un layout VM
 
 . Nella pagina *Automatic VM selection*, esamina il layout ottimale della virtual machine selezionato automaticamente in base alla capacità di storage esterna richiesta e alle preferenze.
@@ -172,6 +177,7 @@ NOTE: Se modifichi manualmente la selezione della VM, puoi ripristinare la selez
 
 
 
+[[review-nfs-datastore-assignments]]
 === Esaminare le assegnazioni dei datastore NFS
 
 . Nella pagina *Review instance store assignment*, esamina il layout dettagliato del datastore e le assegnazioni delle VM.
@@ -231,6 +237,7 @@ NOTE: Se modifichi manualmente la selezione della VM, puoi ripristinare la selez
 
 
 
+[[review-and-save-your-deployment-plan]]
 === Rivedi e salva il tuo piano di distribuzione
 
 . Nella pagina *Review your migration plan*, rivedi e personalizza il tuo piano di distribuzione prima di salvarlo.
