@@ -74,6 +74,8 @@ sidebar:
       url: "/view-evs-well-architected.html"
   - title: Conoscenza e supporto
     entries:
+    - title: Domande frequenti (FAQ) su NetApp Workload Factory per VMware
+      url: "/faq-workload-factory-vmware.html"
     - title: Registrati per ricevere assistenza
       url: "/support-registration.html"
     - title: Richiedi assistenza
