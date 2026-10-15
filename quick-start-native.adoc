@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: Inizia con il consulente per la migrazione VMware per spostare la tua infrastruttura attuale su Amazon EC2 utilizzando Amazon FSX per ONTAP come datastore NFS esterni. 
 ---
-= Guida rapida per la migrazione ad Amazon EC2 utilizzando il consulente per la migrazione dei workload VMware
+= Guida rapida alla migrazione ad Amazon EC2
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

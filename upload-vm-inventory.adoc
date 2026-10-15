@@ -4,7 +4,7 @@ permalink: upload-vm-inventory.html
 keywords: vm workloads, capture vm details 
 summary: È possibile utilizzare il Planning Center per caricare informazioni sul proprio ambiente VMware attuale. 
 ---
-= Carica i dati dell'inventario della VM su NetApp Workload Factory
+= Carica i dati dell'inventario delle VM in Workload Factory for VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

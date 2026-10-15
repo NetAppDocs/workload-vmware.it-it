@@ -11,51 +11,54 @@ indexpage:
     links:
     - title: Scopri di più su NetApp Workload Factory per VMware
       url: learn-about-vmware-workloads.html
-    - title: 'Avvio rapido: migrazione ad Amazon Elastic VMware Service'
+    - title: Guida rapida alla migrazione ad Amazon EVS
       url: quick-start-evs.html
-    - title: 'Avvio rapido: Migrazione a VMware Cloud su AWS'
+    - title: Guida rapida alla migrazione di VMware Cloud on AWS
       url: quick-start.html
-    - title: 'Avvio rapido: Migrazione ad Amazon EC2'
+    - title: Guida rapida alla migrazione ad Amazon EC2
       url: quick-start-native.html
-    - title: 'Avvio rapido: migrare a Google Cloud VMware Engine'
+    - title: Guida rapida per la migrazione di Google Cloud VMware Engine
       url: quick-start-gcve.html
     - title: Esplora il centro di pianificazione VMware
       url: explore-planning-center.html
   - title: Migrazione ad Amazon Elastic VMware Service
     links:
-    - title: Esplora i risparmi
+    - title: Scopri le opportunità di risparmio offerte da Amazon EVS con Workload
+        Factory for VMware
       url: calculate-evs-savings.html
     - title: Creare manualmente un piano di distribuzione
       url: launch-migration-advisor-evs-manual.html
-    - title: Creare un piano di distribuzione utilizzando il Migration Advisor
+    - title: Crea un piano di distribuzione per Amazon EVS utilizzando il consulente
+        per la migrazione
       url: launch-migration-advisor-evs.html
-    - title: Implementa il file system FSX per ONTAP consigliato
-      url: deploy-fsx-file-system.html
+    - title: Distribuisci FSx for ONTAP per Amazon EVS
+      url: deploy-fsx-file-system-evs.html
   - title: Migra a Google Cloud VMware Engine
     links:
-    - title: Creare un piano di distribuzione utilizzando il Migration Advisor
+    - title: Crea un piano di implementazione per Google Cloud VMware Engine
       url: launch-migration-advisor-gcve.html
   - title: Migrazione ad Amazon EC2
     links:
-    - title: Creare un piano di distribuzione utilizzando il Migration Advisor
+    - title: Crea un piano di implementazione per Amazon EC2
       url: launch-onboarding-advisor-native.html
-    - title: Implementa il file system FSX per ONTAP consigliato
-      url: deploy-fsx-file-system.html
+    - title: Distribuisci FSx for ONTAP per Amazon EC2
+      url: deploy-fsx-file-system-native.html
   - title: Migrazione a VMware Cloud su AWS
     links:
-    - title: Creare un piano di distribuzione utilizzando il Migration Advisor
+    - title: Crea un piano di implementazione per VMware Cloud su AWS
       url: launch-onboarding-advisor.html
-    - title: Implementa il file system FSX per ONTAP consigliato
+    - title: Distribuisci FSx for ONTAP per VMware Cloud on AWS
       url: deploy-fsx-file-system.html
-    - title: Connetti i file system FSX per ONTAP a VMware Cloud su AWS
+    - title: Collega i file system FSX per ONTAP a VMware Cloud su AWS
       url: connect-sddc-to-fsx.html
-    - title: Migra i tuoi dati nella nuova infrastruttura
+    - title: Migra i dati delle macchine virtuali su VMware Cloud on AWS
       url: migrate-data.html
   - title: Amministrare e monitorare
     links:
     - title: Analisi della configurazione per configurazioni EVS
       url: configuration-analysis.html
-    - title: Implementare configurazioni EVS ben architettate
+    - title: Esamina i risultati EVS con architettura ottimizzata in Workload Factory
+        per VMware
       url: view-evs-well-architected.html
   - title: Blog e community
     links:
